@@ -47,10 +47,10 @@ def run_tests_inductive(n_runs, include_greedy=True, include_e2e=True, save_resu
 
         if save_results:
             if include_e2e:
-                with open('./e2e/results_inductive(3layers)_{}runs'.format(n_runs), 'wb') as output:
+                with open('./results/e2e/results_inductive(3layers)_{}runs'.format(n_runs), 'wb') as output:
                     pickle.dump(results_e2e, output)
             if include_greedy:
-                with open('./greedy/results_inductive(3layers)_{}runs'.format(n_runs), 'wb') as output:
+                with open('./results/greedy/results_inductive(3layers)_{}runs'.format(n_runs), 'wb') as output:
                     pickle.dump(results_greedy, output)
 
 
