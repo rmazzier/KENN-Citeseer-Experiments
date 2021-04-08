@@ -4,36 +4,11 @@ import numpy as np
 from model import Standard, Kenn_greedy
 import os
 import settings as s
+from training_functions import accuracy, Callback_EarlyStopping
 
 from pre_elab import generate_dataset, get_train_and_valid_lengths
 
-# os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-
-def accuracy(predictions, labels):
-    # Accuracy
-    correctly_classified = tf.equal(tf.argmax(predictions, 1), tf.argmax(labels, 1))
-    return tf.reduce_mean(tf.cast(correctly_classified, tf.float32))
-
-def Callback_EarlyStopping(AccList, min_delta=s.ES_MIN_DELTA, patience=s.ES_PATIENCE):
-    """
-    Takes as argument the list with all the validation accuracies. 
-    If patience=k, checks if the mean of the last k accuracies is higher than the mean of the 
-    previous k accuracies (i.e. we check that we are not overfitting). If not, stops learning.
-    """
-    #No early stopping for 2*patience epochs 
-    if len(AccList)//patience < 2 :
-        return False
-    #Mean loss for last patience epochs and second-last patience epochs
-    mean_previous = np.mean(AccList[::-1][patience:2*patience]) #second-last
-    mean_recent = np.mean(AccList[::-1][:patience]) #last
-    delta = mean_recent - mean_previous
-
-    if delta <= min_delta:
-        print("*CB_ES* Validation Accuracy didn't increase in the last %d epochs"%(patience))
-        print("*CB_ES* delta:", delta)
-        return True
-    else:
-        return False
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 def train_step_standard(model, features, labels, loss, optimizer, train_indices):
     with tf.GradientTape() as tape:
@@ -250,87 +225,3 @@ def train_and_evaluate_kenn_transductive_greedy(percentage_of_training, verbose=
 if __name__ == "__main__":
     generate_dataset(0.75)
     nn_history, greedy_kenn_history = train_and_evaluate_kenn_transductive_greedy(0.75)
-
-# os.environ['CUDA_VISIBLE_DEVICES'] = '0'
-
-# def train_and_evaluate(percentage_of_training):
-#     standard_model = Standard()
-#     standard_model.build((s.NUMBER_OF_FEATURES,))
-#     kenn_model = Kenn_greedy('knowledge_base')
-#     kenn_model.build((s.NUMBER_OF_FEATURES,))
-
-#     optimizer = keras.optimizers.Adam()
-#     loss = keras.losses.CategoricalCrossentropy(from_logits=False) # + BETA * regularizer
-
-#     # LOADING DATASET
-#     features = np.load(s.DATASET_FOLDER + 'features.npy')
-#     labels = np.load(s.DATASET_FOLDER + 'labels.npy')
-
-#     # TRANSDUCTIVE
-#     index_x = np.load(s.DATASET_FOLDER + 'index_x_transductive.npy')
-#     index_y = np.load(s.DATASET_FOLDER + 'index_y_transductive.npy')
-#     relations = np.load(s.DATASET_FOLDER + 'relations_transductive.npy')
-
-
-#     total_number_of_samples = len(features)
-#     number_of_samples_training = percentage_of_training * total_number_of_samples
-#     samples_per_class = int(round(number_of_samples_training / s.NUMBER_OF_CLASSES))
-
-#     train_len = s.NUMBER_OF_CLASSES * samples_per_class
-
-
-#     # TRAIN AND EVALUATE STANDARD MODEL
-#     for i in range(s.EPOCHS):
-#         if i % 10 == 0:
-#             print('Starting epoch ' + str(i) + '\n')
-
-#         with tf.GradientTape() as tape:
-#             # As a matter of fact, for the standard model transductive and inductive are equivalent
-#             # For this reason, only the training data is used
-#             _, predictions = standard_model(features[:train_len,:])
-#             l = loss(predictions, labels[:train_len,:])
-
-#             gradient = tape.gradient(l, standard_model.variables)
-#             optimizer.apply_gradients(zip(gradient, standard_model.variables))
-
-
-#     def accuracy(predictions, labels):
-#         # Accuracy
-#         correctly_classified = tf.equal(tf.argmax(predictions, 1), tf.argmax(labels, 1))
-#         return tf.reduce_mean(tf.cast(correctly_classified, tf.float32))
-
-#     pre_activations_NN, predictions_NN = standard_model(features)
-#     accuracy_train_standard = accuracy(predictions_NN[:train_len, :], labels[:train_len,:])
-#     accuracy_test_standard = accuracy(predictions_NN[train_len:,:], labels[train_len:,:])
-
-
-
-#     # TRAIN AND EVALUATE KENN MODEL
-#     for i in range(s.EPOCHS_KENN):
-#         if i % 10 == 0:
-#             print('Starting epoch ' + str(i) + '\n')
-
-#         with tf.GradientTape() as tape:
-#             predictions_KENN = kenn_model([pre_activations_NN, relations, index_x, index_y])
-#             l = loss(predictions_KENN[:train_len,:], labels[:train_len,:])
-
-#             gradient = tape.gradient(l, kenn_model.variables)
-#             optimizer.apply_gradients(zip(gradient, kenn_model.variables))
-
-#     predictions_KENN = kenn_model([pre_activations_NN, relations, index_x, index_y])
-#     accuracy_train_kenn = accuracy(predictions_KENN[:train_len,:], labels[:train_len,:])
-#     accuracy_test_kenn = accuracy(predictions_KENN[train_len:,:], labels[train_len:,:])
-
-#     print('Accuracy in training set: ')
-#     print('NN: ' + str(accuracy_train_standard))
-#     print('KENN: ' + str(accuracy_train_kenn))
-
-
-#     print('Accuracy in test set: ')
-#     print('NN: ' + str(accuracy_test_standard))
-#     print('KENN: ' + str(accuracy_test_kenn))
-
-#     return {'train_NN':accuracy_train_standard,
-#             'test_NN':accuracy_test_standard,
-#             'train_KENN': accuracy_train_kenn,
-#             'test_KENN': accuracy_test_kenn}

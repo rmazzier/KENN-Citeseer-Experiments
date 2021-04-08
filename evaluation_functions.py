@@ -99,7 +99,7 @@ def get_means_and_stds(history):
     means_kenn = []
     stds_kenn = []
 
-    n_runs = len(history['10']['NN'])
+    n_runs = len(history[list(history.keys())[0]]['NN'])
 
     for num in history.keys():
         test_accuracies = [history[num]['NN'][i]['test_accuracy'] for i in range(n_runs)]
@@ -134,7 +134,7 @@ def plot_means_and_stds(history, title, barwidth=0.3):
     
     # Add xticks on the middle of the group bars
     plt.xlabel('Percentage of Training', fontweight='bold')
-    plt.xticks([r + barWidth for r in range(len(means))], ['10%', '25%', '50%', '75%', '90%'])
+    plt.xticks([r + barWidth for r in range(len(means))], history.keys())
     plt.legend(loc='best')
     plt.title(title)
 
@@ -178,41 +178,50 @@ def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
         plt.bar(r3, deltas_RNM_t, color='g', width=barwidth, edgecolor='white', label='delta RNM')
 
     plt.xlabel('Percentage of Training', fontweight='bold')
-    plt.xticks([r + barwidth for r in range(len(means))], ['10%', '25%', '50%', '75%', '90%'])
+    plt.xticks([r + barwidth for r in range(len(means))], list(history.keys()))
     plt.legend(loc='best')
     plt.title(title)
     return
 
 def print_stats(history):
     means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
-    print("== 10% ==")
-    print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[0], means_kenn[0]))
-    print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[0], stds_kenn[0]))
-    print("\t\t\tDelta = {:8.6f}".format(means_kenn[0]-means[0]))
-    print()
-    print("== 25% ==")
-    print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[1], means_kenn[1]))
-    print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[1], stds_kenn[1]))
-    print("\t\t\tDelta = {:8.6f}".format(means_kenn[1]-means[1]))
-    print()
-    print("== 50% ==")
-    print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[2], means_kenn[2]))
-    print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[2], stds_kenn[2]))
-    print("\t\t\tDelta = {:8.6f}".format(means_kenn[2]-means[2]))
-    print()
-    print("== 75% ==")
-    print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[3], means_kenn[3]))
-    print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[3], stds_kenn[3]))
-    print("\t\t\tDelta = {:8.6f}".format(means_kenn[3]-means[3]))
-    print()
-    print("== 90% ==")
-    print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[4], means_kenn[4]))
-    print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[4], stds_kenn[4]))
-    print("\t\t\tDelta = {:8.6f}".format(means_kenn[4]-means[4]))
-    print()
-    return
+
+    for i,key in enumerate(history.keys()):
+        print("== {}% ==".format(key))
+        print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[i], means_kenn[i]))
+        print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[i], stds_kenn[i]))
+        print("\t\t\tDelta = {:8.6f}".format(means_kenn[i]-means[i]))
+        print()
+    # print("== 25% ==")
+    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[1], means_kenn[1]))
+    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[1], stds_kenn[1]))
+    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[1]-means[1]))
+    # print()
+    # print("== 50% ==")
+    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[2], means_kenn[2]))
+    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[2], stds_kenn[2]))
+    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[2]-means[2]))
+    # print()
+    # print("== 75% ==")
+    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[3], means_kenn[3]))
+    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[3], stds_kenn[3]))
+    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[3]-means[3]))
+    # print()
+    # print("== 90% ==")
+    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[4], means_kenn[4]))
+    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[4], stds_kenn[4]))
+    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[4]-means[4]))
+    # print()
+    # return
 
 def print_and_plot_results(history, plot_title, other_deltas=''):
+    """
+    Parameters:
+    - other_deltas: a string taking values in ['', 'i', 't']. 
+        - '': Only the deltas from kenn are plotted:
+        - 'i': The deltas from the other inductive experiments are printed along our deltas
+        - 't': The deltas from the other transductive experiments are printed along our deltas
+    """
     means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
     print_stats(history)
     plot_means_and_stds(history, plot_title, 0.4)

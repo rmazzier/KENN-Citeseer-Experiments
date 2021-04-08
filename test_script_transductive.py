@@ -7,7 +7,7 @@ import pickle
 def mean(x):
     return np.array(x).mean()
 
-def run_tests_transductive(n_runs, include_greedy=True, include_e2e=True, save_results=True, custom_training_dimensions=False):
+def run_tests_transductive(n_runs, include_greedy=True, include_e2e=True, save_results=True, custom_training_dimensions=False, verbose=True):
     training_dimensions = []
     if not custom_training_dimensions:
         print("No custom training dimensions found.")
@@ -36,11 +36,11 @@ def run_tests_transductive(n_runs, include_greedy=True, include_e2e=True, save_r
             generate_dataset(td, verbose=False)
 
             if include_e2e:
-                results_e2e[td_string].setdefault('NN', []).append(t.train_and_evaluate_standard_transductive(td))
-                results_e2e[td_string].setdefault('KENN', []).append(t.train_and_evaluate_kenn_transductive(td))
+                results_e2e[td_string].setdefault('NN', []).append(t.train_and_evaluate_standard_transductive(td, verbose=verbose))
+                results_e2e[td_string].setdefault('KENN', []).append(t.train_and_evaluate_kenn_transductive(td, verbose=verbose))
 
             if include_greedy:
-                res_nn, res_kenn = tg.train_and_evaluate_kenn_transductive_greedy(td)
+                res_nn, res_kenn = tg.train_and_evaluate_kenn_transductive_greedy(td, verbose=verbose)
                 results_greedy[td_string].setdefault('NN', []).append(res_nn)
                 results_greedy[td_string].setdefault('KENN', []).append(res_kenn)
 
@@ -51,6 +51,8 @@ def run_tests_transductive(n_runs, include_greedy=True, include_e2e=True, save_r
             if include_greedy:
                 with open('./results/greedy/results_transductive(3layers)_{}runs'.format(n_runs), 'wb') as output:
                     pickle.dump(results_greedy, output)
+    
+    return (results_e2e, results_greedy)
 
 
 if __name__ == "__main__":
