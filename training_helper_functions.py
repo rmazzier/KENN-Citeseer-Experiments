@@ -17,8 +17,8 @@ def callback_early_stopping(AccList, min_delta=s.ES_MIN_DELTA, patience=s.ES_PAT
     if len(AccList)//patience < 2 :
         return False
     #Mean loss for last patience epochs and second-last patience epochs
-    mean_previous = np.mean(AccList[::-1][patience:2*patience]) #second-last
-    mean_recent = np.mean(AccList[::-1][:patience]) #last
+    mean_recent = np.mean(AccList[patience:2*patience])
+    mean_previous = np.mean(AccList[:patience])
     delta = mean_recent - mean_previous
 
     if delta <= min_delta:
@@ -92,7 +92,7 @@ def train_step_kenn_transductive(model, features, relations, index_x_train, inde
     - index_x_train: indexes corresponding to the first objects of the binary relation pairs;
     - index_y_train: indexes corresponding to the second objects of the binary relation pairs;
     (NB: len(index_x_train) == len(index_y_train) == len(relations))
-    - labels: the ground truth labels corresponding to the samples given in the features parameter;
+    - labels: the ground truth labels corresponding to the samples given in the features parameter;  TODO: correggere
     - loss: tf.loss object associated with the model;
     - optimizer: tf.optimizer object associated with the model.
     """
