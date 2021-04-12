@@ -49,10 +49,13 @@ def run_tests_transductive(
             generate_dataset(td, verbose=False)
 
             if include_e2e:
+                print("--- Starting Base NN Training ---")
                 results_e2e[td_string].setdefault('NN', []).append(ts.train_and_evaluate_standard(td, verbose=verbose)[3])
+                print("--- Starting KENN Transductive Training ---")
                 results_e2e[td_string].setdefault('KENN', []).append(t.train_and_evaluate_kenn_transductive(td, verbose=verbose))
 
             if include_greedy:
+                print("--- Starting KENN Greedy Training ---")
                 res_nn, res_kenn = tg.train_and_evaluate_kenn_transductive_greedy(td, verbose=verbose)
                 results_greedy[td_string].setdefault('NN', []).append(res_nn)
                 results_greedy[td_string].setdefault('KENN', []).append(res_kenn)
@@ -69,4 +72,4 @@ def run_tests_transductive(
 
 
 if __name__ == "__main__":
-    run_tests_transductive(20, include_greedy=True, include_e2e=True, save_results=True)
+    run_tests_transductive(3, include_greedy=True, include_e2e=True, save_results=False, custom_training_dimensions=[0.90])
