@@ -20,7 +20,6 @@ class Standard(Model):
         self.d3 = layers.Dropout(0.5)
 
         self.last_layer = layers.Dense(6, input_shape=(50,), activation='linear')
-        # self.last_layer = layers.Dense(6, input_shape=input_shape, activation='linear')
 
     def preactivations(self, inputs):
         x = self.h1(inputs)

@@ -36,7 +36,6 @@ class KnowledgeEnhancer(tf.keras.layers.Layer):
         """
 
         for clause in self.clauses:
-            # perché c'era clause[:-1] -> perché l'ultimo carattere probabilmente è \n?
             self.clause_enhancers.append(ClauseEnhancer(self.predicates, clause[:-1], self.initial_clause_weight))
 
         super(KnowledgeEnhancer, self).build(input_shape)

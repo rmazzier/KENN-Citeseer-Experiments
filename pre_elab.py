@@ -51,15 +51,7 @@ def permute(y, samples_per_class):
         # Here we select only the desired amount of samples for each class
         p_train = np.concatenate((p_train, i_c[:samples_per_class]), axis=0)
         p_other = np.concatenate((p_other, i_c[samples_per_class:]), axis=0)
-        # note that at the end of the for cycle we will have an array of indexes but
-        # ordered such that at first we will have all the indexes relative to the first class,
-        # the all the indexes relative to the second class and so on... 
 
-    # ... for this reason here we generate shuffled indexes that we will use to shuffle them
-
-    # NB: can't we just use np.random.permutation(p_train) ?
-    # p1 = np.random.permutation(len(p_train))
-    # p2 = np.random.permutation(len(p_other))
     p_train = np.random.permutation(p_train)
 
     return np.concatenate((p_train, np.random.permutation(p_other)), axis=0)
@@ -177,15 +169,6 @@ def generate_dataset(percentage_of_training, verbose=True):
 
     number_of_samples_training, number_of_samples_validation = get_train_and_valid_lengths(x, percentage_of_training)
 
-    # y_col_name = list(y.columns)[0]
-    # Instead of using y_col_name to access the column of the y dataframe I just take the first column
-    # using iloc
-
-    # p will be an array of indexes that we will use to both shuffle the dataset
-    # and to select an equal amount of samples for each class (dataset balancing)
-
-    # NB!!! The size of p is the same as the whole dataset: calling X[p] will just permute its rows
-    # so that the first "number_of_samples_training" rows will be a balanced training set
     p = permute(y.iloc[:,0], int(number_of_samples_training //s.NUMBER_OF_CLASSES))
 
     # balances and shuffles ids and x
@@ -195,8 +178,6 @@ def generate_dataset(percentage_of_training, verbose=True):
     y = pd.get_dummies(y, prefix=['class'])
     # just gets a list with the names of all the possible classes
     classes = [c[5:] for c in list(y.columns)]
-    # we can use s.NUMBER_OF_CLASSES to get the number of classes...
-    # number_of_classes = len(classes)
 
     # balances and shuffles y
     y = y.to_numpy().astype(np.float32)[p,:]
@@ -241,8 +222,6 @@ def generate_dataset(percentage_of_training, verbose=True):
     np.save(s.DATASET_FOLDER + 'index_y_inductive_test', s2te)
     np.save(s.DATASET_FOLDER + 'relations_inductive_test', bte)
 
-
-    # TODO calcolo knowledge su file separato
     # Generate knowledge
     kb = ''
 

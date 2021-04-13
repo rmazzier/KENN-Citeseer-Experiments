@@ -192,27 +192,6 @@ def print_stats(history):
         print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[i], stds_kenn[i]))
         print("\t\t\tDelta = {:8.6f}".format(means_kenn[i]-means[i]))
         print()
-    # print("== 25% ==")
-    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[1], means_kenn[1]))
-    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[1], stds_kenn[1]))
-    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[1]-means[1]))
-    # print()
-    # print("== 50% ==")
-    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[2], means_kenn[2]))
-    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[2], stds_kenn[2]))
-    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[2]-means[2]))
-    # print()
-    # print("== 75% ==")
-    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[3], means_kenn[3]))
-    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[3], stds_kenn[3]))
-    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[3]-means[3]))
-    # print()
-    # print("== 90% ==")
-    # print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[4], means_kenn[4]))
-    # print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[4], stds_kenn[4]))
-    # print("\t\t\tDelta = {:8.6f}".format(means_kenn[4]-means[4]))
-    # print()
-    # return
 
 def print_and_plot_results(history, plot_title, other_deltas=''):
     """
