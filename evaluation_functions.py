@@ -206,3 +206,18 @@ def print_and_plot_results(history, plot_title, other_deltas=''):
     plot_means_and_stds(history, plot_title, 0.4)
     plot_deltas(history, title=plot_title, other_deltas=other_deltas)
     return
+
+def plot_clause_weights(history):
+    fig, axes = plt.subplots(1,3)
+
+    for i,l in enumerate(history['clause_weights']):
+        for j in range(len(np.transpose(l))):
+            axes[i].plot(np.transpose(l)[j], label=topics[j]) 
+        axes[i].set_title('KENN Layer {}'.format(i+1))
+        axes[i].set_xlabel('Epochs')
+        axes[i].set_ylabel('Value')
+        axes[i].legend(loc='best')
+
+    fig.set_figheight(5)
+    fig.set_figwidth(15)
+    plt.subplots_adjust(hspace=0.3)

@@ -38,6 +38,11 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
     valid_accuracies = []
     train_accuracies = []
 
+    # list of all the evolutions of the clause weights
+    clause_weights_1 = []
+    clause_weights_2 = []
+    clause_weights_3 = []
+
     train_indices = range(train_len)
     valid_indices = range(train_len, train_len + samples_in_valid)
     test_indices = range(train_len + samples_in_valid, features.shape[0])
@@ -66,6 +71,14 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
         train_accuracy = accuracy(train_predictions, labels[train_indices, :])
         validation_accuracy = accuracy(validation_predictions, labels[valid_indices, :])
 
+        # Append current clause weights
+        c_enhancers_weights_1 = [float(tf.squeeze(ce.clause_weight)) for ce in kenn_model.kenn_layer_1.binary_ke.clause_enhancers]
+        clause_weights_1.append(c_enhancers_weights_1)
+        c_enhancers_weights_2 = [float(tf.squeeze(ce.clause_weight)) for ce in kenn_model.kenn_layer_2.binary_ke.clause_enhancers]
+        clause_weights_2.append(c_enhancers_weights_2)
+        c_enhancers_weights_3 = [float(tf.squeeze(ce.clause_weight)) for ce in kenn_model.kenn_layer_3.binary_ke.clause_enhancers]
+        clause_weights_3.append(c_enhancers_weights_3)
+
         # update lists
         train_losses.append(train_loss)
         valid_losses.append(validation_loss)
@@ -87,14 +100,15 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
 
     kenn_predictions = kenn_model([features, relations, index_x, index_y])
     test_accuracy = accuracy(kenn_predictions[(train_len + samples_in_valid):,:], labels[(train_len + samples_in_valid):,:])
-
+    all_clause_weights = np.array([clause_weights_1, clause_weights_2, clause_weights_3])
     print("Test Accuracy: {}".format(test_accuracy))
     return {
         "train_losses": train_losses, 
         "train_accuracies": train_accuracies, 
         "valid_losses": valid_losses, 
         "valid_accuracies": valid_accuracies, 
-        "test_accuracy": test_accuracy}
+        "test_accuracy": test_accuracy,
+        "clause_weights": all_clause_weights}
 
 if __name__ == "__main__":
     generate_dataset(0.75)

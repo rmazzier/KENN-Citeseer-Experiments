@@ -1,0 +1,1383 @@
+
+àõÚ
+	/host:CPUõ
+˜/˜/ m
+
+tf_Compute mœh
+
+tf_Computeœh„,
+
+tf_Compute„,äV
+
+tf_ComputeäV	à)
+
+tf_Computeà)œA
+
+tf_ComputeœAä
+
+tf_Computeä´I
+
+tf_Compute´I"Rõ˜/my_funcH€ŠİOPàĞõØ‡eZ
+tracing_count2Z!
+tf_function_calltraced-nonXla"õ˜/tf.constantH ÑÂPÀÇ£"õ˜/tf.constantHÀ†ÂôP€ù
+"õ˜/tf.constantHàË¬…Pà—¦	"õ˜/tf.constantHàæ”Pà…²"/õ˜/tf.function-graph_buildingH€İ¾À
+P€„÷˜”D"%õ˜/convert_to_tensorH€¼»óœP †³S"õ˜/tf.constantH î×­P Æ®"%õ˜/convert_to_tensorHÀêâÉPà¹»"õ˜/tf.constantH ì¹ÓP€ÚÄ	"%õ˜/convert_to_tensorHÀø°æPÀÁÀ"õ˜/tf.constantH€¦îP ¶"-õ˜/TFE_Py_FastPathExecute_CH€­Ñ”P ’şƒ"0õ˜/EagerExecute: RandomUniformH€Øà¦P€Èôï"5õ˜/ EagerLocalExecute: RandomUniformH ¹È§PÀ¤îî"0õ˜/ValidateInputTypeAndPlacementHÀŞÚÊPÀ„="'õ˜/EagerKernelExecuteH€‚áËPàñ¤Ê"[õ˜/RandomUniformH ìÂÍP€‡áÅZ(
+	long_nameRandomUniform:RandomUniformZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€ÿí»¢P ³«'"%õ˜/EagerExecute: SubH ­ÅÇ¢P ‰à"*õ˜/EagerLocalExecute: SubHàüéÇ¢PÀ¬µ"0õ˜/ValidateInputTypeAndPlacementH€–¶Ù¢P€µ"&õ˜/EagerKernelExecuteHÀšóÙ¢P€ç™"<õ˜/SubH€ÔÈÚ¢PÀÙâZ
+	long_nameSub:SubZ
+is_eager1"-õ˜/TFE_Py_FastPathExecute_CH ¢â„£P ö°"&õ˜/EagerExecute: MulHÀ´‡ˆ£P€ñàˆ"+õ˜/EagerLocalExecute: MulHÀéŸˆ£PÀ¡¼ˆ"0õ˜/ValidateInputTypeAndPlacementH ®¨–£Pà§"&õ˜/EagerKernelExecuteH€‹Ó–£PÀ°äy"<õ˜/MulH ·¢—£PàäéuZ
+	long_nameMul:MulZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHàş™–¤PÀØ"-õ˜/TFE_Py_FastPathExecute_CHÀˆ§›¤PÀ¯‚"%õ˜/EagerExecute: AddH€¨Ò¤P üŞ}"*õ˜/EagerLocalExecute: AddH€İê¤P€ºÀ}"0õ˜/ValidateInputTypeAndPlacementHÀˆÜ³¤P€µ"&õ˜/EagerKernelExecuteHà´«´¤P€ ág"<õ˜/AddHÀ„¶¤P ¨ÈdZ
+	long_nameAdd:AddZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀâô¥Pàûs")õ˜/TFE_DeleteTensorHandleH€»“ ¥Pà‘C")õ˜/TFE_DeleteTensorHandleH€İ¨±¥P€ŸI")õ˜/TFE_DeleteTensorHandleHà£„²¥P ")õ˜/TFE_DeleteTensorHandleHÀË–²¥P "%õ˜/convert_to_tensorHÀŒ¼¥P€É”",õ˜/TFE_Py_FastPathExecute_CH ”™‡¦Pàã†'"-õ˜/EagerExecute: VarHandleOpHàæ‰˜¦P€°®"2õ˜/EagerLocalExecute: VarHandleOpH€©¨˜¦PÀà‰"0õ˜/ValidateInputTypeAndPlacementH€÷Û¨¦PÀš"&õ˜/EagerKernelExecuteHàÓ†©¦P€™"Tõ˜/VarHandleOpH€€Ö©¦Pà£·Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€ûı²¨PÀ¤ÿ"2õ˜/EagerExecute: AssignVariableOpHà„‹¸¨PÀî¢"7õ˜/#EagerLocalExecute: AssignVariableOpH Ô¯¸¨PÀ„ò"0õ˜/ValidateInputTypeAndPlacementHÀöõÊ¨Pà§"&õ˜/EagerKernelExecuteHàí¬Ë¨P Ãâ"cõ˜/AssignVariableOpH€šüË¨P€­âZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ¥¯Ù¨PÀ„="õ˜/tf.constantHÀ²­£­P ‹³"õ˜/tf.constantH€ëó¶­PàÙ“",õ˜/TFE_Py_FastPathExecute_CHÀâÑ­P€ª€%"&õ˜/EagerExecute: FillHÀÄ‹Ö­P€¿‹"+õ˜/EagerLocalExecute: FillH€”°Ö­P âà"0õ˜/ValidateInputTypeAndPlacementHÀô¹ë­P€µ"&õ˜/EagerKernelExecuteHàëğë­Pàâ	"?õ˜/FillH ¥Æì­PàºÊZ
+	long_name	Fill:FillZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€‰˜û­P ")õ˜/TFE_DeleteTensorHandleHà’¥€®PÀ„="%õ˜/convert_to_tensorHÀÑÊ…®P çÊ	",õ˜/TFE_Py_FastPathExecute_CHàÖ„»®P ø¯"-õ˜/EagerExecute: VarHandleOpH€¨€Å®PàÅÌ"2õ˜/EagerLocalExecute: VarHandleOpH€İ˜Å®P ö§"0õ˜/ValidateInputTypeAndPlacementH ³³Ò®P "&õ˜/EagerKernelExecuteH€ŞÒ®PÀ›Ğ"Tõ˜/VarHandleOpHà¡¡Ó®P æ†Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ±ò¯PàÕ¸
+"2õ˜/EagerExecute: AssignVariableOpH ôÏö¯P Ê"7õ˜/#EagerLocalExecute: AssignVariableOpHÀ¶îö¯Pà¾¥"0õ˜/ValidateInputTypeAndPlacementH€˜‡ù¯P€µ"&õ˜/EagerKernelExecuteHàô±ù¯P€æÕ"cõ˜/AssignVariableOpHà“ûù¯P êáZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€½³‚°P€ê0"%õ˜/convert_to_tensorH  …‰µPÀ‰Ü"&õ˜/convert_to_tensorHàã‚ÁµP€Şõğ"&õ˜/convert_to_tensorHÀİóÕ¸P€ñØÒ"%õ˜/convert_to_tensorHàå„ÅP Ç½"&õ˜/convert_to_tensorH€“˜¤ÅPÀÚ„¬"&õ˜/convert_to_tensorH€ÿÙ©ÆP€¯ï®"%õ˜/convert_to_tensorHà´ßòÏP€º·"%õ˜/convert_to_tensorH —ñ’ĞP€ıè"%õ˜/convert_to_tensorH …şÔÕPÀŸ«"%õ˜/convert_to_tensorHàá“†ŞPàáÉ"%õ˜/convert_to_tensorH ¸Ê‰äPÀç°#"õ˜/tf.constantH€‚òšäPà¡ä"%õ˜/convert_to_tensorHà…Ñ¯äP€Ùµ"õ˜/tf.constantHàÀÌ¸äPàç¬"%õ˜/convert_to_tensorH ÀŸÎäP éÒ"õ˜/tf.constantHÀÊÖäPà…²",õ˜/TFE_Py_FastPathExecute_CH ¢ÏëäPÀ©Ó:"/õ˜/EagerExecute: RandomUniformH ÇûôäP€¬ˆ0"4õ˜/ EagerLocalExecute: RandomUniformHà€ÑõäP€Ø¦/"1õ˜/ValidateInputTypeAndPlacementHàô¿üäPÀ¬€"&õ˜/EagerKernelExecuteH€è›ÿäPÀ®½%"Zõ˜/RandomUniformHà¡¢åPà—Û!Z(
+	long_nameRandomUniform:RandomUniformZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀ‹Œ±åP€ÈĞ"%õ˜/EagerExecute: SubH úª³åPàÔô"*õ˜/EagerLocalExecute: SubH ¯Ã³åPÀ’Ö"0õ˜/ValidateInputTypeAndPlacementHÀÎ½µåPà§"&õ˜/EagerKernelExecuteH€âµåP ‰«"<õ˜/SubH •™¶åP€óªZ
+	long_nameSub:SubZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀ ÌÃåPà›"%õ˜/EagerExecute: MulHÀı§ÅåPÀÇî"*õ˜/EagerLocalExecute: MulH ¥ºÅåPÀ’Ö"0õ˜/ValidateInputTypeAndPlacementHÀœÇåPÀš"&õ˜/EagerKernelExecuteHÀÄ´ÇåPàØÏ"<õ˜/MulH ¡ßÇåPÀÂÏZ
+	long_nameMul:MulZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàşœÌåPàûs",õ˜/TFE_Py_FastPathExecute_CH€§‘ÏåPÀº™"%õ˜/EagerExecute: AddHÀéàĞåP€™"*õ˜/EagerLocalExecute: AddH ‘óĞåP€Ù€"0õ˜/ValidateInputTypeAndPlacementH€áÈÒåPÀš"&õ˜/EagerKernelExecuteH€–áÒåP€ÇŒ"<õ˜/AddHàò‹ÓåPÀØZ
+	long_nameAdd:AddZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàØáÕåP ¬O")õ˜/TFE_DeleteTensorHandleH€ºÉÖåP Â")õ˜/TFE_DeleteTensorHandleH ë·ÚåPÀ„="%õ˜/TFE_DeleteTensorHandleHÀ—‡Ûå"%õ˜/TFE_DeleteTensorHandleH€²“Ûå"%õ˜/convert_to_tensorHÀğ‡ßåPÀŠ 	",õ˜/TFE_Py_FastPathExecute_CH€™—”æPÀŒİ,"-õ˜/EagerExecute: VarHandleOpHàŸ¡æP€¿‹"2õ˜/EagerLocalExecute: VarHandleOpHàÔ¥¡æPàüì"0õ˜/ValidateInputTypeAndPlacementH€ôÔ»æPÀš"&õ˜/EagerKernelExecuteHàĞÿ»æP€Ù€"Tõ˜/VarHandleOpHÀâÂ¼æP€ü¤Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ÇËûçPÀÄ×"2õ˜/EagerExecute: AssignVariableOpHàº€èP ë¥"7õ˜/#EagerLocalExecute: AssignVariableOpHàÃÒ€èP€©‡"0õ˜/ValidateInputTypeAndPlacementHÀ²ñ‚èPà§"&õ˜/EagerKernelExecuteH œƒèP€Ã±"cõ˜/AssignVariableOpHàÈñƒèPà¬±Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàö—èPÀ„="õ˜/tf.constantHÀæíÀéPàŠÑ
+"õ˜/tf.constantH Ü³ÑéPà’‡",õ˜/TFE_Py_FastPathExecute_CH  ©ÛéP€Äõ	"&õ˜/EagerExecute: FillH€˜ÂŞéPÀ…"+õ˜/EagerLocalExecute: FillH ÚàŞéP€¶Ü"0õ˜/ValidateInputTypeAndPlacementH Ö…áéPà§"&õ˜/EagerKernelExecuteH€³°áéPàÂ€"?õ˜/FillHÀì…âéPÀ·Z
+	long_name	Fill:FillZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ˆ‡ééP ")õ˜/TFE_DeleteTensorHandleH€¾²íéPÀ„="%õ˜/convert_to_tensorH€—³ñéPÀ ï",õ˜/TFE_Py_FastPathExecute_CHÀ›Ú¢êPÀş"-õ˜/EagerExecute: VarHandleOpHÀÖÕ«êP —Ä"2õ˜/EagerLocalExecute: VarHandleOpHÀ‹î«êP€Õ¥"0õ˜/ValidateInputTypeAndPlacementH€í†®êP "&õ˜/EagerKernelExecuteH ¯¥®êPÀ‰Ü"Tõ˜/VarHandleOpH Îî®êP ŸúZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ¸İÁëPÀ²ã
+"2õ˜/EagerExecute: AssignVariableOpH€¹ğÅëP ­“"7õ˜/#EagerLocalExecute: AssignVariableOpH ûÆëPàİî"0õ˜/ValidateInputTypeAndPlacementHà§ÈëPà§"&õ˜/EagerKernelExecuteHà‘ÀÈëPà¬±"cõ˜/AssignVariableOpH –ıÈëPÀËÉZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ÑøÑëP€ê0"%õ˜/convert_to_tensorHÀë°¬íPà¬±"&õ˜/convert_to_tensorH úĞíP€‰£ˆ"&õ˜/convert_to_tensorHàÔÁÓîP ¼ßß"%õ˜/convert_to_tensorHÀÆÑ’øP ’¥"&õ˜/convert_to_tensorHà¾Ì˜øP õíË"&õ˜/convert_to_tensorHÀ“Ê—ùPÀİ¯"%õ˜/convert_to_tensorH€ù’½ÿPÀê’"%õ˜/convert_to_tensorHàÍ¼ÚÿPÀÃ“"%õ˜/convert_to_tensorHà”¢İƒPà’‡"%õ˜/convert_to_tensorHÀ ‡ŒPà¾¥"%õ˜/convert_to_tensorHà®Æ¬“PÀ¸*"õ˜/tf.constantHÀ¥ĞÂ“P Îä"%õ˜/convert_to_tensorHÀçòÙ“PÀòı"õ˜/tf.constantH Ê€ã“Pà…²"%õ˜/convert_to_tensorH ùêò“P€§´"õ˜/tf.constantHà¦¯ú“Pàó½",õ˜/TFE_Py_FastPathExecute_CHàª¿”P ÎÎB"/õ˜/EagerExecute: RandomUniformH€˜í¢”Pà«×."4õ˜/ EagerLocalExecute: RandomUniformH€ìÎ£”P€°ã-"0õ˜/ValidateInputTypeAndPlacementHàñ€«”Pà‘C"&õ˜/EagerKernelExecuteH •‡¬”P ·†%"Zõ˜/RandomUniformH ‘¬®”PÀë‹!Z(
+	long_nameRandomUniform:RandomUniformZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€–„á”Pà  
+"%õ˜/EagerExecute: SubHàä”Pàü·"*õ˜/EagerLocalExecute: SubHàÂµä”PàÇŸ"0õ˜/ValidateInputTypeAndPlacementH€Ìàæ”PÀš"&õ˜/EagerKernelExecuteHÀ›…ç”PÀÔÃ"<õ˜/SubHÀ…¶ç”P€¨ÃZ
+	long_nameSub:SubZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàˆ³ù”PÀø«"%õ˜/EagerExecute: MulH €›û”Pà‰"*õ˜/EagerLocalExecute: MulH€¨­û”PàÔô"0õ˜/ValidateInputTypeAndPlacementHÀÔ­ı”PÀš"&õ˜/EagerKernelExecuteHà–Ìı”PàØÏ"<õ˜/MulHÀóöı”PàÏÕZ
+	long_nameMul:MulZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHà­ß‚•PÀ£†",õ˜/TFE_Py_FastPathExecute_CHÀÄÁ†•PÀÙâ"%õ˜/EagerExecute: AddH ”—ˆ•PàŸÜ"*õ˜/EagerLocalExecute: AddH€¼©ˆ•PàêÃ"0õ˜/ValidateInputTypeAndPlacementH ¦‹Š•P "&õ˜/EagerKernelExecuteH Û£Š•P€±½"<õ˜/AddH€íæŠ•PÀ·Z
+	long_nameAdd:AddZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH Êó•P€ê0")õ˜/TFE_DeleteTensorHandleHÀöÂ•PÀÏ$")õ˜/TFE_DeleteTensorHandleH Ë·“•Pà‘C"%õ˜/TFE_DeleteTensorHandleHÀ÷†”•"%õ˜/TFE_DeleteTensorHandleH€’“”•"%õ˜/convert_to_tensorHàºé™•PàŞ²",õ˜/TFE_Py_FastPathExecute_CHÀ§ŸÚ•P€µÍ"-õ˜/EagerExecute: VarHandleOpHàÍÀê•Pàïâ"2õ˜/EagerLocalExecute: VarHandleOpHà‚Ùê•PÀ­Ä"0õ˜/ValidateInputTypeAndPlacementH ™Ší•P "&õ˜/EagerKernelExecuteH Î¢í•PÀÇî"Tõ˜/VarHandleOpHÀúñí•P€±½Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀóÜÓ—PÀƒ®"2õ˜/EagerExecute: AssignVariableOpHàÚ§İ—PÀŠ 	"7õ˜/#EagerLocalExecute: AssignVariableOpHàÀİ—P È	"0õ˜/ValidateInputTypeAndPlacementH ¦ñß—Pà§"&õ˜/EagerKernelExecuteH€ƒœà—P ­“"cõ˜/AssignVariableOpHÀ¼ñà—Pà‰Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH øÿí—P€ê0"õ˜/tf.constantH€ìå¶™P ®×"õ˜/tf.constantHÀ’¸È™P ­“",õ˜/TFE_Py_FastPathExecute_CH€ƒÓ™P€‚ˆ"&õ˜/EagerExecute: FillHÀäÆÖ™Pà±Ğ"+õ˜/EagerLocalExecute: FillHà¦åÖ™P â«"0õ˜/ValidateInputTypeAndPlacementH€å¨Ù™P€µ"&õ˜/EagerKernelExecuteH ÜßÙ™P€…Ÿ"?õ˜/FillH °ÁÚ™PÀÂÏZ
+	long_name	Fill:FillZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀĞÿá™P ")õ˜/TFE_DeleteTensorHandleHÀ“±æ™P ÷6"%õ˜/convert_to_tensorH€‡¾ê™PÀ ï",õ˜/TFE_Py_FastPathExecute_CHÀèÀšP€ÿğ"-õ˜/EagerExecute: VarHandleOpHÀóÂ©šPàÇŸ"2õ˜/EagerLocalExecute: VarHandleOpHÀ¨Û©šPÀ…"0õ˜/ValidateInputTypeAndPlacementH€Šô«šPÀš"&õ˜/EagerKernelExecuteHÀÙ˜¬šP€º·"Tõ˜/VarHandleOpH ëÛ¬šPàÏÕZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀõˆÇ›PàŠÑ
+"2õ˜/EagerExecute: AssignVariableOpH€ˆßË›P€Ä"7õ˜/#EagerLocalExecute: AssignVariableOpHà¯ñË›P€Ì«"0õ˜/ValidateInputTypeAndPlacementH ÜñÍ›Pà§"&õ˜/EagerKernelExecuteH€¹œÎ›P€›î"cõ˜/AssignVariableOpH åëÎ›P€’ôZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀÙ‹×›P ÷6"%õ˜/convert_to_tensorHÀÖ†ÓPàáÉ"&õ˜/convert_to_tensorH€¾ùP ºÏ"&õ˜/convert_to_tensorHÀ÷Ê‰ŸPàäØÅ"%õ˜/convert_to_tensorH è‰î©PÀ¾ô"&õ˜/convert_to_tensorHàÁìô©PÀ×Œı"&õ˜/convert_to_tensorH€¿ù¨«P òğı"%õ˜/convert_to_tensorH€İ‘Ü²Pà–â"%õ˜/convert_to_tensorHÀ‘û²P€©‡"%õ˜/convert_to_tensorH€šîğ¶P€¤è"%õ˜/convert_to_tensorH€ÖõÏ¾PÀ›Ğ"%õ˜/convert_to_tensorHà«ÆP èÃ'"õ˜/tf.constantHà¨ß²ÆPàõÅ"%õ˜/convert_to_tensorH ’ãÈÆP€Ÿş"õ˜/tf.constantH€õğÑÆPÀŠ 	"%õ˜/convert_to_tensorH øíãÆPàúä"õ˜/tf.constantH€³¸ëÆP€ôî",õ˜/TFE_Py_FastPathExecute_CH€ùµ€ÇPà¾Ú"/õ˜/EagerExecute: RandomUniformH€§ÜŠÇPà‡º"4õ˜/ EagerLocalExecute: RandomUniformH€û½‹ÇP€ŒÆ"0õ˜/ValidateInputTypeAndPlacementH€±š‘ÇP€ŸI"&õ˜/EagerKernelExecuteH Çš’ÇP ğÄ
+"Zõ˜/RandomUniformHÀ›­”ÇP€ôîZ(
+	long_nameRandomUniform:RandomUniformZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀÂá¨ÇP ©¸"%õ˜/EagerExecute: SubH€¤úªÇP Ãâ"*õ˜/EagerLocalExecute: SubHàËŒ«ÇP Ê"0õ˜/ValidateInputTypeAndPlacementHàÇ±­ÇPÀš"&õ˜/EagerKernelExecuteH —Ö­ÇPÀµú"<õ˜/SubHÀ®ÇPàš½Z
+	long_nameSub:SubZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàö›½ÇP€Š¾"%õ˜/EagerExecute: MulH îƒ¿ÇPÀ¨¥"*õ˜/EagerLocalExecute: MulH€––¿ÇPÀóŒ"0õ˜/ValidateInputTypeAndPlacementHÀşÀÇP€µ"&õ˜/EagerKernelExecuteH€İ¢ÁÇP Ÿú"<õ˜/MulHà¹ÍÁÇPÀ£†Z
+	long_nameMul:MulZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleH€ë»ÅÇP –€",õ˜/TFE_Py_FastPathExecute_CHÀŠçÈÇPàİî"%õ˜/EagerExecute: AddH ¥¤ÊÇP æ†"*õ˜/EagerLocalExecute: AddH€Í¶ÊÇP ±î"0õ˜/ValidateInputTypeAndPlacementHÀ†ÌÇPà§"&õ˜/EagerKernelExecuteHàÑ¤ÌÇP Ÿú";õ˜/AddH ¡ÉÌÇPàûsZ
+	long_nameAdd:AddZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀßŒÏÇP Â")õ˜/TFE_DeleteTensorHandleHÀÉ½ÏÇP Â")õ˜/TFE_DeleteTensorHandleH àŸÓÇP€ê0")õ˜/TFE_DeleteTensorHandleHÀ×ÖÓÇP "%õ˜/TFE_DeleteTensorHandleH ÿèÓÇ"%õ˜/convert_to_tensorH £Ñ×ÇPà¶ï	",õ˜/TFE_Py_FastPathExecute_CHÀáÈPàÊ /"-õ˜/EagerExecute: VarHandleOpH •×œÈPÀÕ¼!"2õ˜/EagerLocalExecute: VarHandleOpH ÊïœÈP “!"0õ˜/ValidateInputTypeAndPlacementHàˆ™¹ÈP "&õ˜/EagerKernelExecuteHàòÉ¹ÈP€Ã±"Tõ˜/VarHandleOpH€Ÿ™ºÈP ¾ÃZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€³½ŠÊP ìé"2õ˜/EagerExecute: AssignVariableOpHÀäÜÊP ¶"7õ˜/#EagerLocalExecute: AssignVariableOpHà¦ûÊPÀÙâ"0õ˜/ValidateInputTypeAndPlacementH€°¦’ÊPà§"&õ˜/EagerKernelExecuteH€š×’ÊPàËú"cõ˜/AssignVariableOpHàà²“ÊP ¨ôZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ŠœÊP ÷6"õ˜/tf.constantH ôôàËP ãï"õ˜/tf.constantHÀ¬ŠóËP ­“",õ˜/TFE_Py_FastPathExecute_CH€úÛ€ÌPàÈã"&õ˜/EagerExecute: FillH Œ„ÌPÀâÜ"+õ˜/EagerLocalExecute: FillH Á™„ÌP  ¾"0õ˜/ValidateInputTypeAndPlacementH€åĞ†ÌPÀš"&õ˜/EagerKernelExecuteHàÁû†ÌP€øÉ"?õ˜/FillH€îÊ‡ÌPàÏÕZ
+	long_name	Fill:FillZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀøêÌP ")õ˜/TFE_DeleteTensorHandleH€Ö¨•ÌPÀ„="%õ˜/convert_to_tensorHÀÉµ™ÌP È	",õ˜/TFE_Py_FastPathExecute_CH€ÊÍÌPÀÛ "-õ˜/EagerExecute: VarHandleOpHÀóêÖÌPÀéƒ"2õ˜/EagerLocalExecute: VarHandleOpHÀ¨ƒ×ÌP §å"0õ˜/ValidateInputTypeAndPlacementHàà˜éÌPÀš"&õ˜/EagerKernelExecuteH °½éÌP€…Ÿ"Tõ˜/VarHandleOpH Ï†êÌPàÏÕZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàÈ´‰ÎP Úõ
+"2õ˜/EagerExecute: AssignVariableOpHÀ³øÎP øú"7õ˜/#EagerLocalExecute: AssignVariableOpHÀèÎP€¶Ü"0õ˜/ValidateInputTypeAndPlacementH€Ê©ÎPà§"&õ˜/EagerKernelExecuteH€´ÚÎP€Ğ†"cõ˜/AssignVariableOpH à©‘ÎP Ô’Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ±ô™ÎP€ê0"%õ˜/convert_to_tensorHà¶‡”ĞP€Ù€"&õ˜/convert_to_tensorH€ü¦½ĞPÀå²"&õ˜/convert_to_tensorHàé¿ÌÑPàÈÛÕ"%õ˜/convert_to_tensorHàòğíÜPÀóŒ"&õ˜/convert_to_tensorH ìôÜP€Òì­"&õ˜/convert_to_tensorHàœúŒŞP ÕÅ×"%õ˜/convert_to_tensorHà§ğ‡åPÀÔÃ"%õ˜/convert_to_tensorH Ìï¦åP€ŞŸ"%õ˜/convert_to_tensorH€¦À°¦PÀ…"%õ˜/convert_to_tensorHÀ±´¬P€Ù€"%õ˜/convert_to_tensorH ¾û´Pà–â"%õ˜/convert_to_tensorH€­Ïœ´PÀËÉ"&õ˜/convert_to_tensorHàÌà¹´P€Öµ·"%õ˜/convert_to_tensorHà³’™¿P€º·"%õ˜/convert_to_tensorHà¦ò²¿P ¾Ã"&õ˜/convert_to_tensorHÀò¡Ï¿PàÓŸÏ"%õ˜/convert_to_tensorHÀ±¯öÊP ôŸ"%õ˜/convert_to_tensorH ÅúËP€Š¾"%õ˜/convert_to_tensorHàåéŠËPàÇŸ"&õ˜/convert_to_tensorHàËŞÖËPÀ­³×" õ˜/tf.constantH º‚¹ğP €İ"%õ˜/convert_to_tensorHÀĞ¡ƒñP –ê1"õ˜/tf.constantHàÉ•§ñP€· ",õ˜/TFE_Py_ExecuteCancelableHÀ•úÛñP€º¡4")õ˜/EagerExecute: ReshapeH Ù¾äñP€Á“*".õ˜/EagerLocalExecute: ReshapeH ­ åñP€¸™)"0õ˜/ValidateInputTypeAndPlacementHÀ·Ä…òPÀ„="&õ˜/EagerKernelExecuteH€ÛÊ†òP€ÈĞ"Hõ˜/ReshapeHÀšˆòP€±½Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHÀá’òPÀ£†"%õ˜/TFE_DeleteTensorHandleHÀóƒ”ò"%õ˜/convert_to_tensorH€ÍæšòPÀœ”",õ˜/TFE_Py_FastPathExecute_CHÀ«ÒÕòPÀìÏ&"-õ˜/EagerExecute: VarHandleOpHÀ¥¤åòPÀ´ë"2õ˜/EagerLocalExecute: VarHandleOpHàçÂåòP€åÆ"0õ˜/ValidateInputTypeAndPlacementHàŸ§öòP "&õ˜/EagerKernelExecuteHÀüÑöòPÀ¨¥"Tõ˜/VarHandleOpHÀ››÷òP ‰«Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀÛİÆôP Öš"2õ˜/EagerExecute: AssignVariableOpHÀ§‰ÌôPÀø«"7õ˜/#EagerLocalExecute: AssignVariableOpHàé§ÌôP€©‡"0õ˜/ValidateInputTypeAndPlacementHàšåÎôPà§"&õ˜/EagerKernelExecuteHà„–ÏôP æ†"cõ˜/AssignVariableOpHà£ßÏôPÀê’Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàœíÙôPÀ„="%õ˜/convert_to_tensorH ô÷¹æ$P€ëô"&õ˜/convert_to_tensorH€°»ßæ$P€…ŞÙ"&õ˜/convert_to_tensorHàÕîÛí$PÀ˜İõ"%õ˜/convert_to_tensorHÀ‰Éõø$P Ç½"&õ˜/convert_to_tensorH ¼’šù$Pàë•£"%õ˜/convert_to_tensorH »êÆ%P€ïÏ"%õ˜/convert_to_tensorH€ÖîÔƒ%P Ç½"&õ˜/convert_to_tensorH€íç¯†%PÀá¦›"%õ˜/convert_to_tensorH Íí¥‹%P ’¥"%õ˜/convert_to_tensorHÀûùÉ‹%P Šï"%õ˜/convert_to_tensorH€÷Áè%PÀŸ«"&õ˜/convert_to_tensorH€˜ÈŒ%Pà¡Â¯"&õ˜/convert_to_tensorH ÄÕŸ%P€…Ãë"%õ˜/convert_to_tensorH ƒ¡Ùœ%P€º·"&õ˜/convert_to_tensorHàöâõœ%PÀğÎŒ"%õ˜/convert_to_tensorHàÄçĞ¥%PÀŸ«"%õ˜/convert_to_tensorH€Òµ¡­%PÀÔÃ"&õ˜/convert_to_tensorH â¼Ê­%PÀ‹½"&õ˜/convert_to_tensorHÀ”èá·%P€‘İŞ"%õ˜/convert_to_tensorH€×™Ş¼%P€…Ÿ"%õ˜/convert_to_tensorH ¦Âõ¼%P€ôî"Cõ˜/ExecutorState::ProcessHÀí¹°À%P€üÙZ
+id-1Z
+iter_num0"†õ˜/	ReverseV2H€øÙ¹À%PÀ»İZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2:ReverseV2Z
+is_eager0"bõ˜/O_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2_0:_SendHÀñÉÆÀ%P€ŸI"2õ˜/ExecutorDoneCallbackH ×îÇÀ%P€¾’Z
+id-1"Cõ˜/ExecutorState::ProcessH ’ÔÁ%P Ç½Z
+id-1Z
+iter_num0"…õ˜/	ReverseV2H€È‚Á%P ágZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2:ReverseV2Z
+is_eager0"bõ˜/O_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2_0:_SendH€óƒÁ%Pà‘C"1õ˜/ExecutorDoneCallbackH€Ší„Á%P€µZ
+id-1"%õ˜/convert_to_tensorH€’µôÂ%P€ïÏ"&õ˜/convert_to_tensorH€Ã§Ã%P ƒìá"õ˜/tf.constantH€ïæßÎ%Pà‘—b"%õ˜/convert_to_tensorH€¼‹ƒÏ%P ó"õ˜/tf.constantHàŸİ‘Ï%Pà  
+",õ˜/TFE_Py_ExecuteCancelableHÀ±ÕªÏ%P ×Ş")õ˜/EagerExecute: ReshapeH ã¥±Ï%P ®×".õ˜/EagerLocalExecute: ReshapeHÀÄ²Ï%Pà¿é
+"0õ˜/ValidateInputTypeAndPlacementHà¿·Ï%PÀ„="&õ˜/EagerKernelExecuteHàÛÑ¸Ï%P æ†"Gõ˜/ReshapeH€Æ³ºÏ%PàÆ[Z
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH –ë¾Ï%P ág")õ˜/TFE_DeleteTensorHandleHàØºÀÏ%P "%õ˜/convert_to_tensorHà¤æÅÏ%PÀŠ 	",õ˜/TFE_Py_FastPathExecute_CHÀÀÑıÏ%P ÷ë"-õ˜/EagerExecute: VarHandleOpH ­Ğ%Pà¬"2õ˜/EagerLocalExecute: VarHandleOpH âµĞ%PÀÌ"0õ˜/ValidateInputTypeAndPlacementH È‹Ğ%PÀš"&õ˜/EagerKernelExecuteHà—°Ğ%PÀü†"Tõ˜/VarHandleOpH€ÄÿĞ%P€›îZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàÆËÑ%P€ş¬"2õ˜/EagerExecute: AssignVariableOpH âİĞÑ%P ë¥"7õ˜/#EagerLocalExecute: AssignVariableOpH€¿ˆÑÑ%P õ"0õ˜/ValidateInputTypeAndPlacementH È³ÓÑ%Pà§"&õ˜/EagerKernelExecuteH€¥ŞÓÑ%Pà€“"cõ˜/AssignVariableOpH€Ä§ÔÑ%Pà÷˜Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀ×ÁŞÑ%P ÷6"%õ˜/convert_to_tensorH€Ÿ¤ÒØ%P üÕ"&õ˜/convert_to_tensorHàØßìØ%P †È"&õ˜/convert_to_tensorHÀÁÕß%P€Éí"%õ˜/convert_to_tensorHà‹‰ıè%P€º·"&õ˜/convert_to_tensorH µ§Ÿé%P õ‡ö"%õ˜/convert_to_tensorHÀ¤²âï%P ’¥"%õ˜/convert_to_tensorH€“ôÄğ%PàÂ€"&õ˜/convert_to_tensorHàÏÂüò%Pà£Ûê"%õ˜/convert_to_tensorH€ö¦¾÷%Pà÷˜"%õ˜/convert_to_tensorHàÂšà÷%P€ŞŸ"%õ˜/convert_to_tensorH ÌÆêú%Pà¬±"&õ˜/convert_to_tensorH€ÎÒŒû%P€ôâõ"&õ˜/convert_to_tensorH€ëÑ”ü%PÀ™·Ê"%õ˜/convert_to_tensorH€äÏ²…&Pà¬±"&õ˜/convert_to_tensorHàÒ£Í…&P ÍÜ"%õ˜/convert_to_tensorH ¸ÀÔŒ&P€…Ÿ"%õ˜/convert_to_tensorHàóÊÂ‘&P€º·"&õ˜/convert_to_tensorH Ü¿ë‘&PàıÔŒ"&õ˜/convert_to_tensorH Í”ã™&PÀ‡Û"%õ˜/convert_to_tensorHà¶ÅÛ&P€º·"%õ˜/convert_to_tensorH ÈŒó&PÀû"Cõ˜/ExecutorState::ProcessHÀœºã¡&P †”
+Z
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2HÀãÆå¡&P€ü¤ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2:ReverseV2Z
+is_eager0"eõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2_0:_SendHÀäŠë¡&PÀ£†"1õ˜/ExecutorDoneCallbackH éøì¡&PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH ¯«š¢&P€Ğ†Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2H ƒ›¢&PàÆ[ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2_0:_SendHÀÎ¥œ¢&P€ê0"1õ˜/ExecutorDoneCallbackHÀ¢‡¢&P€µZ
+id-1"%õ˜/convert_to_tensorH ³˜Œ¤&PÀÔÃ"&õ˜/convert_to_tensorH äŠ§¤&PÀíÍã"õ˜/tf.constantH ºàë¯&P€øf"%õ˜/convert_to_tensorHÀÎÂ’°&P ……"õ˜/tf.constantHÀ²Å¢°&Pà¿é
+",õ˜/TFE_Py_ExecuteCancelableH€ìÏ»°&Pàèğ")õ˜/EagerExecute: ReshapeHà³ïÁ°&PÀœ”".õ˜/EagerLocalExecute: ReshapeH íÄÂ°&PàÕ¸
+"0õ˜/ValidateInputTypeAndPlacementH€¡Ç°&P€ê0"&õ˜/EagerKernelExecuteH £¡È°&PÀİ½"Hõ˜/ReshapeH µ•Ê°&P –€Z
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€ŠŠÏ°&PàÆ[")õ˜/TFE_DeleteTensorHandleHà¤ÇĞ°&P "%õ˜/convert_to_tensorHà»ÚÕ°&Pà—¦	",õ˜/TFE_Py_FastPathExecute_CHà³‹±&PÀ‘Ç"-õ˜/EagerExecute: VarHandleOpH€©ò˜±&PàøÜ"2õ˜/EagerLocalExecute: VarHandleOpHÀø–™±&P€œ²"0õ˜/ValidateInputTypeAndPlacementH€ã©œ±&PÀš"&õ˜/EagerKernelExecuteHà¿Ôœ±&P ºè"Tõ˜/VarHandleOpHÀ†°±&Pà£·Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàœØá²&P õã"2õ˜/EagerExecute: AssignVariableOpH íÀç²&P€“¸"7õ˜/#EagerLocalExecute: AssignVariableOpHÀ¯ßç²&PÀÃ“"0õ˜/ValidateInputTypeAndPlacementH€Æê²&Pà§"&õ˜/EagerKernelExecuteH€°Áê²&PÀ¨¥"cõ˜/AssignVariableOpH Üë²&Pà÷˜Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàïªõ²&P€ê0"%õ˜/convert_to_tensorHÀ•Şñ¹&P€Ù€"&õ˜/convert_to_tensorHàÆº&P £ÖÃ"&õ˜/convert_to_tensorHàï¾ñ¿&P€ËÖÏ"%õ˜/convert_to_tensorHÀˆÕÈ&P€º·"&õ˜/convert_to_tensorHÀÅ²÷È&PÀôôñ"%õ˜/convert_to_tensorH ¯®Ï&P ’¥"%õ˜/convert_to_tensorHà¥´’Ğ&P€Ğ†"&õ˜/convert_to_tensorH ìÏÒ&Pàáíë"%õ˜/convert_to_tensorHàŠï–×&P ’¥"%õ˜/convert_to_tensorH ´¹×&PÀÃ“"%õ˜/convert_to_tensorH€Ë¿ÃÚ&P€º·"&õ˜/convert_to_tensorHÀŠ­åÚ&PàíÎë"&õ˜/convert_to_tensorH Ï¾íÛ&P€‹¼Ã"%õ˜/convert_to_tensorH Üƒ€å&P Ç½"&õ˜/convert_to_tensorHÀÆššå&P ÑêÙ"%õ˜/convert_to_tensorH Ïì&Pà÷˜"%õ˜/convert_to_tensorH€ÚŠñ&P€ïÏ"&õ˜/convert_to_tensorH€ôºñ&P ³Ï"&õ˜/convert_to_tensorH £·¶ù&P ½¬ß"%õ˜/convert_to_tensorH ê¥³ş&P ’¥"%õ˜/convert_to_tensorH€ÔÚÊş&PÀû"Cõ˜/ExecutorState::ProcessHÀó ¼'P ÕÖZ
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2HÀïÅ¾'P ‰«ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2_0:_SendH€ñÁ'P€Ôa"1õ˜/ExecutorDoneCallbackHà©®Ã'PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH€ôìï'P€Ğ†Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2H ÕÔğ'PÀ¹UZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2_0:_SendH “çñ'P€ê0"1õ˜/ExecutorDoneCallbackH çÈò'P€µZ
+id-1"%õ˜/convert_to_tensorHàèËÖƒ'PÀÔÃ"&õ˜/convert_to_tensorHÀÁĞñƒ'P ÍÜ"õ˜/tf.constantHÀÛæ§'Pà„Âc"%õ˜/convert_to_tensorHà–ÈÊ'PÀŸà"õ˜/tf.constantH í“Ù'P Úõ
+",õ˜/TFE_Py_ExecuteCancelableH€ÿ‹ò'P éÒ")õ˜/EagerExecute: ReshapeHÀ„ø'PÀìš".õ˜/EagerLocalExecute: ReshapeH Ëèø'PÀ˜¹"0õ˜/ValidateInputTypeAndPlacementH€ëÄı'Pà‘C"&õ˜/EagerKernelExecuteH€©×ş'P ë¥"Hõ˜/ReshapeHÀë¦€'P êáZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀèˆ'Pàûs"%õ˜/TFE_DeleteTensorHandleHÀÅë‰'"%õ˜/convert_to_tensorHàé„'P ²²	",õ˜/TFE_Py_FastPathExecute_CH€ĞõÃ'P€£Ù"-õ˜/EagerExecute: VarHandleOpH Û¨Ñ'Pà¬"2õ˜/EagerLocalExecute: VarHandleOpHÀÇÑ'P ¿‡"0õ˜/ValidateInputTypeAndPlacementH ö–Ô'PÀš"&õ˜/EagerKernelExecuteHàÅ»Ô'PÀü†"Tõ˜/VarHandleOpH€òŠÕ'PàØÏZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ı°’'PÀùï"2õ˜/EagerExecute: AssignVariableOpH şô’’'Pàæè"7õ˜/#EagerLocalExecute: AssignVariableOpHàÍ™“’'P€Š¾"0õ˜/ValidateInputTypeAndPlacementHÀ¼¸•’'Pà§"&õ˜/EagerKernelExecuteH ™ã•’'P€¤è"cõ˜/AssignVariableOpHàÒ¸–’'P€›îZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€ºƒ ’'P€ê0"%õ˜/convert_to_tensorH€şì˜™'PÀÔÃ"&õ˜/convert_to_tensorHàìÀ³™'P ÿ¸§"&õ˜/convert_to_tensorHàñàú'PàŠÀÚ"%õ˜/convert_to_tensorHàí‹à§'P Ç½"&õ˜/convert_to_tensorH€ôÔ‚¨'PÀ›ôí"%õ˜/convert_to_tensorH€Ø¬¸®'P€…Ÿ"%õ˜/convert_to_tensorHÀÆîš¯'PàÂ€"&õ˜/convert_to_tensorHà½À‰²'P ”™"%õ˜/convert_to_tensorHÀÛöı¶'P ’¥"%õ˜/convert_to_tensorH ¤¢·'P€ÈĞ"%õ˜/convert_to_tensorH óÖ¾º'P Ç½"&õ˜/convert_to_tensorH€õâàº'Pà÷Œò"&õ˜/convert_to_tensorH €Ÿè»'Pà®óÅ"%õ˜/convert_to_tensorH ¸óŒÅ'PàêÃ"&õ˜/convert_to_tensorHÀ§©ªÅ'P€¢„á"%õ˜/convert_to_tensorHà‰ş·Ì'Pà÷˜"%õ˜/convert_to_tensorH€Áü¦Ñ'PÀŸ«"&õ˜/convert_to_tensorHàëĞÑ'P ç£Š"&õ˜/convert_to_tensorHàƒäÃÙ'P€ò“Ş"%õ˜/convert_to_tensorH€šÆ¿Ş'PÀŸ«"%õ˜/convert_to_tensorH€‘×Ş'PÀÃ“"Cõ˜/ExecutorState::ProcessH€Ì—Îá'P ¿‡Z
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2H ŠÛĞá'PÀ–±ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2_0:_SendH€·ŒÔá'P€Ôa"1õ˜/ExecutorDoneCallbackH ìÕÕá'PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHà­ƒâ'PÀµúZ
+id-1Z
+iter_num0"‡õ˜/	ReverseV2HàÕ„â'PàÆ[ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2_0:_SendH€¡§…â'PàÜ*"1õ˜/ExecutorDoneCallbackHàç‚†â'P€µZ
+id-1"%õ˜/convert_to_tensorH êÉïã'PàáÉ"&õ˜/convert_to_tensorH€ÙŠä'PàñÙâ"õ˜/tf.constantHàìÔÎï'Pà‰áf"%õ˜/convert_to_tensorHÀá‹òï'PÀæì"õ˜/tf.constantHà¦ö‚ğ'PàŠÑ
+",õ˜/TFE_Py_ExecuteCancelableH à€œğ'P ë")õ˜/EagerExecute: ReshapeH€İ¸¢ğ'PÀ‚ê".õ˜/EagerLocalExecute: ReshapeH€ü£ğ'P€É”"0õ˜/ValidateInputTypeAndPlacementH€Şü§ğ'Pà‘C"&õ˜/EagerKernelExecuteHÀı§«ğ'P …Ğ"Gõ˜/ReshapeH ‚–­ğ'PàûsZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ™©²ğ'P€‰z"%õ˜/TFE_DeleteTensorHandleH ö„´ğ'"%õ˜/convert_to_tensorH€µª¹ğ'P€¥¬	",õ˜/TFE_Py_FastPathExecute_CH€—ïğ'PÀû÷"-õ˜/EagerExecute: VarHandleOpH€ˆçığ'P€œ²"2õ˜/EagerLocalExecute: VarHandleOpH Ê…şğ'PÀÌ"0õ˜/ValidateInputTypeAndPlacementH °Û€ñ'P "&õ˜/EagerKernelExecuteHÀòù€ñ'Pà‰"Tõ˜/VarHandleOpH€¬Ïñ'PÀËÉZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHÀ‚»ò'PÀìš"2õ˜/EagerExecute: AssignVariableOpHàØÀò'PÀÌ"7õ˜/#EagerLocalExecute: AssignVariableOpHàÅğÀò'P Šï"0õ˜/ValidateInputTypeAndPlacementH Ü¡Ãò'P€µ"&õ˜/EagerKernelExecuteHÀÓØÃò'P€âú"cõ˜/AssignVariableOpHàÿ§Äò'PàËúZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ç£Ïò'P€ê0"%õ˜/convert_to_tensorH€˜¤¿ù'PàáÉ"&õ˜/convert_to_tensorH ÀÍÚù'P Á×"&õ˜/convert_to_tensorHÀß²Ñÿ'PàÓŸÏ"%õ˜/convert_to_tensorHÀàü¹ˆ(P Ç½"&õ˜/convert_to_tensorH€ôËÜˆ(P ìõ"%õ˜/convert_to_tensorH Í‡ (PÀŸ«"%õ˜/convert_to_tensorH€¦«„(P€Ğ†"&õ˜/convert_to_tensorH ®Ã¾’(P€¨çé"%õ˜/convert_to_tensorHÀ–•ÿ–(P€Ğ†"%õ˜/convert_to_tensorH€·¹ —(P€ôî"%õ˜/convert_to_tensorHÀìƒªš(P€…Ÿ"&õ˜/convert_to_tensorH ÏÆËš(P€Ï¶ì"&õ˜/convert_to_tensorHÀÑˆÒ›(P€ÉÎÄ"%õ˜/convert_to_tensorHà»Úç¤(Pà¬±"&õ˜/convert_to_tensorHÀª®‚¥(PÀçêÚ"%õ˜/convert_to_tensorH ğî„¬(PÀê’"%õ˜/convert_to_tensorH şë°(P€º·"&õ˜/convert_to_tensorH ¶Î”±(Pà¡½"&õ˜/convert_to_tensorHÀŸ’¹(PÀéûß"%õ˜/convert_to_tensorHÀï†¾(Pà÷˜"%õ˜/convert_to_tensorHÀæÁ§¾(Pà›"Cõ˜/ExecutorState::ProcessH€Èõ—Á(P ë¥Z
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2H œˆšÁ(P€ü¤ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2_0:_SendH ¡§Á(P€ŸI"1õ˜/ExecutorDoneCallbackHÀ¡ØÁ(P ÂZ
+id-1"Cõ˜/ExecutorState::ProcessHà“ÚÌÁ(P€Ğ†Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2Hàç»ÍÁ(PÀ¹UZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2_0:_SendH€³ÔÎÁ(P€ê0"1õ˜/ExecutorDoneCallbackH€‡¶ÏÁ(P€µZ
+id-1"%õ˜/convert_to_tensorHÀ£§¶Ã(P€º·"&õ˜/convert_to_tensorHàáŸÑÃ(PÀ®÷Ü"õ˜/tf.constantH ´Ç‚Ï(P îa"%õ˜/convert_to_tensorH ­Š¥Ï(PÀóÁ"õ˜/tf.constantH òÃ´Ï(P€Íï
+",õ˜/TFE_Py_ExecuteCancelableHààæÍÏ(P ä³")õ˜/EagerExecute: ReshapeH€ÙáÓÏ(PÀçû
+".õ˜/EagerLocalExecute: ReshapeHàŸ½ÔÏ(P †”
+"0õ˜/ValidateInputTypeAndPlacementHà—‡ÙÏ(P€ŸI"&õ˜/EagerKernelExecuteHàÕ™ÚÏ(P ›Ÿ"Gõ˜/ReshapeHÀğÖÛÏ(PàÆ[Z
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàß×àÏ(P ág"%õ˜/TFE_DeleteTensorHandleH€•¡âÏ("%õ˜/convert_to_tensorH îÒçÏ(P€ÚÄ	",õ˜/TFE_Py_FastPathExecute_CH â«ŸĞ(Pà´œ"-õ˜/EagerExecute: VarHandleOpH€ò›­Ğ(P ©¸"2õ˜/EagerLocalExecute: VarHandleOpH ´º­Ğ(PàÙ“"0õ˜/ValidateInputTypeAndPlacementH€¬Ó°Ğ(PÀš"&õ˜/EagerKernelExecuteHÀû÷°Ğ(P€øÉ"Tõ˜/VarHandleOpHÀšÁ±Ğ(PàîZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ‚áèÑ(P€Å¹"2õ˜/EagerExecute: AssignVariableOpHàè˜îÑ(PÀ¿¸	"7õ˜/#EagerLocalExecute: AssignVariableOpHà±îÑ(P ı™	"0õ˜/ValidateInputTypeAndPlacementH ´âğÑ(Pà§"&õ˜/EagerKernelExecuteHàƒ‡ñÑ(PÀï±"cõ˜/AssignVariableOpH ½ÜñÑ(PàèZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€¥‰şÑ(P ÷6"%õ˜/convert_to_tensorH€œƒìØ(PÀ‰Ü"&õ˜/convert_to_tensorHàŞ¸‡Ù(Pà ìµ"&õ˜/convert_to_tensorH ï¼İŞ(Pà„İÑ"%õ˜/convert_to_tensorHàÎÓ·ç(PÀÔÃ"&õ˜/convert_to_tensorHàİåÙç(P ÙÕí"%õ˜/convert_to_tensorHà´èî(P€…Ÿ"%õ˜/convert_to_tensorHà´¼òî(P İŒ"&õ˜/convert_to_tensorH€ˆ¼¬ñ(PÀ›ôí"%õ˜/convert_to_tensorHÀ˜‚ğõ(P ’¥"%õ˜/convert_to_tensorH€î¾‘ö(Pà›"%õ˜/convert_to_tensorHÀ°Ş™ù(Pà¬±"&õ˜/convert_to_tensorH ıÑ»ù(PÀÆî"&õ˜/convert_to_tensorHÀÊûÁú(PÀ»—Ã"%õ˜/convert_to_tensorH€ÙæÜƒ)P€º·"&õ˜/convert_to_tensorHÀ…œ÷ƒ)PÀ†´Û"%õ˜/convert_to_tensorHà°ĞùŠ)Pà¬±"%õ˜/convert_to_tensorH Šàâ)PÀŸ«"&õ˜/convert_to_tensorHàˆ¤‹)P ôøˆ"&õ˜/convert_to_tensorHÀï‰û—)P ãŞ"%õ˜/convert_to_tensorH€²»÷œ)P€…Ÿ"%õ˜/convert_to_tensorH€©ö)P€©‡"Cõ˜/ExecutorState::ProcessHÀùù‚ )P ¶Z
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2H ³€… )P ‰«ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2_0:_SendH ¸Ÿˆ )P€ŸI"1õ˜/ExecutorDoneCallbackHà¾‰ )PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH€×¡¸ )PàÂ€Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2H ¸‰¹ )PÀ¹UZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2_0:_SendH ö›º )PàÜ*"1õ˜/ExecutorDoneCallbackH Êıº )P€µZ
+id-1"%õ˜/convert_to_tensorHàÂ†¢)P€º·"&õ˜/convert_to_tensorHà‰È¸¢)Pàø€ñ"%õ˜/convert_to_tensorH ÔÂè®)PÀÌ"%õ˜/convert_to_tensorH Àûó®)P —Ä"%õ˜/convert_to_tensorH ûöü®)P ­“"%õ˜/convert_to_tensorH —©…¯)Pà’‡"%õ˜/convert_to_tensorHÀ‹É¯)PÀ…"%õ˜/convert_to_tensorHàÿè•¯)PÀ…"%õ˜/convert_to_tensorHà—ÜàĞ-PàÇŸ"&õ˜/convert_to_tensorH€Ê­³Ñ-Pàš¾Å"&õ˜/convert_to_tensorH€İæşÖ-PÀûÛ"&õ˜/convert_to_tensorH€¿æÛ-PÀ«¬	"%õ˜/convert_to_tensorH€‡¶›í-P ë¥"%õ˜/convert_to_tensorHà¹´Øí-PÀÙâ"%õ˜/convert_to_tensorHà«ºî-Pà‹•"%õ˜/convert_to_tensorH€¾ÉÑî-Pà‰"%õ˜/convert_to_tensorH€·…‚ù-P€¤è"&õ˜/convert_to_tensorH æÕ«ù-PÀÏç±"&õ˜/convert_to_tensorH ı«âı-PàÈ‡ô"&õ˜/convert_to_tensorH ËƒÛ.Pà°°é"%õ˜/convert_to_tensorHàÕĞÆ†.P İŒ"%õ˜/convert_to_tensorHàÈ°à†.P ¾Ã"%õ˜/convert_to_tensorHÀª¯ü†.Pà›"%õ˜/convert_to_tensorH ‹ê’‡.Pàü·"%õ˜/convert_to_tensorH€¦’‰.PÀŸ«"&õ˜/convert_to_tensorH€€Œ«.P€¢î‘"&õ˜/convert_to_tensorHà´Ã‘.Pà—ÿ‰"&õ˜/convert_to_tensorHàğ™Ò•.PÀûæç"%õ˜/convert_to_tensorHàòÎ¿š.P€…Ÿ"%õ˜/convert_to_tensorH ±øÛš.Pà£·"%õ˜/convert_to_tensorHÀøê÷š.PàºÊ"%õ˜/convert_to_tensorHàÇ“›.P â«"%õ˜/convert_to_tensorH Ø¨¢.PÀóŒ"%õ˜/convert_to_tensorH ßÈ±§.P€ïÏ"%õ˜/convert_to_tensorH åàÒ§.P óÛ"%õ˜/convert_to_tensorH€Æ›é§.P€ôî"%õ˜/convert_to_tensorHÀ¬Ô²­.PÀ‰Ü"%õ˜/convert_to_tensorH€ÖòÔ­.Pà…²"%õ˜/convert_to_tensorHà—´ñ°.PÀŸ«"%õ˜/convert_to_tensorH ¯Ş‘±.PÀËÉ"%õ˜/convert_to_tensorH şÕ§±.Pà›"%õ˜/convert_to_tensorHàÃà‰µ.P€º·"%õ˜/convert_to_tensorHà³©«µ.PàĞ™"%õ˜/convert_to_tensorH€¿¬¿¸.P ’¥"%õ˜/convert_to_tensorH ÒÊà¸.Pà›"%õ˜/convert_to_tensorHÀŠÅÂÈ/Pà¨Ö"%õ˜/convert_to_tensorH €Œ—Î/Pà–â"%õ˜/convert_to_tensorHÀÜ—ÆÒ/PÀ‰Ü"%õ˜/convert_to_tensorH€Ô´àÒ/PàØÏ"&õ˜/convert_to_tensorHÀæ¿ıÒ/P€êÔè"%õ˜/convert_to_tensorHÀ¯†Ü/PÀÔÃ"%õ˜/convert_to_tensorH ´² Ü/P ¾Ã"&õ˜/convert_to_tensorH Â€½Ü/P€Ñ¹Ø"%õ˜/convert_to_tensorHàÚ¿­å/Pàïâ"%õ˜/convert_to_tensorHÀÏÁ¸å/Pà±Ğ"%õ˜/convert_to_tensorH€¥ÉÁå/PÀï±"&õ˜/convert_to_tensorHÀÍØöå/PàÖëß"õ˜/tf.constantH€ôÅà™0Pàéˆy"%õ˜/convert_to_tensorHàÙ‰š0P€†˜!"õ˜/tf.constantHÀ™›š0P€É”",õ˜/TFE_Py_ExecuteCancelableHÀ«ç·š0PÀ¨Ú")õ˜/EagerExecute: ReshapeHàŸ‡Àš0Pàúä".õ˜/EagerLocalExecute: ReshapeHÀæâÀš0PÀ™ı"0õ˜/ValidateInputTypeAndPlacementHÀœ¿Æš0P ¬O"&õ˜/EagerKernelExecuteH€õİÇš0P ®×"Hõ˜/ReshapeH ÉğÉš0P €±Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHà£—Öš0P –€"%õ˜/TFE_DeleteTensorHandleH€ù×š0"%õ˜/convert_to_tensorH€ÄÕİš0Pà¶ï	",õ˜/TFE_Py_FastPathExecute_CHÀè‰•›0PÀì"-õ˜/EagerExecute: VarHandleOpHÀ—ô¤›0P€»û"2õ˜/EagerLocalExecute: VarHandleOpH€ç˜¥›0P ŞĞ"0õ˜/ValidateInputTypeAndPlacementH ¨›0PÀš"&õ˜/EagerKernelExecuteHàŞ±¨›0Pà¾¥"Tõ˜/VarHandleOpH€‹©›0P óÛZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€îçöœ0P ÀË"2õ˜/EagerExecute: AssignVariableOpHàËÖüœ0P€ŞŸ"7õ˜/#EagerLocalExecute: AssignVariableOpHà€ïüœ0Pà›"0õ˜/ValidateInputTypeAndPlacementH€Ššÿœ0P Â"&õ˜/EagerKernelExecuteHÀ×ÿœ0PÀóŒ"cõ˜/AssignVariableOpHàº¦€0P İŒZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH äŠ0P€ŸI"%õ˜/convert_to_tensorH ší£0PÀóŒ"&õ˜/convert_to_tensorH Ñ€Š¤0P€îé"&õ˜/convert_to_tensorHÀñÑÉ«0P Ö‰İ"%õ˜/convert_to_tensorH€»Î¼´0PÀÔÃ"&õ˜/convert_to_tensorH€é©ß´0P »Ğò"%õ˜/convert_to_tensorH€ŒØ›»0PÀŸ«"%õ˜/convert_to_tensorH Êïÿ»0PàÂ€"&õ˜/convert_to_tensorHÀÒ‡º¾0PÀš°è"%õ˜/convert_to_tensorHÀÌœûÂ0P€…Ÿ"%õ˜/convert_to_tensorH€¢ÙœÃ0P€ŞŸ"%õ˜/convert_to_tensorHÀé—¨Æ0Pà¬±"&õ˜/convert_to_tensorH€ÑÈËÆ0Pà‡®"&õ˜/convert_to_tensorH ÔÎ×Ç0P€£“Î"%õ˜/convert_to_tensorH€˜¸ŒÑ0P€º·"&õ˜/convert_to_tensorHÀù…§Ñ0PÀªœß"%õ˜/convert_to_tensorHÀÿÆÏØ0Pà€“"%õ˜/convert_to_tensorH ÙÛ›Ş0P Ğ·"&õ˜/convert_to_tensorH ¾×ÉŞ0PÀÆÓ†"&õ˜/convert_to_tensorHÀÂÁê0P ø‘™"%õ˜/convert_to_tensorHÀĞÓúï0P Ç½"%õ˜/convert_to_tensorHÀæ×’ğ0P ë¥"Cõ˜/ExecutorState::ProcessHàÏÅ•ó0PàªŞZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2Hà€ƒ˜ó0P ‰«Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2_0:_SendHàÄø¡ó0Pà„î"1õ˜/ExecutorDoneCallbackHà³È¥ó0P€ê0Z
+id-1"Cõ˜/ExecutorState::ProcessH ñâÔó0P ’¥Z
+id-1Z
+iter_num0"‹õ˜/	ReverseV2HàßĞÕó0P€ÔaZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2_0:_SendHàÒûÖó0PàÜ*"1õ˜/ExecutorDoneCallbackHà¦İ×ó0P€µZ
+id-1"%õ˜/convert_to_tensorHàºëØõ0Pà–â"&õ˜/convert_to_tensorHà¿¿ôõ0PÀÄûô" õ˜/tf.constantHÀ‰ˆ×1P ²ÚÌ"%õ˜/convert_to_tensorH ä”ı1PÀÑ."õ˜/tf.constantH€»‘‚1PÀƒ",õ˜/TFE_Py_ExecuteCancelableHàÉ§Æ‚1Pà ¿S")õ˜/EagerExecute: ReshapeHàĞ‚1Pà‚›".õ˜/EagerLocalExecute: ReshapeH€¤Ñ‚1P€Ò"0õ˜/ValidateInputTypeAndPlacementH »á×‚1P ÷6"&õ˜/EagerKernelExecuteHà“€Ù‚1PÀ…"Hõ˜/ReshapeHÀìÏÛ‚1P Ë˜Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleH€¿ªƒ1Pàå¤")õ˜/TFE_DeleteTensorHandleH ÈÕŸƒ1P "%õ˜/convert_to_tensorHàˆªƒ1P€ö",õ˜/TFE_Py_FastPathExecute_CHà®¬îƒ1Pàüì"-õ˜/EagerExecute: VarHandleOpH ²Ú„1P€ã¾
+"2õ˜/EagerLocalExecute: VarHandleOpH€…‚„1P€ù
+"0õ˜/ValidateInputTypeAndPlacementHàğÎ…„1PÀš"&õ˜/EagerKernelExecuteH€è…†„1P€ëô"Tõ˜/VarHandleOpHàãù†„1PàèZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàÉ¬å…1PÀ¼ÀZ"2õ˜/EagerExecute: AssignVariableOpH €ëí…1PÀ—”Q"7õ˜/#EagerLocalExecute: AssignVariableOpHÀÂ‰î…1P€ÈïP"0õ˜/ValidateInputTypeAndPlacementH Ğñğ…1P Â"&õ˜/EagerKernelExecuteHÀÇ¨ñ…1Pà€²M"cõ˜/AssignVariableOpH „ò…1P ¨“LZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€•™È†1PÀ¹U"%õ˜/convert_to_tensorHÀØ‡1P€øÉ"&õ˜/convert_to_tensorH€©İ¥1Pà¬œø"&õ˜/convert_to_tensorHàÅÂ¿”1P ·ÒĞ"%õ˜/convert_to_tensorHàûë´Ÿ1P Ç½"&õ˜/convert_to_tensorHàŞß×Ÿ1PÀÊŞı"%õ˜/convert_to_tensorHÀËµ¥¦1P ’¥"%õ˜/convert_to_tensorH º¨‰§1PÀµú"&õ˜/convert_to_tensorHàº»É©1P ‹Œ"%õ˜/convert_to_tensorHà²²°®1P ’¥"%õ˜/convert_to_tensorHàöÜÒ®1P€©‡"%õ˜/convert_to_tensorH Äşæ±1P€…Ÿ"&õ˜/convert_to_tensorH øˆ²1PÀèè—"&õ˜/convert_to_tensorH ş¨•³1PÀ•‘å"%õ˜/convert_to_tensorHÀûœã¼1P€º·"&õ˜/convert_to_tensorH Ÿ‰ş¼1P üì–"%õ˜/convert_to_tensorHà¨ëäÅ1PÀŸ«"%õ˜/convert_to_tensorH€ÅåË1P üÕ"&õ˜/convert_to_tensorHàÂ«Ë1P Ô ›"&õ˜/convert_to_tensorHàÆÖÓ1Pà½â"%õ˜/convert_to_tensorHÀ›äÕØ1PÀŸ«"%õ˜/convert_to_tensorHÀÇ·íØ1P€©‡"Cõ˜/ExecutorState::ProcessH §ÉìÛ1P€ç™Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H ŸïÛ1P€æÕZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2_0:_SendHÀ‰õòÛ1P€ŸI"1õ˜/ExecutorDoneCallbackH€â“ôÛ1PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHÀ¬ƒ¢Ü1PÀê’Z
+id-1Z
+iter_num0"‹õ˜/	ReverseV2Hàë¢Ü1PàÆ[Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2_0:_SendH æ‰¤Ü1PàÜ*"1õ˜/ExecutorDoneCallbackH ºë¤Ü1P€µZ
+id-1"%õ˜/convert_to_tensorH€ïä—Ş1Pà–â"&õ˜/convert_to_tensorH Ì¦³Ş1PàËÓ„"õ˜/tf.constantH ¤î³ê1P ›óe"%õ˜/convert_to_tensorHÀÒú×ê1P ›Ô"õ˜/tf.constantHÀÌÌçê1P€˜×
+",õ˜/TFE_Py_ExecuteCancelableH€†×€ë1Pàƒß")õ˜/EagerExecute: ReshapeH ™À‰ë1P ù¾".õ˜/EagerLocalExecute: ReshapeH€à›Šë1P ¥İ
+"0õ˜/ValidateInputTypeAndPlacementHàé¨ë1P ÷6"&õ˜/EagerKernelExecuteHÀšµë1P ›Ÿ"Gõ˜/ReshapeH€’’ë1P€‰zZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH —í–ë1P€Ôa")õ˜/TFE_DeleteTensorHandleH ¿°˜ë1P "%õ˜/convert_to_tensorH€şÕë1PÀ¿¸	",õ˜/TFE_Py_FastPathExecute_CHàÛ®Ôë1Pàšò"-õ˜/EagerExecute: VarHandleOpHàâÕâë1P ©¸"2õ˜/EagerLocalExecute: VarHandleOpHà—îâë1P€ç™"0õ˜/ValidateInputTypeAndPlacementH€õúåë1P "&õ˜/EagerKernelExecuteHÀÄŸæë1PàŸÜ"Tõ˜/VarHandleOpHÀãèæë1Pà£·Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€ùı¦í1P€Ò"2õ˜/EagerExecute: AssignVariableOpHÀè¯­í1PàĞ™"7õ˜/#EagerLocalExecute: AssignVariableOpHàªÎ­í1P õ"0õ˜/ValidateInputTypeAndPlacementH Áÿ¯í1P€µ"&õ˜/EagerKernelExecuteH «°°í1P€Ù€"cõ˜/AssignVariableOpHÀ×ÿ°í1P€Ğ†Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH Ã‡»í1PàÜ*"%õ˜/convert_to_tensorHà÷æ¿ô1Pà–â"&õ˜/convert_to_tensorHÀï´Ûô1P ÿ×ğ"&õ˜/convert_to_tensorH€˜úìú1P »Ğò"%õ˜/convert_to_tensorH •„Š„2P üÕ"&õ˜/convert_to_tensorHÀ›Í¬„2Pà–»„"%õ˜/convert_to_tensorHàÏ‘ÿŠ2PÀŸ«"%õ˜/convert_to_tensorH€ŠÎå‹2PàÂ€"&õ˜/convert_to_tensorHÀë—¥2P ç‹"%õ˜/convert_to_tensorHàôï‰“2PÀê’"%õ˜/convert_to_tensorH Ê¬«“2Pà›"%õ˜/convert_to_tensorHÀ÷¸–2P€º·"&õ˜/convert_to_tensorHàŞÚ–2P€§İ›"&õ˜/convert_to_tensorHÀÇ‰æ—2PÀ˜¨İ"%õ˜/convert_to_tensorH ²§¯¡2P Ç½"&õ˜/convert_to_tensorH ã™Ê¡2P §Ôå"%õ˜/convert_to_tensorH ¬×Ş¨2Pà÷˜"%õ˜/convert_to_tensorHÀÍ†Î­2PÀŸ«"&õ˜/convert_to_tensorHàæ‡ø­2PàÙÖ¹"&õ˜/convert_to_tensorH »ç­¶2PÀ«éŞ"%õ˜/convert_to_tensorH€À·ª»2P ’¥"%õ˜/convert_to_tensorH ÄøÁ»2P€ôî"Cõ˜/ExecutorState::ProcessH Á±Ğ¾2PÀ­ÄZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀÊÜÒ¾2PÀ–±Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2_0:_SendHÀ„”Ö¾2P€ŸI"1õ˜/ExecutorDoneCallbackHàÏ¬×¾2PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHÀ¨æŠ¿2P İŒZ
+id-1Z
+iter_num0"‹õ˜/	ReverseV2Hà‰Î‹¿2PàÆ[Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2_0:_SendH âìŒ¿2P€ê0"1õ˜/ExecutorDoneCallbackH ¶Î¿2P€µZ
+id-1"%õ˜/convert_to_tensorHààØøÀ2P€º·"&õ˜/convert_to_tensorHÀ„Å“Á2P€èí"õ˜/tf.constantH€öŸöÌ2P ±Âe"%õ˜/convert_to_tensorH€¶ïšÍ2P€ù"õ˜/tf.constantHÀ´şªÍ2PÀ†Å",õ˜/TFE_Py_ExecuteCancelableHàˆÆÅÍ2Pàş¿")õ˜/EagerExecute: ReshapeH€¶ÙËÍ2PÀçû
+".õ˜/EagerLocalExecute: ReshapeH â¨ÌÍ2Pà  
+"0õ˜/ValidateInputTypeAndPlacementHà©—ÑÍ2PÀ„="&õ˜/EagerKernelExecuteH€À—ÒÍ2Pà€“"Gõ˜/ReshapeH ªùÓÍ2PÀîmZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀäáØÍ2P ág")õ˜/TFE_DeleteTensorHandleHà™«ÚÍ2P "%õ˜/convert_to_tensorHÀØĞßÍ2P€İ	",õ˜/TFE_Py_FastPathExecute_CH€ğ¯˜Î2Pàÿƒ"-õ˜/EagerExecute: VarHandleOpHÀ§²¦Î2P€ç™"2õ˜/EagerLocalExecute: VarHandleOpH ÏÄ¦Î2P€²"0õ˜/ValidateInputTypeAndPlacementHÀˆ©Î2P "&õ˜/EagerKernelExecuteH€İ¬©Î2Pà‰"Tõ˜/VarHandleOpHÀ–‚ªÎ2PàØÏZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàäÙæÏ2PÀšÁ"2õ˜/EagerExecute: AssignVariableOpHÀ°ìÏ2PÀÅ›"7õ˜/#EagerLocalExecute: AssignVariableOpHàÏÎìÏ2PÀÛê"0õ˜/ValidateInputTypeAndPlacementHàãÊùÏ2P€µ"&õ˜/EagerKernelExecuteH€ÛúÏ2PÀ¨¥"cõ˜/AssignVariableOpHÀÉïúÏ2P İŒZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€›œ†Ğ2P ÷6"%õ˜/convert_to_tensorH Ê«†×2P üÕ"&õ˜/convert_to_tensorH „˜¢×2PÀ°ÜÃ"&õ˜/convert_to_tensorHàüù…İ2P Ù Õ"%õ˜/convert_to_tensorHàŸ¤çå2P Ç½"&õ˜/convert_to_tensorHÀ¡°‰æ2PàÕ‘‹"%õ˜/convert_to_tensorHàõâì2P ’¥"%õ˜/convert_to_tensorHÀ¯ÜÅí2PÀµú"&õ˜/convert_to_tensorHÀö™…ğ2PÀŠÄñ"%õ˜/convert_to_tensorH Ü¶Ğô2P ’¥"%õ˜/convert_to_tensorHÀöûÿô2P Šï"%õ˜/convert_to_tensorH ƒ¥œø2PÀŸ«"&õ˜/convert_to_tensorHàÂ’¾ø2P€÷®†"&õ˜/convert_to_tensorHàö¤Ëù2PÀ•ÜÌ"%õ˜/convert_to_tensorHÀº€ƒ3Pà¬±"&õ˜/convert_to_tensorHÀ¶èšƒ3Pàöøå"%õ˜/convert_to_tensorH€İã³Š3Pà÷˜"%õ˜/convert_to_tensorH€¸™¥3P€º·"&õ˜/convert_to_tensorH€¡ğĞ3P É±"&õ˜/convert_to_tensorHàÓëö—3P€ñ„ñ"%õ˜/convert_to_tensorH ÿ¾†3P€º·"%õ˜/convert_to_tensorH€Ó¤3PÀÃ“"Cõ˜/ExecutorState::ProcessHÀøÍ˜ 3PÀø«Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀôòš 3PÀá˜Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2_0:_SendHÀù‘ 3P ¬O"1õ˜/ExecutorDoneCallbackH ß¶Ÿ 3P ÂZ
+id-1"Cõ˜/ExecutorState::ProcessHÀôÜË 3P€Ğ†Z
+id-1Z
+iter_num0"‹õ˜/	ReverseV2HÀÈ¾Ì 3PàÆ[Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2_0:_SendH€¡İÍ 3PàÜ*"1õ˜/ExecutorDoneCallbackH€õ¾Î 3Pà§Z
+id-1"%õ˜/convert_to_tensorHÀÙ€½¢3PàáÉ"&õ˜/convert_to_tensorHà—ù×¢3P Úä"õ˜/tf.constantHÀÊùœ®3PàÜşa"%õ˜/convert_to_tensorH€Èù¿®3P Ùæ"õ˜/tf.constantH £³Ğ®3Pàô",õ˜/TFE_Py_ExecuteCancelableH€ŸÜé®3P Åê")õ˜/EagerExecute: ReshapeHàÇ²ï®3PÀ²ã
+".õ˜/EagerLocalExecute: ReshapeHàæûï®3P€ù
+"0õ˜/ValidateInputTypeAndPlacementH€¡äô®3P ¬O"&õ˜/EagerKernelExecuteH€ßöõ®3P ±î"Gõ˜/ReshapeHÀ¡Æ÷®3P ágZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ŒŠü®3P€Ôa"%õ˜/TFE_DeleteTensorHandleH ´Íı®3"%õ˜/convert_to_tensorHÀØæ‚¯3Pà—¦	",õ˜/TFE_Py_FastPathExecute_CHà±‚¹¯3PÀÂ„"-õ˜/EagerExecute: VarHandleOpHàÎøÆ¯3P Ä¦"2õ˜/EagerLocalExecute: VarHandleOpHàƒ‘Ç¯3Pàô"0õ˜/ValidateInputTypeAndPlacementH€¬…Ê¯3P "&õ˜/EagerKernelExecuteHÀû©Ê¯3PÀâÜ"Tõ˜/VarHandleOpHÀÏ‹Ë¯3P ¤™Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH Ï‚±3P€³Å"2õ˜/EagerExecute: AssignVariableOpH€øØ’±3PÀø«"7õ˜/#EagerLocalExecute: AssignVariableOpH º÷’±3Pà›"0õ˜/ValidateInputTypeAndPlacementHàĞ¨•±3P€µ"&õ˜/EagerKernelExecuteHàºÙ•±3PÀóŒ"cõ˜/AssignVariableOpH ô®–±3P İŒZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€à¶ ±3P€ê0"%õ˜/convert_to_tensorH Û¼¸3P Ç½"&õ˜/convert_to_tensorH€éÙ¨¸3PÀæíá"&õ˜/convert_to_tensorH€ğë«¾3P …ôì"%õ˜/convert_to_tensorHÀ«„³Ç3P Ç½"&õ˜/convert_to_tensorH€“µÖÇ3P œ‡ò"%õ˜/convert_to_tensorHàµ²‘Î3P€…Ÿ"%õ˜/convert_to_tensorHÀÕâ÷Î3PÀµú"&õ˜/convert_to_tensorHàµ·°Ñ3PàÓÔç"%õ˜/convert_to_tensorHà³§ïÕ3PÀê’"%õ˜/convert_to_tensorHà‰Æ“Ö3PÀø«"%õ˜/convert_to_tensorHÀ¿ÁÙ3PÀŸ«"&õ˜/convert_to_tensorH€Ê–ÀÙ3Pà¥³ü"&õ˜/convert_to_tensorHÀÑ¨ËÚ3Pà«ÜÍ"%õ˜/convert_to_tensorH€®Çöã3Pà¬±"&õ˜/convert_to_tensorH ·§‘ä3PÀÑĞó"%õ˜/convert_to_tensorHàª’µë3Pà÷˜"%õ˜/convert_to_tensorH€À°«ğ3P€º·"&õ˜/convert_to_tensorHÀ’ÖÔğ3PÀùÈ"&õ˜/convert_to_tensorH „¾Ğø3PàÛ“İ"%õ˜/convert_to_tensorH€¬²Ëı3P ’¥"%õ˜/convert_to_tensorHÀò‘ãı3PÀû"Cõ˜/ExecutorState::ProcessH€‹æŞ€4Pà…²Z
+id-1Z
+iter_num0"õ˜/	ReverseV2H ßøà€4Pà£·Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2_0:_SendHàş£ä€4P€ŸI"1õ˜/ExecutorDoneCallbackHàñÎå€4PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHÀªû’4P …ĞZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2Hà‹ã“4PàÆ[Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2_0:_SendH ŒÅ–4PàÜ*"1õ˜/ExecutorDoneCallbackH à¦—4P€µZ
+id-1"%õ˜/convert_to_tensorHà©ú‚ƒ4P Ç½"&õ˜/convert_to_tensorHàÚìƒ4P óé›"õ˜/tf.constantHÀÀõ¡“4P Ş¤j"%õ˜/convert_to_tensorH€æ¸Æ“4PÀü»"õ˜/tf.constantH ×ÁÖ“4P€‚ˆ",õ˜/TFE_Py_ExecuteCancelableHÀ¢ğ“4Pàé´")õ˜/EagerExecute: ReshapeH —ú“4PÀùï".õ˜/EagerLocalExecute: ReshapeHà±û“4PàÈã"0õ˜/ValidateInputTypeAndPlacementHàÈ°€”4P ¬O"&õ˜/EagerKernelExecuteH ¡Ï”4P€—“"Gõ˜/ReshapeH èÛƒ”4P€‰zZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàÎ“‰”4P€Ôa")õ˜/TFE_DeleteTensorHandleHàöÖŠ”4P "%õ˜/convert_to_tensorH İ”4PÀ¿¸	",õ˜/TFE_Py_FastPathExecute_CHà˜Æ”4P€–„"-õ˜/EagerExecute: VarHandleOpH€ØİÔ”4PÀ¶¾"2õ˜/EagerLocalExecute: VarHandleOpH šüÔ”4P€ç™"0õ˜/ValidateInputTypeAndPlacementH €Ò×”4P "&õ˜/EagerKernelExecuteHÀÂğ×”4P ¤™"Tõ˜/VarHandleOpH€üÅØ”4P€æÕZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ¢Ú“–4PÀ˜¹"2õ˜/EagerExecute: AssignVariableOpH€Ë°™–4P€ŞŸ"7õ˜/#EagerLocalExecute: AssignVariableOpH Ï™–4PÀû"0õ˜/ValidateInputTypeAndPlacementHà£€œ–4P€µ"&õ˜/EagerKernelExecuteH€›·œ–4P€Ù€"cõ˜/AssignVariableOpHÀÔŒ–4PÀµúZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHà¥ˆ§–4P ÷6"%õ˜/convert_to_tensorHÀæ©¦4PÀ‰Ü"&õ˜/convert_to_tensorH€ÑñÁ4PÀŠì´"&õ˜/convert_to_tensorH€¾ï–£4Pà¹õÑ"%õ˜/convert_to_tensorHàº‚¬4Pà¬±"&õ˜/convert_to_tensorHàúü¤¬4PÀØá²"%õ˜/convert_to_tensorH€â§³4P ’¥"%õ˜/convert_to_tensorHÀÊÏ´4PÀê’"&õ˜/convert_to_tensorH ±Ì¶4Pà€·ì"%õ˜/convert_to_tensorH€å„—»4PÀæ·"%õ˜/convert_to_tensorH Ú½»4PàĞ™"%õ˜/convert_to_tensorH ãÍ¾4P ’¥"&õ˜/convert_to_tensorH€¿¸ğ¾4P€Ø°í"&õ˜/convert_to_tensorHà™™ø¿4P€ÉÎÄ"%õ˜/convert_to_tensorHÀ°ëÉ4P€º·"&õ˜/convert_to_tensorHÀ÷¬ªÉ4P€Ş×"%õ˜/convert_to_tensorH °‚ßĞ4PÀŸ«"%õ˜/convert_to_tensorH€°³ØÕ4P€º·"&õ˜/convert_to_tensorH õÒÖ4Pà¾³"&õ˜/convert_to_tensorHÀïÛõŞ4Pà´Û"%õ˜/convert_to_tensorHà·Èóä4Pà–â"%õ˜/convert_to_tensorH èØ‹å4PÀÃ“"Cõ˜/ExecutorState::ProcessH ŸÉè4PàÙ“Z
+id-1Z
+iter_num0"õ˜/	ReverseV2H º· è4Pà£·Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2_0:_SendH ôî£è4P ¬O"1õ˜/ExecutorDoneCallbackH€Ú“¥è4PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH€ùÆÖè4PÀê’Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H Ú®×è4PàÆ[Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2_0:_SendHà²ÍØè4P€ê0"1õ˜/ExecutorDoneCallbackH€”µÙè4P€µZ
+id-1"%õ˜/convert_to_tensorH øúŞê4PÀÔÃ"&õ˜/convert_to_tensorH ©íùê4Pàï†ğ"%õ˜/convert_to_tensorHà‚ùô4P †”
+"%õ˜/convert_to_tensorHÀâŠ‡õ4P€“¸"%õ˜/convert_to_tensorH€«½‘õ4PÀÃ“"%õ˜/convert_to_tensorHàá¬›õ4PÀÃ“"%õ˜/convert_to_tensorHà¥¢¥õ4P€ŞŸ"%õ˜/convert_to_tensorHÀ‘ª¯õ4P€©‡"%õ˜/convert_to_tensorHÀ™—Ë€5P€âú"&õ˜/convert_to_tensorHàŠÕó€5Pà¹„"&õ˜/convert_to_tensorHàå¿ı…5PÀÜ‡˜"&õ˜/convert_to_tensorH€¶…›Š5P€Ö÷¤"%õ˜/convert_to_tensorHÀÒåÑ5P üÕ"%õ˜/convert_to_tensorHà™Øí5PàØÏ"%õ˜/convert_to_tensorH€¤ü5PÀø«"%õ˜/convert_to_tensorHà¬ú¥5Pàü·"%õ˜/convert_to_tensorHàòÌà–5PàáÉ"&õ˜/convert_to_tensorH€êí‘—5PÀóØ¯"&õ˜/convert_to_tensorHÀÑµÈœ5P€£ç¯"&õ˜/convert_to_tensorH€™çş 5Pà¿¬¼"%õ˜/convert_to_tensorHÀ–³Í¦5PÀ¾ô"%õ˜/convert_to_tensorH ëÜê¦5P óÛ"%õ˜/convert_to_tensorHÀÚ’ˆ§5Pà…²"%õ˜/convert_to_tensorH ÄÇŸ§5P€Õ¥"%õ˜/convert_to_tensorHà´ä­5PÀÃ“"&õ˜/convert_to_tensorHàùµ‘®5P€Ù­æ"&õ˜/convert_to_tensorH €¨ÿ²5P „îù"&õ˜/convert_to_tensorH ¶æÿ·5PÀƒ‡”"%õ˜/convert_to_tensorHÀ´º½5PÀ¾ô"%õ˜/convert_to_tensorHÀ£•Ö½5P€±½"%õ˜/convert_to_tensorHÀ›”ó½5P ë¥"%õ˜/convert_to_tensorH€øÂŠ¾5Pàü·"%õ˜/convert_to_tensorH€ùí©Æ5Pà‰"%õ˜/convert_to_tensorHà­ªÎÌ5P€âú"%õ˜/convert_to_tensorH€ÏáóÌ5Pàè"%õ˜/convert_to_tensorH€šş‹Í5PÀø«"%õ˜/convert_to_tensorHÀ“±ÊÑ5PÀİ½"%õ˜/convert_to_tensorHàå¥òÑ5P ôŸ"%õ˜/convert_to_tensorHàËÔõÕ5P ±î"%õ˜/convert_to_tensorH ˜—–Ö5PÀ€â"%õ˜/convert_to_tensorH€ùÑ¬Ö5P€ôî"%õ˜/convert_to_tensorHÀ‹²Ú5P ’¥"%õ˜/convert_to_tensorH€€‡ÔÚ5P ¶"%õ˜/convert_to_tensorH€Òåèİ5P ’¥"%õ˜/convert_to_tensorHàÿŠŞ5P ë¥"%õ˜/convert_to_tensorHàŸ–Ó€6P Ãâ"%õ˜/convert_to_tensorH ƒ•€ˆ6Pàó½"%õ˜/convert_to_tensorH€àÁˆ“6PÀÕ‡	"%õ˜/convert_to_tensorHà¹¿Á“6P Ê"&õ˜/convert_to_tensorH ÍÃü“6PÀš¨²"%õ˜/convert_to_tensorH ›ı¢6PÀÇî"%õ˜/convert_to_tensorHÀ®»£6PàÂ€"&õ˜/convert_to_tensorHàÁÙ¿£6Pà˜­À"%õ˜/convert_to_tensorH€òÃØ¯6PàÄˆ"%õ˜/convert_to_tensorHÀÖ¨ë¯6P ÕÖ"%õ˜/convert_to_tensorHàû…ö¯6P€“¸"&õ˜/convert_to_tensorHÀƒª¹°6PÀãÖé" õ˜/tf.constantH Ó¿¿í6P ‡Ëº"%õ˜/convert_to_tensorH ü°÷í6PàÈ‚U"õ˜/tf.constantHÀ×Ô¸î6PÀØ",õ˜/TFE_Py_ExecuteCancelableHÀºÈÛî6P€µÍ")õ˜/EagerExecute: ReshapeH€Û·äî6P ³ö".õ˜/EagerLocalExecute: ReshapeHà¡“åî6PàÄˆ"0õ˜/ValidateInputTypeAndPlacementH ½ãêî6P ¬O"&õ˜/EagerKernelExecuteHÀˆüëî6PÀû"Hõ˜/ReshapeH€Ÿ­îî6P €±Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHÀŠöî6P Ë˜")õ˜/TFE_DeleteTensorHandleHàÕœøî6P "%õ˜/convert_to_tensorHàÉ‹ÿî6P€ªË",õ˜/TFE_Py_FastPathExecute_CHÀ­Ç¾ï6Pà–—"-õ˜/EagerExecute: VarHandleOpHÀ¹Ğï6PÀ¿¸	"2õ˜/EagerLocalExecute: VarHandleOpH€‰²Ğï6Pàâ	"0õ˜/ValidateInputTypeAndPlacementHÀ‰”Óï6PÀš"&õ˜/EagerKernelExecuteH€Ù¸Óï6P€ëô"Tõ˜/VarHandleOpHÀ’Ôï6PÀµúZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàİƒ±ñ6P ñˆ"2õ˜/EagerExecute: AssignVariableOpH€ªà·ñ6P€†ã"7õ˜/#EagerLocalExecute: AssignVariableOpH ìş·ñ6PÀ¶¾"0õ˜/ValidateInputTypeAndPlacementH€úæºñ6P€µ"&õ˜/EagerKernelExecuteH€ä—»ñ6P ¤™"cõ˜/AssignVariableOpH€¸ù»ñ6PàËúZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀ¾¾Çñ6P€‰z"%õ˜/convert_to_tensorHÀİ£úù6P€âú"&õ˜/convert_to_tensorHà†‘›ú6P Êôˆ"&õ˜/convert_to_tensorHàä…È€7PàÕ‘‹"%õ˜/convert_to_tensorH ‘Ê¿Š7P€Ã±"&õ˜/convert_to_tensorH€Ï•ğŠ7PÀÒ"%õ˜/convert_to_tensorHÀ÷Í¬’7P üÕ"%õ˜/convert_to_tensorH ¹ª“7Pà¬±"&õ˜/convert_to_tensorH€ÅÃ¢–7P œñ¢"%õ˜/convert_to_tensorH ñ©¶›7PÀÔÃ"%õ˜/convert_to_tensorH€Ã¼Û›7P€ŞŸ"%õ˜/convert_to_tensorH€°ó£Ÿ7P …Ğ"&õ˜/convert_to_tensorH ½ÊŸ7Pàÿ¾’	"&õ˜/convert_to_tensorHà€µî 7PÀ„µÊ"%õ˜/convert_to_tensorH€»› ®7PàÔô"&õ˜/convert_to_tensorHÀÉË¿®7P Ó°÷"%õ˜/convert_to_tensorH ø¿É·7P€™"%õ˜/convert_to_tensorHÀï÷½7PÀóŒ"&õ˜/convert_to_tensorH µù¹½7P€×Úó"&õ˜/convert_to_tensorH †éîÆ7PÀÚ"%õ˜/convert_to_tensorHà•“ğÌ7Pà€“"%õ˜/convert_to_tensorH š…‰Í7PàºÊ"Cõ˜/ExecutorState::ProcessHÀÕ±Ğ7P ôŸZ
+id-1Z
+iter_num0"õ˜/	ReverseV2Hà¿˜´Ğ7PÀËÉZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2_0:_SendHà®è·Ğ7P ág"1õ˜/ExecutorDoneCallbackH ¼Ÿ¹Ğ7PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH ¦ºêĞ7PÀê’Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀ‡¢ëĞ7PàÆ[Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2_0:_SendH íÆìĞ7PàÜ*"1õ˜/ExecutorDoneCallbackH€´¢íĞ7P ÂZ
+id-1"%õ˜/convert_to_tensorHàŒî”Ó7P€™"&õ˜/convert_to_tensorH ‰ª²Ó7P ÿƒ"õ˜/tf.constantHÀÍ«Æâ7PàÜ³z"%õ˜/convert_to_tensorHÀ¿ğâ7P Éú&"õ˜/tf.constantHÀ¹Î‚ã7PÀÅ›",õ˜/TFE_Py_ExecuteCancelableHà Î¤ã7P€Øñ")õ˜/EagerExecute: ReshapeH ×Œ­ã7PàÚ×".õ˜/EagerLocalExecute: ReshapeH€è­ã7P ìé"0õ˜/ValidateInputTypeAndPlacementHàÆ¾³ã7PÀ¹U"&õ˜/EagerKernelExecuteHà¹é´ã7P€Ä"Hõ˜/ReshapeH Ğš·ã7P Ë˜Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHàÕ›½ã7P –€"%õ˜/TFE_DeleteTensorHandleH ‚œ¿ã7"%õ˜/convert_to_tensorH€«òÄã7P »¬
+",õ˜/TFE_Py_FastPathExecute_CH æˆ€ä7PÀËş"-õ˜/EagerExecute: VarHandleOpH€‘çä7P ı™	"2õ˜/EagerLocalExecute: VarHandleOpH€Æÿä7P€»û"0õ˜/ValidateInputTypeAndPlacementH £Œ”ä7PÀš"&õ˜/EagerKernelExecuteHàò°”ä7Pàó½"Tõ˜/VarHandleOpH ¬†•ä7PàèZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHàÆïğå7PÀŒ¨"2õ˜/EagerExecute: AssignVariableOpHÀÑÀûå7P€ğ“	"7õ˜/#EagerLocalExecute: AssignVariableOpHà“ßûå7PÀ ï"0õ˜/ValidateInputTypeAndPlacementH€¦„ÿå7PÀÏ$"&õ˜/EagerKernelExecuteH€ÅÍÿå7PÀÇî"cõ˜/AssignVariableOpHÀ³»€æ7PàáÉZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH ’î‹æ7P€ŸI"%õ˜/convert_to_tensorHàÛÙÎò7PÀ›Ğ"&õ˜/convert_to_tensorHàüßòò7Pà‰Šî"&õ˜/convert_to_tensorH€É™û7Pà¼´"%õ˜/convert_to_tensorHàı«ã†8P€—“"&õ˜/convert_to_tensorH ¨‹‡8Pà’´è"%õ˜/convert_to_tensorH Ì’Á8P æ†"%õ˜/convert_to_tensorHàÑœÁ8PàáÉ"&õ˜/convert_to_tensorHÀ²§Ş“8PÀÒ"%õ˜/convert_to_tensorH »¦º™8PàêÃ"%õ˜/convert_to_tensorH€…ƒä™8PÀ­Ä"%õ˜/convert_to_tensorHàö‘ß8Pà–â"&õ˜/convert_to_tensorHÀÕù‚8P ºÏ"&õ˜/convert_to_tensorH€ÕÕ’Ÿ8P€ëÍ†"%õ˜/convert_to_tensorHÀÅşã¬8Pà‰"&õ˜/convert_to_tensorH ˆé—­8Pà¼é¥"%õ˜/convert_to_tensorHà²‚à¸8P€œ²"%õ˜/convert_to_tensorHÀÍñâÀ8P Ãâ"&õ˜/convert_to_tensorH í·˜Á8P€ôœ"&õ˜/convert_to_tensorH€İıŞË8PàìĞ
+"%õ˜/convert_to_tensorH Ò®ÜÖ8PÀ’Ö"%õ˜/convert_to_tensorH€ŒêöÖ8P ¿‡"Cõ˜/ExecutorState::ProcessHàüÿÓÚ8Pà¬Z
+id-1Z
+iter_num0"õ˜/	ReverseV2H “±ÖÚ8PÀËÉZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2_0:_SendHàœÚÚ8PàÆ["1õ˜/ExecutorDoneCallbackH€¾ÛÚ8P ÷6Z
+id-1"Cõ˜/ExecutorState::ProcessHÀ²•‰Û8P İŒZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2Hà“ı‰Û8P€ÔaZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2_0:_SendH ì›‹Û8PàÜ*"1õ˜/ExecutorDoneCallbackH€³÷‹Û8P€µZ
+id-1"%õ˜/convert_to_tensorH€ŠÖÚİ8Pà¾¥"&õ˜/convert_to_tensorH ŒÄÿİ8P€õªÖ"õ˜/tf.constantH –Ìï8P áğz"%õ˜/convert_to_tensorH ÁÒöï8P€ß˜%"õ˜/tf.constantHàÍúŠğ8P€‡§",õ˜/TFE_Py_ExecuteCancelableH€÷ç«ğ8P §å")õ˜/EagerExecute: ReshapeHÀİ³ğ8P Öš".õ˜/EagerLocalExecute: ReshapeHàº¬´ğ8PÀ¿"0õ˜/ValidateInputTypeAndPlacementHà»ğ¹ğ8PÀ¹U"&õ˜/EagerKernelExecuteHà®›»ğ8P€Ì«"Hõ˜/ReshapeHÀº½ğ8P €±Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHà•µÃğ8Pà°Œ"%õ˜/TFE_DeleteTensorHandleHàÜÁÅğ8"%õ˜/convert_to_tensorHà¨íÊğ8Pà  
+",õ˜/TFE_Py_FastPathExecute_CH ¬º§ñ8PÀ†ú#"-õ˜/EagerExecute: VarHandleOpH€Ÿé¿ñ8Pà  
+"2õ˜/EagerLocalExecute: VarHandleOpHÀîÀñ8P€Äõ	"0õ˜/ValidateInputTypeAndPlacementHàËšÃñ8Pà§"&õ˜/EagerKernelExecuteH€ÃÑÃñ8PàÇŸ"Tõ˜/VarHandleOpHà‰­Äñ8P Ç½Z$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH çïçô8P€„"2õ˜/EagerExecute: AssignVariableOpHÀ¢œòô8PÀçû
+"7õ˜/#EagerLocalExecute: AssignVariableOpH ÿÆòô8PÀÈ²
+"0õ˜/ValidateInputTypeAndPlacementH £¯öô8PÀÏ$"&õ˜/EagerKernelExecuteH ÷÷ô8PÀ›Ğ"cõ˜/AssignVariableOpH€’Îøô8PàáÉZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHÀìô„õ8PÀîm"%õ˜/convert_to_tensorH€”úş8P Šï"&õ˜/convert_to_tensorH€ÜÔ±ÿ8PÀòƒú"&õ˜/convert_to_tensorH ÏÕàˆ9PÀì’Ø"%õ˜/convert_to_tensorHÀŞŸ«—9PàÃÄ"&õ˜/convert_to_tensorHÀàÆÿ—9PÀ©êÍ"%õ˜/convert_to_tensorH€â½Ò 9Pà–â"%õ˜/convert_to_tensorHàëÓÑ¡9Pàó½"&õ˜/convert_to_tensorHÀ²½ë¥9P ˜‰Ğ"%õ˜/convert_to_tensorHà„‡¹¬9P …Ğ"%õ˜/convert_to_tensorHàè¾á¬9PÀâÜ"%õ˜/convert_to_tensorHàº¦ğ°9P ›Ÿ"&õ˜/convert_to_tensorHÀàš–±9P úÿù"&õ˜/convert_to_tensorHÀÏ¨¬²9P€Ì¹"%õ˜/convert_to_tensorHàÔˆ½9PÀóŒ"&õ˜/convert_to_tensorHàâŞ¤½9P€¨Ñš"%õ˜/convert_to_tensorH€è«’Å9Pà¬±"%õ˜/convert_to_tensorHÀ™âªÊ9PÀóŒ"&õ˜/convert_to_tensorHÀÍ ÖÊ9P ƒªô"&õ˜/convert_to_tensorH€ÓÆˆÔ9P€İò”"%õ˜/convert_to_tensorH€¶Ñ¾Ù9P€ïÏ"%õ˜/convert_to_tensorH€îÖÙ9PÀø«"Cõ˜/ExecutorState::ProcessH ãüÜ9PÀÌZ
+id-1Z
+iter_num0"õ˜/	ReverseV2HàùÏşÜ9PÀËÉZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2_0:_SendHÀÛ™‚İ9PÀ¹U"1õ˜/ExecutorDoneCallbackH öÖƒİ9PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH€ÿ‰´İ9Pà÷˜Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H àñ´İ9PàÆ[Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2_0:_SendHà¸¶İ9P€ê0"1õ˜/ExecutorDoneCallbackH€šø¶İ9P€µZ
+id-1"%õ˜/convert_to_tensorH€ÛÕß9P …Ğ"&õ˜/convert_to_tensorHÀˆ—õß9P ë‡‚"õ˜/tf.constantH€Û­î9PÀŒüu"%õ˜/convert_to_tensorHÀ­´Öî9PÀÑá#"õ˜/tf.constantHÀÂôèî9PàãÑ",õ˜/TFE_Py_ExecuteCancelableHà…Œ‡ï9P€£Ù")õ˜/EagerExecute: ReshapeH€¯Äï9Pà¥¿".õ˜/EagerLocalExecute: ReshapeH ¬ï9P€ªË"0õ˜/ValidateInputTypeAndPlacementH Æˆ–ï9Pà‘C"&õ˜/EagerKernelExecuteH „›—ï9Pàó½"Hõ˜/ReshapeH µØ™ï9P€óªZ
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHàºÙŸï9P –€"%õ˜/TFE_DeleteTensorHandleHÀ¿Ç¡ï9"%õ˜/convert_to_tensorHà˜ù¦ï9Pà©š",õ˜/TFE_Py_FastPathExecute_CHàˆ÷àï9PÀ’‹"-õ˜/EagerExecute: VarHandleOpH ¼ñï9Pà“Ë"2õ˜/EagerLocalExecute: VarHandleOpHÀş¼ñï9P€ğ“	"0õ˜/ValidateInputTypeAndPlacementHÀÎÃôï9Pà§"&õ˜/EagerKernelExecuteHÀ¸ôôï9P Ê"Tõ˜/VarHandleOpH€òÉõï9P€›îZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH ¡Êñ9P€Î³"2õ˜/EagerExecute: AssignVariableOpH€ÆˆÒñ9P Šï"7õ˜/#EagerLocalExecute: AssignVariableOpH ˆ§Òñ9PàºÊ"0õ˜/ValidateInputTypeAndPlacementHÀû‚Õñ9PÀÏ$"&õ˜/EagerKernelExecuteH€€ÀÕñ9P ›Ÿ"cõ˜/AssignVariableOpH€Ô¡Öñ9P€Ğ†Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHàŞòàñ9P€ê0"%õ˜/convert_to_tensorH °»ú9Pà‰"&õ˜/convert_to_tensorHàòÀú9PÀÕ§–"&õ˜/convert_to_tensorH øÊü€:P€Ñîğ"%õ˜/convert_to_tensorHÀÉÕãŠ:PÀ±Ÿ"&õ˜/convert_to_tensorHÀ…ÊŠ‹:PÀÑ¤Õ"%õ˜/convert_to_tensorHàšÎÖ’:P ±î"%õ˜/convert_to_tensorH€¬¸Î“:P ’¥"&õ˜/convert_to_tensorH€¸ö©˜:Pà¢»Í"%õ˜/convert_to_tensorHÀğŒ¡:PÀæ·"%õ˜/convert_to_tensorH€ë«Ë¡:P€Ûˆ"%õ˜/convert_to_tensorH€Ó—ò¥:P ›Ÿ"&õ˜/convert_to_tensorHàï‘—¦:Pàé’·"&õ˜/convert_to_tensorH€ ú§§:Pàúˆü"%õ˜/convert_to_tensorHà™ª“±:PÀÔÃ"&õ˜/convert_to_tensorHÀˆş­±:PàğÊõ"%õ˜/convert_to_tensorH€¯®ß¸:PÀŸ«"%õ˜/convert_to_tensorH€ÿ–İ½:PÀÔÃ"&õ˜/convert_to_tensorH€˜ç…¾:P ¸¸"&õ˜/convert_to_tensorH íøˆÇ:PàÁˆ©"%õ˜/convert_to_tensorHà´èÑÌ:PÀÔÃ"%õ˜/convert_to_tensorHÀå©ëÌ:P ÕÖ"Cõ˜/ExecutorState::ProcessHÀ²éüÏ:Pà¤ûZ
+id-1Z
+iter_num0"õ˜/	ReverseV2H€ş²ÿÏ:PÀ–±Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2_0:_SendHÀŞ‚Ğ:P€Ôa"1õ˜/ExecutorDoneCallbackH ¸›„Ğ:PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHÀñ©´Ğ:P ’¥Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H€à—µĞ:P€ÔaZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2_0:_SendHàÅ¼¶Ğ:P€ê0"1õ˜/ExecutorDoneCallbackH€§¤·Ğ:P€µZ
+id-1"%õ˜/convert_to_tensorH€û´Ò:Pà–â"&õ˜/convert_to_tensorH †€ÒÒ:P€ò©­" õ˜/tf.constantHÀœß¶ß:PÀø´"%õ˜/convert_to_tensorH€Šóâß:P€şá%"õ˜/tf.constantH€¨­öß:PàìË",õ˜/TFE_Py_ExecuteCancelableHÀÕ¦–à:PÀÜ®")õ˜/EagerExecute: ReshapeHÀñØà:P ß”".õ˜/EagerLocalExecute: ReshapeHàÒÀŸà:P Öš"0õ˜/ValidateInputTypeAndPlacementHÀåÇ¥à:PÀ„="&õ˜/EagerKernelExecuteHÀ£Ú¦à:P€¶Ü"Hõ˜/ReshapeHàá©à:P €±Z
+	long_nameReshape:ReshapeZ
+is_eager1"*õ˜/TFE_DeleteTensorHandleHàã¥´à:P€¾’")õ˜/TFE_DeleteTensorHandleH€¸¸¶à:P "%õ˜/convert_to_tensorH Ïü¼à:PàŠÑ
+",õ˜/TFE_Py_FastPathExecute_CHÀğèúà:P€Ùµ"-õ˜/EagerExecute: VarHandleOpH ÙÙŒá:P çÊ	"2õ˜/EagerLocalExecute: VarHandleOpHÀ›øŒá:Pà—¦	"0õ˜/ValidateInputTypeAndPlacementH È©á:PÀš"&õ˜/EagerKernelExecuteHà—Îá:P€Ä"Tõ˜/VarHandleOpH Ñ£‘á:P ¨ôZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CHà–çæâ:P€¡"2õ˜/EagerExecute: AssignVariableOpHà ¥íâ:P ôŸ"7õ˜/#EagerLocalExecute: AssignVariableOpHàÕ½íâ:P€²"0õ˜/ValidateInputTypeAndPlacementHÀ˜¾ğâ:P€µ"&õ˜/EagerKernelExecuteHàõğâ:PÀİ½"cõ˜/AssignVariableOpHÀÖĞñâ:PÀŸ«Z.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH€‰´üâ:P€ŸI"%õ˜/convert_to_tensorH€Š‹ºê:Pà€“"&õ˜/convert_to_tensorH ãñ×ê:Pà¢©Ù"&õ˜/convert_to_tensorHÀÒİÑğ:PàŸËÔ"%õ˜/convert_to_tensorHÀ‹×²ù:P Ç½"&õ˜/convert_to_tensorH€Ÿ¦Õù:P ÿÅü"%õ˜/convert_to_tensorHÀ­à²€;P€º·"%õ˜/convert_to_tensorHà³È;Pà÷˜"&õ˜/convert_to_tensorHà›×éƒ;Pàñû"%õ˜/convert_to_tensorHÀ°ŞÄˆ;Pà÷˜"%õ˜/convert_to_tensorH€ğËæˆ;P ¶"%õ˜/convert_to_tensorH€«—ö‹;PÀŸ«"&õ˜/convert_to_tensorHÀµì—Œ;P€·”ú"&õ˜/convert_to_tensorHà¯¢;P€Æ·Ì"%õ˜/convert_to_tensorH †´Å–;P€º·"&õ˜/convert_to_tensorHÀÚûß–;PÀ×şã"%õ˜/convert_to_tensorHàÉ®æ;P …Ğ"%õ˜/convert_to_tensorH ú©ó¤;PàÔô"&õ˜/convert_to_tensorH ÒĞ¢¥;PÀá™Æ"&õ˜/convert_to_tensorHàÙÔ°;P€¾²"%õ˜/convert_to_tensorHÀàÛ†·;P üÕ"%õ˜/convert_to_tensorH éÙ·;P ë¥"Cõ˜/ExecutorState::ProcessH  Ê°º;PÀ­ÄZ
+id-1Z
+iter_num0"õ˜/	ReverseV2H€é²º;P ¾ÃZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2_0:_SendHÀã¬¶º;P€ŸI"1õ˜/ExecutorDoneCallbackHà®Å·º;PÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH »¢äº;P€Ğ†Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H „åº;PàÆ[Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2_0:_SendHàç¢æº;P€ê0"1õ˜/ExecutorDoneCallbackHà»„çº;Pà§Z
+id-1"%õ˜/convert_to_tensorH€œïî¼;PàáÉ"&õ˜/convert_to_tensorHÀœ†Š½;P€„ÿå"õ˜/tf.constantH€Ó°ËÈ;P ›óe"%õ˜/convert_to_tensorH øÂîÈ;PÀÃÈ"õ˜/tf.constantH £Ò€É;P€‚ˆ",õ˜/TFE_Py_ExecuteCancelableH€‰¬šÉ;Pà‡º")õ˜/EagerExecute: ReshapeHà…ä É;P€¡Ñ".õ˜/EagerLocalExecute: ReshapeHàÙÅ¡É;PÀ²ã
+"0õ˜/ValidateInputTypeAndPlacementHàğØ¦É;Pà‘C"&õ˜/EagerKernelExecuteHà®ë§É;Pà€“"Gõ˜/ReshapeH€ä´©É;PÀîmZ
+	long_nameReshape:ReshapeZ
+is_eager1")õ˜/TFE_DeleteTensorHandleHà¸©®É;P ág")õ˜/TFE_DeleteTensorHandleH€îò¯É;P "%õ˜/convert_to_tensorH€ºµÉ;P ²²	",õ˜/TFE_Py_FastPathExecute_CHÀ¶ëÉ;PàÍ"-õ˜/EagerExecute: VarHandleOpHÀÓ…ùÉ;PàøÜ"2õ˜/EagerLocalExecute: VarHandleOpH °°ùÉ;PÀ¦"0õ˜/ValidateInputTypeAndPlacementHÀ£ŒüÉ;PÀš"&õ˜/EagerKernelExecuteH€ó°üÉ;P ¤™"Tõ˜/VarHandleOpHÀ¬†ıÉ;PàØÏZ$
+	long_nameVarHandleOp:VarHandleOpZ
+is_eager1",õ˜/TFE_Py_FastPathExecute_CH€Å²µË;P ·Ñ"2õ˜/EagerExecute: AssignVariableOpHÀöÑºË;P õ"7õ˜/#EagerLocalExecute: AssignVariableOpHà¸ğºË;Pà±Ğ"0õ˜/ValidateInputTypeAndPlacementHàé­½Ë;Pà§"&õ˜/EagerKernelExecuteHÀÆØ½Ë;PÀ‰Ü"cõ˜/AssignVariableOpHàò§¾Ë;PÀ€âZ.
+	long_name!AssignVariableOp:AssignVariableOpZ
+is_eager1")õ˜/TFE_DeleteTensorHandleH çøÇË;PÀ„="%õ˜/convert_to_tensorHÀù‘ºÒ;PÀ‰Ü"&õ˜/convert_to_tensorHÀÉÍÕÒ;PÀŠ‹ş"&õ˜/convert_to_tensorH ´æÿØ;P€Ïà"%õ˜/convert_to_tensorH Ø¤íä;PÀ’Ö"&õ˜/convert_to_tensorH ·½’å;P æÉµ"%õ˜/convert_to_tensorHÀºÍÜì;P€âú"%õ˜/convert_to_tensorH€ÛÅßí;P üÕ"&õ˜/convert_to_tensorH€ş¹äğ;PàÕû»"%õ˜/convert_to_tensorHÀ‚ø¨ö;Pà¾¥"%õ˜/convert_to_tensorHà¼ÊŞö;PÀëÖ"%õ˜/convert_to_tensorH ‰æÿú;P ±î"&õ˜/convert_to_tensorH ß„¤û;P€ğÊ©"&õ˜/convert_to_tensorHà‹Ã¸ü;P ¦äÁ"%õ˜/convert_to_tensorH ¥ª<P€İ	"&õ˜/convert_to_tensorH€“Æ×<P Ü™È"%õ˜/convert_to_tensorHÀšÀÀ<P ÌÜ"%õ˜/convert_to_tensorH€Î×ä¦<Pàİî"&õ˜/convert_to_tensorH€´—˜§<Pà¨í˜"&õ˜/convert_to_tensorH ù¯Ï±<P€ö–Ÿ"%õ˜/convert_to_tensorH€åÁ—¸<P€¤è"%õ˜/convert_to_tensorHÀÿ‚°¸<P€“¸"Cõ˜/ExecutorState::ProcessH€¥–Û»<Pà­õZ
+id-1Z
+iter_num0"õ˜/	ReverseV2H€‹ìİ»<PÀµúZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2_0:_SendH ñòá»<P€Ôa"1õ˜/ExecutorDoneCallbackHÀ¦¼ã»<PàÜ*Z
+id-1"Cõ˜/ExecutorState::ProcessHàæñ¡¼<PÀæ·Z
+id-1Z
+iter_num0"õ˜/	ReverseV2HàÙœ£¼<Pà°ŒZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2_0:_SendHÀÈ»¥¼<PÀ¹U"1õ˜/ExecutorDoneCallbackH ®à¦¼<P€ê0Z
+id-1"%õ˜/convert_to_tensorHà ÍÀ<Pà¨Ö"&õ˜/convert_to_tensorH€¨ÚµÀ<P ˜ó€"%õ˜/convert_to_tensorHàÒë‹Î<Pàë‡
+"%õ˜/convert_to_tensorHÀ­Ã™Î<PÀÙâ"%õ˜/convert_to_tensorH€¸ã¢Î<PÀº™"%õ˜/convert_to_tensorHàû§«Î<P€ëô"%õ˜/convert_to_tensorHÀÕ»³Î<PÀĞè"%õ˜/convert_to_tensorHàÉÛ»Î<Pàİî"%õ˜/convert_to_tensorHÀÒú¤Ú<Pà˜ê"&õ˜/convert_to_tensorH€ÀøÛ<P æ·"&õ˜/convert_to_tensorH –¯Áã<PÀÊœ"&õ˜/convert_to_tensorH€ÕëÙè<PÀ°Ïî"%õ˜/convert_to_tensorH€¼Ö¬ñ<Pà¨Ö"%õ˜/convert_to_tensorH€æÖÑñ<PÀ€â"%õ˜/convert_to_tensorH Ñ±ññ<P€²"%õ˜/convert_to_tensorH€È‰ò<PÀï±"%õ˜/convert_to_tensorHàŠ°ùø<P ’¥"&õ˜/convert_to_tensorHàòÂŸù<P€ÏĞ–"&õ˜/convert_to_tensorHà„Åºı<PÀâ€ğ"&õ˜/convert_to_tensorH€ñ®=PÀäÓâ"%õ˜/convert_to_tensorH€†‹Œ†=PÀê’"%õ˜/convert_to_tensorHÀÈ¦†=Pà£·"%õ˜/convert_to_tensorH€èïÁ†=PàĞ™"%õ˜/convert_to_tensorHÀ¥ÕØ†=P â«"%õ˜/convert_to_tensorH ÿÜÏ=Pàæè"&õ˜/convert_to_tensorHà‹ºü=P â¹Ÿ"&õ˜/convert_to_tensorH ¾« ’=PàŸÔÎ"&õ˜/convert_to_tensorHàª¾ø–=P€ÏŞ¯"%õ˜/convert_to_tensorH€’ãÆ =P€Ù€"%õ˜/convert_to_tensorH ­·ã =P€±½"%õ˜/convert_to_tensorHàÚ°ƒ¡=P€“¸"%õ˜/convert_to_tensorH ·ßš¡=Pàü·"%õ˜/convert_to_tensorH€©›ø©=PÀø«"%õ˜/convert_to_tensorH õÈÉ²=P€—“"%õ˜/convert_to_tensorHà–±ğ²=P óÛ"%õ˜/convert_to_tensorHÀ¬„‡³=PÀ­Ä"%õ˜/convert_to_tensorH É¢”·=P üÕ"%õ˜/convert_to_tensorHà°Ó··=P€ŞŸ"%õ˜/convert_to_tensorH€´ Ğº=Pà¬±"%õ˜/convert_to_tensorHÀîîîº=P ¾Ã"%õ˜/convert_to_tensorH€€¶†»=P€ôî"%õ˜/convert_to_tensorHÀ»‚â¾=P€…Ÿ"%õ˜/convert_to_tensorHàƒ¹ƒ¿=P€ôî"%õ˜/convert_to_tensorH Î‡Â=P€…Ÿ"%õ˜/convert_to_tensorH€Ç ¨Â=PàÃÄ"%õ˜/convert_to_tensorHà¹¼Ì=P€âú"%õ˜/convert_to_tensorHàİ„´Í=P€…Ÿ"%õ˜/convert_to_tensorH€Ò¥€Ó=Pàó½"%õ˜/convert_to_tensorHÀşã”Ô=PàÔô"*õ˜/TFE_DeleteTensorHandleH éÑîDPà÷˜")õ˜/TFE_DeleteTensorHandleHà‘÷òDPà‘C")õ˜/TFE_DeleteTensorHandleHàåØóDPÀîm")õ˜/TFE_DeleteTensorHandleHàØƒõDP ág"õ˜/tf.constantHÀä‹° DP àØ"õ˜/tf.constantHà¢„Ë DPàºÊ"õ˜/tf.constantH€ãÏØ DP —Ä"õ˜/tf.constantH û×ä DP€Õ¥"0õ˜/tf.function-graph_buildingHÀÌ­¡DPÀ”¿ó–"%õ˜/convert_to_tensorH ¡ü±ÌDP€Ì«"&õ˜/convert_to_tensorH€ø­ÚÌDPÀ•‰¯"&õ˜/convert_to_tensorH€¨åéÍDP€ÉÁï"%õ˜/convert_to_tensorHÀ›ŠÅØDPÀ‰Ü"&õ˜/convert_to_tensorH ˜ÂËØDPÀ¸›¹"&õ˜/convert_to_tensorH °¢ĞÙDP€Å‰–"%õ˜/convert_to_tensorHÀÜ‘ŞßDP€Ğ†"%õ˜/convert_to_tensorH€ïœûßDPàæè"%õ˜/convert_to_tensorH€•üÙãDPà–â"%õ˜/convert_to_tensorH€‡¸èDPÀÔÃ"%õ˜/convert_to_tensorHÀû¹ÂìDPàáÉ"&õ˜/convert_to_tensorH€˜ƒæìDPàÛ¥Ñ"&õ˜/convert_to_tensorHÀƒãèíDPà¡é®"%õ˜/convert_to_tensorHÀ²Æ†øDPÀü†"&õ˜/convert_to_tensorH€øDP ÷öš"&õ˜/convert_to_tensorHÀ´öÔùDP ñüş"%õ˜/convert_to_tensorH ıú±…EPÀ’Ö"%õ˜/convert_to_tensorH ê¬Û…EPàÙ“"%õ˜/convert_to_tensorH Ç‰¡‹EP€âú"%õ˜/convert_to_tensorH òÅ•EP Ç½"%õ˜/convert_to_tensorHà„õš”EPà–â"&õ˜/convert_to_tensorH€¼û¿”EP€‘Ùƒ"&õ˜/convert_to_tensorHÀ…ûÉ•EP ë”×"%õ˜/convert_to_tensorH€í›ŸEP Ç½"&õ˜/convert_to_tensorHà½µˆŸEPÀŒı¹"&õ˜/convert_to_tensorH€³¢ EPÀ·Ò”"%õ˜/convert_to_tensorHàŠÎš¦EP İŒ"%õ˜/convert_to_tensorH€úƒ¸¦EPà›"%õ˜/convert_to_tensorHÀĞ‰ş©EPÀŸ«"%õ˜/convert_to_tensorH€ùñ³®EP€ïÏ"%õ˜/convert_to_tensorH€¢Ò»²EP€ïÏ"&õ˜/convert_to_tensorHÀöÿï²EP Ş¯"&õ˜/convert_to_tensorH€ÿÕ€´EPÀºÏâ"%õ˜/convert_to_tensorH Âı¿ÃEPÀû"&õ˜/convert_to_tensorHÀ†¤ËÃEP€¹ÄÈ"&õ˜/convert_to_tensorHà’ø¹ÅEP İšœ"%õ˜/convert_to_tensorH Í¤øÌEP Ç½"%õ˜/convert_to_tensorH€«È–ÍEPà›"%õ˜/convert_to_tensorH ŸæËÚEP€Ã±"%õ˜/convert_to_tensorHàÍïœàEPàËú"%õ˜/convert_to_tensorHÀŞ±ÉäEPÀŸ«"%õ˜/convert_to_tensorHÀÄ¼ääEPà£·"&õ˜/convert_to_tensorHÀ‡£åEPà¥‚¿"%õ˜/convert_to_tensorHàüàÓîEPà¬±"%õ˜/convert_to_tensorHàº¨íîEP ¾Ã"&õ˜/convert_to_tensorHàŞÅ‰ïEPà÷¦œ"%õ˜/convert_to_tensorH€¹¹ÁüEP€ã¾
+"%õ˜/convert_to_tensorH ÍæÏüEPàæè"%õ˜/convert_to_tensorHà×†ÙüEP€ "&õ˜/convert_to_tensorHÀ¶£•ıEPÀŸË"%õ˜/convert_to_tensorH ‰³è“FPÀÇî"&õ˜/convert_to_tensorH ¿Ä†”FPÀáƒ÷"&õ˜/convert_to_tensorHÀéà¡šFP€ßÒÜ"%õ˜/convert_to_tensorHàœİ“£FP Ç½"&õ˜/convert_to_tensorHà«ïµ£FPÀĞö"%õ˜/convert_to_tensorH î²¦ªFP€…Ÿ"%õ˜/convert_to_tensorH€ï™Œ«FP İŒ"&õ˜/convert_to_tensorH€’ïÇ­FP ­”Ê"%õ˜/convert_to_tensorH ê…Ï´FP Šï"%õ˜/convert_to_tensorHà–Ú²µFPÀÆß"%õ˜/convert_to_tensorHàÎôŸ»FPÀ±Ÿ"&õ˜/convert_to_tensorHÀ® É»FPÀ®âÑ	"&õ˜/convert_to_tensorHà£Âé¼FPÀˆä©"%õ˜/convert_to_tensorH€šõşÈFP ºè"&õ˜/convert_to_tensorHÀÂÏ›ÉFPàØóê"%õ˜/convert_to_tensorH€¼ÈĞFPàáÉ"%õ˜/convert_to_tensorHÀ›úêÕFPÀ‰Ü"&õ˜/convert_to_tensorHà´û”ÖFPàÚå¦"&õ˜/convert_to_tensorH ’ ³ŞFP àĞİ"%õ˜/convert_to_tensorHÀÙ¿±ãFP€…Ÿ"%õ˜/convert_to_tensorH ÃôÈãFPÀÃ“"Cõ˜/ExecutorState::ProcessH »¼æFP€ç™Z
+id-1Z
+iter_num0"†õ˜/	ReverseV2H Àø¾æFPÀ–±ZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2:ReverseV2Z
+is_eager0"bõ˜/O_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2_0:_SendHà”¼ÂæFPàÆ["1õ˜/ExecutorDoneCallbackH€Ê…ÄæFPÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHÀÛôæFP€…ŸZ
+id-1Z
+iter_num0"…õ˜/	ReverseV2HÀ¯ãôæFPàÆ[ZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2:ReverseV2Z
+is_eager0"bõ˜/O_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer/ReverseV2_0:_SendH •ˆöæFP€ê0"1õ˜/ExecutorDoneCallbackHàƒööæFP ÂZ
+id-1"%õ˜/convert_to_tensorH€½¬êèFP€ïÏ"&õ˜/convert_to_tensorH û¤…éFP «¯ã"%õ˜/convert_to_tensorHÀ¥»òşFP€Íï
+"&õ˜/convert_to_tensorHÀ™”ªÿFPÀÀ®"&õ˜/convert_to_tensorH èöğ‡GP€†ë"%õ˜/convert_to_tensorH †ßª’GPà–â"&õ˜/convert_to_tensorHÀ•¢Î’GPÀ§ºÿ"%õ˜/convert_to_tensorHàÀìŸ™GP€™"%õ˜/convert_to_tensorH àë„šGPÀê’"&õ˜/convert_to_tensorH ÓüÛœGP€ê¾™"%õ˜/convert_to_tensorHÀÒËÒ¡GPÀŸ«"%õ˜/convert_to_tensorH âğø¡GPà­õ"%õ˜/convert_to_tensorHÀƒÃŒ¥GP ’¥"&õ˜/convert_to_tensorHàµª®¥GP ÇæŠ"&õ˜/convert_to_tensorH Œÿ¶¦GP€îÅµ"%õ˜/convert_to_tensorH ÷ş¾²GPÀ˜¹"&õ˜/convert_to_tensorHÀúšš³GP Ğ–"%õ˜/convert_to_tensorHàñÖÀGP€Ä"%õ˜/convert_to_tensorH ëªÉÆGP€™"&õ˜/convert_to_tensorH ÜìˆÇGPà“øí"&õ˜/convert_to_tensorHàû¼¸ĞGP€Š¿Ê"%õ˜/convert_to_tensorH õ—ºÖGPàºÊ"%õ˜/convert_to_tensorH òµÚÖGP Šï"Cõ˜/ExecutorState::ProcessH€ş„¢ÚGP€ÈĞZ
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2H€ú©¤ÚGPÀËÉZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2_0:_SendH Áç§ÚGPÀ¹U"1õ˜/ExecutorDoneCallbackH€§Œ©ÚGPÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH€§öÙÚGPàÂ€Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2H ˆŞÚÚGPÀ¹UZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ReverseV2_0:_SendH ÆğÛÚGPàÜ*"1õ˜/ExecutorDoneCallbackH€ÌÜÚGP€µZ
+id-1"%õ˜/convert_to_tensorHàÖ¤«İGPÀÇî"&õ˜/convert_to_tensorH šíÊİGP ì¬¾"%õ˜/convert_to_tensorHÀ‰ØµöGP ­“"&õ˜/convert_to_tensorHà×ñßöGP€†×÷"&õ˜/convert_to_tensorH€¤¬†şGP ‰Ü"%õ˜/convert_to_tensorH ›­ßHPÀëÖ"&õ˜/convert_to_tensorHà‰º©‘HPÀöŞ÷"%õ˜/convert_to_tensorHÀŞêíŸHPÀæ·"%õ˜/convert_to_tensorH€•²ğ HP ’¥"&õ˜/convert_to_tensorHÀæùé£HP€í²í"%õ˜/convert_to_tensorH€…©¸«HP€²"%õ˜/convert_to_tensorHàêì‚¬HPÀ‹ä"%õ˜/convert_to_tensorHÀæÙ‘¶HP Ä¦"&õ˜/convert_to_tensorH€‰»Ö¶HPÀ«æÇ"&õ˜/convert_to_tensorHÀ†ù‹¸HP€ÔÌõ"%õ˜/convert_to_tensorH€˜—ÑÉHP€Ì«"&õ˜/convert_to_tensorH ¢»ñÉHP •´Å"%õ˜/convert_to_tensorH Åû¡ÒHPÀ‰Ü"%õ˜/convert_to_tensorHÀ”ğä×HP æ†"&õ˜/convert_to_tensorH€‹ş‘ØHPà‘Ú“"&õ˜/convert_to_tensorH€‹ØÖáHPàÍÁå"%õ˜/convert_to_tensorH€ŞÓñèHPÀü†"%õ˜/convert_to_tensorHàì´’éHPà­õ"Cõ˜/ExecutorState::ProcessHàÜúœñHP È	Z
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2HÀêâŸñHPÀµúZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2_0:_SendHàĞé£ñHPàÆ["1õ˜/ExecutorDoneCallbackHÀë¦¥ñHPàÜ*Z
+id-1"Cõ˜/ExecutorState::ProcessHàÃşÕñHP İŒZ
+id-1Z
+iter_num0"‡õ˜/	ReverseV2H€¥æÖñHPàÆ[ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ReverseV2_0:_SendHÀı„ØñHP€ê0"1õ˜/ExecutorDoneCallbackHÀÑæØñHP€µZ
+id-1"%õ˜/convert_to_tensorH€Ë¯æõHP€ğ“	"&õ˜/convert_to_tensorH Ü¯­öHP€±Í"%õ˜/convert_to_tensorHÀéØ†IP€¶Ü"&õ˜/convert_to_tensorHàº‰©IP€ ­“"&õ˜/convert_to_tensorH€İ¤á“IPÀçŸó"%õ˜/convert_to_tensorH€»­IP€Ã±"&õ˜/convert_to_tensorH€âÓIPÀËŒ´"%õ˜/convert_to_tensorHàî±º¦IP ğÄ
+"%õ˜/convert_to_tensorH øŸ²¨IP —Ä"&õ˜/convert_to_tensorHÀ¦Õİ¯IPÀÜ¯Û"%õ˜/convert_to_tensorHà·ªÊ¶IPÀ’Ö"%õ˜/convert_to_tensorHàÑ¾ø¶IPàÃÄ"%õ˜/convert_to_tensorHàöô¿½IP€Ä"&õ˜/convert_to_tensorH ¸êì½IP “æñ"&õ˜/convert_to_tensorHà°Ô†¿IP ¬İ™"%õ˜/convert_to_tensorH€©çãÉIPÀ¨¥"&õ˜/convert_to_tensorHÀ·—ƒÊIPÀóµ‹"%õ˜/convert_to_tensorHàÿÿÔIP ÌÜ"%õ˜/convert_to_tensorH€áÎÀÚIPÀ¨¥"&õ˜/convert_to_tensorH€½ĞíÚIPàËòÍ"&õ˜/convert_to_tensorH ½×ØæIP€üÅÓ"%õ˜/convert_to_tensorHÀé±ÛòIPàêÃ"%õ˜/convert_to_tensorH€–çõòIP€¥¬	"Cõ˜/ExecutorState::ProcessHÀ÷µÔøIP€ªËZ
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2Hàó‹ØøIPÀİ½ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2:ReverseV2Z
+is_eager0"eõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2_0:_SendH€Ö·ŞøIPÀ£†"1õ˜/ExecutorDoneCallbackHÀÍŸàøIP€ê0Z
+id-1"Cõ˜/ExecutorState::ProcessH€†Ğ¤ùIP€º·Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2H ç·¥ùIP ágZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ReverseV2_0:_SendHÀçè¦ùIPà‘C"1õ˜/ExecutorDoneCallbackHÀğâ§ùIP€µZ
+id-1"%õ˜/convert_to_tensorH ×›µüIP Ê"&õ˜/convert_to_tensorHàŸƒØüIP€®Ô"%õ˜/convert_to_tensorHà†¶ûŒJPàŸÜ"&õ˜/convert_to_tensorH€ÁÓ˜JP€òœØ"&õ˜/convert_to_tensorHà½ö““JP ¸¸"%õ˜/convert_to_tensorH Ë¦£JP€­â"&õ˜/convert_to_tensorH ß×ÈJPÀ½æÚ"%õ˜/convert_to_tensorHàÖƒ¬JPà’‡"%õ˜/convert_to_tensorH úôµ­JP ÕÖ"&õ˜/convert_to_tensorH £¿î±JPÀ¿êŠ"%õ˜/convert_to_tensorHà¡¾’»JP€øÉ"%õ˜/convert_to_tensorH€®ê½»JPÀ¦"%õ˜/convert_to_tensorHÀ³ÄÄ¿JP Ç½"&õ˜/convert_to_tensorH€’ûæ¿JPàÌ²ø"&õ˜/convert_to_tensorH Ê™óÀJPàÒÛÉ"%õ˜/convert_to_tensorH Ê¾ŸÊJPà¬±"&õ˜/convert_to_tensorHàà¤ºÊJP€Ë‹è"%õ˜/convert_to_tensorHÀ²«ÎÑJPà÷˜"%õ˜/convert_to_tensorH€«„¸ÖJPÀÔÃ"&õ˜/convert_to_tensorHÀ©ÈàÖJP ¼É"&õ˜/convert_to_tensorH ¬ÿ¡ßJPÀ‡ÄŒ	"%õ˜/convert_to_tensorHàÜ´æèJP Ğ·"%õ˜/convert_to_tensorH€’³€éJP ÕÖ"Cõ˜/ExecutorState::ProcessHàÈÆòìJPÀ—õZ
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2H ß÷ôìJPÀËÉZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2_0:_SendHà³»øìJP ¬O"1õ˜/ExecutorDoneCallbackHà¦æùìJPàÜ*Z
+id-1"Cõ˜/ExecutorState::ProcessH ¦î§íJPÀê’Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2Hà”Ü¨íJPÀ¹UZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ReverseV2_0:_SendH íú©íJPàÜ*"1õ˜/ExecutorDoneCallbackH ÁÜªíJPà§Z
+id-1"%õ˜/convert_to_tensorH •ïèïJP€—“"&õ˜/convert_to_tensorHÀ¬è‡ğJP «ƒÅ"%õ˜/convert_to_tensorH §çú…KPà‚›"&õ˜/convert_to_tensorH è¯½†KPàÃÎÆ"&õ˜/convert_to_tensorHà»£ªKPàùŞ"%õ˜/convert_to_tensorH€°ş­–KP€¤è"&õ˜/convert_to_tensorH ëßĞ–KPÀšå€"%õ˜/convert_to_tensorH —§×KPàêÃ"%õ˜/convert_to_tensorHÀ¸²ŞKP üÕ"&õ˜/convert_to_tensorH€Ğİ¤KPÀ”ƒ¼	"%õ˜/convert_to_tensorH€ºÅã¯KPàïâ"%õ˜/convert_to_tensorHÀ©–³°KP š"%õ˜/convert_to_tensorHàÍÆËµKPÀ±Ÿ"&õ˜/convert_to_tensorHÀ¾¢ñµKP€‚üù"&õ˜/convert_to_tensorHÀ°Çÿ¶KPÀ¦ŒÉ"%õ˜/convert_to_tensorHÀÛÆ¥ÀKP æ†"&õ˜/convert_to_tensorHà¸ˆÁÀKP€ò„"%õ˜/convert_to_tensorH Öó‰ÈKPÀŸ«"%õ˜/convert_to_tensorHàñ¥ŠÍKPÀ’Ö"&õ˜/convert_to_tensorHÀä´ÍKPÀñ’’"&õ˜/convert_to_tensorHàÀ„ºÕKP ’‡ş"%õ˜/convert_to_tensorHÀ¨ÈÙÚKPÀ¾ô"%õ˜/convert_to_tensorHÀ’®òÚKPÀâÜ"Cõ˜/ExecutorState::ProcessHà›ıÜŞKP€ã¾
+Z
+id-1Z
+iter_num0"ˆõ˜/	ReverseV2H †àŞKP€ïÏZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2_0:_SendHà‚—åŞKPÀ¹U"1õ˜/ExecutorDoneCallbackHÀÔæŞKPàÜ*Z
+id-1"Cõ˜/ExecutorState::ProcessH€†ş§ßKP€Íï
+Z
+id-1Z
+iter_num0"‡õ˜/	ReverseV2Hàò¨ßKP ágZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2:ReverseV2Z
+is_eager0"dõ˜/Q_send_kenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ReverseV2_0:_SendHÀúÎ±ßKPà‘C"1õ˜/ExecutorDoneCallbackH öÂ²ßKP ÂZ
+id-1"%õ˜/convert_to_tensorHÀ©¤¶åKP€¶Ü"&õ˜/convert_to_tensorH ÆÛåKP É‘º"%õ˜/convert_to_tensorHàÓ•÷ñKP€· "%õ˜/convert_to_tensorH ”’†òKPàü·"%õ˜/convert_to_tensorHà´òKP€ "%õ˜/convert_to_tensorHÀÃ­—òKPÀ…"%õ˜/convert_to_tensorH€»ŸòKP Šï"%õ˜/convert_to_tensorHÀ£Õ©òKPà’‡"%õ˜/convert_to_tensorH€âû®úKPÀ‰Ü"&õ˜/convert_to_tensorHÀÒ¦ÓúKP€«¼ô"&õ˜/convert_to_tensorH€äšÍÿKPàÌ—Š"&õ˜/convert_to_tensorH ø ÜƒLP€î¯æ"%õ˜/convert_to_tensorH€ñªÇˆLP€…Ÿ"%õ˜/convert_to_tensorHÀèÇáˆLP€±½"%õ˜/convert_to_tensorH€òØıˆLP ¶"%õ˜/convert_to_tensorH€é“•‰LP â«"%õ˜/convert_to_tensorHÀ³„‡LPà¬±"&õ˜/convert_to_tensorH€›µªLP ’Éë"&õ˜/convert_to_tensorHàÕ£š“LPàåÈé"&õ˜/convert_to_tensorHà‹¤ˆ—LP€‰£ˆ"%õ˜/convert_to_tensorH€±Åˆ¡LP€ì¸"%õ˜/convert_to_tensorH€­Ô»¡LPàØÏ"%õ˜/convert_to_tensorHà¸ä¡LPàøÜ"%õ˜/convert_to_tensorHÀÊ–ı¡LPà±Ğ"%õ˜/convert_to_tensorH ï¤½©LP€®¦
+"&õ˜/convert_to_tensorH ¡ö©LP€·õ°"&õ˜/convert_to_tensorH ß¬µ°LP ÂŸÄ"&õ˜/convert_to_tensorHàÁŠ¶LPàÌ—Š"%õ˜/convert_to_tensorH Ú»LPà–â"%õ˜/convert_to_tensorH€Ä¹»LP€±½"%õ˜/convert_to_tensorHàÄ×Õ»LPà…²"%õ˜/convert_to_tensorHà†úì»LP€Õ¥"%õ˜/convert_to_tensorH Ö¨«ÂLPÀê’"%õ˜/convert_to_tensorHà¥ä¾ÇLP üÕ"%õ˜/convert_to_tensorH€Æ×ŞÇLP€æÕ"%õ˜/convert_to_tensorH€´˜õÇLPàæè"%õ˜/convert_to_tensorHÀ×ÂŞËLPà¬±"%õ˜/convert_to_tensorHÀÇ‹€ÌLP€©‡"%õ˜/convert_to_tensorH€«ü“ÏLPÀŸ«"%õ˜/convert_to_tensorH€Ë¾²ÏLP€æÕ"%õ˜/convert_to_tensorHàöàÈÏLP€ôî"%õ˜/convert_to_tensorHÀö¡ÓLPà¬±"%õ˜/convert_to_tensorH ñ¸ÃÓLPàĞ™"%õ˜/convert_to_tensorH ŒáıÖLP …Ğ"%õ˜/convert_to_tensorH Äú¦×LPàıû"%õ˜/convert_to_tensorHà­ñœñLP€ëô"%õ˜/convert_to_tensorHàŞÎ¬÷LP ºè"%õ˜/convert_to_tensorHÀÑÀöûLP€º·"%õ˜/convert_to_tensorH ì²üLP€›î"&õ˜/convert_to_tensorH Îâ­üLP ÿä"%õ˜/convert_to_tensorHÀÙ›…MP Ç½"%õ˜/convert_to_tensorHà¤é·…MPÀ€â"&õ˜/convert_to_tensorHÀÚÉÔ…MP ½îÌ"%õ˜/convert_to_tensorHà€¼¯MPà¤û"%õ˜/convert_to_tensorHà·ÜºMP€Õ¥"%õ˜/convert_to_tensorHà½¿ÃMPÀº™"&õ˜/convert_to_tensorH€ĞÎ÷MP ÁÉÊ"%õ˜/convert_to_tensorH ÅğÌ¨MPàó½"&õ˜/convert_to_tensorHà¹öî¨MPà”ä¶"&õ˜/convert_to_tensorHàµÚÇ¯MP€°Òı"%õ˜/convert_to_tensorHÀ¸åê¸MP€ëô"&õ˜/convert_to_tensorH Šø¹MP ²ó"%õ˜/convert_to_tensorHàøïÎ¿MPà¬±"%õ˜/convert_to_tensorH€ìŸ³ÀMP ’¥"&õ˜/convert_to_tensorHÀôèîÂMP€Øàæ"%õ˜/convert_to_tensorHÀÿ­¬ÇMPÀê’"%õ˜/convert_to_tensorH€ÕêÍÇMP õ"%õ˜/convert_to_tensorHÀ¢ŒâÊMP ’¥"&õ˜/convert_to_tensorH ºçƒËMPÀÇ—Œ"&õ˜/convert_to_tensorHà™¶ÌMPà¦½Ê"%õ˜/convert_to_tensorH İ›£ÚMPàù "&õ˜/convert_to_tensorHÀŒÖıÚMPà˜ëÒ"%õ˜/convert_to_tensorH ²¶ÜæMPÀü†"%õ˜/convert_to_tensorH€«³òìMP æ†"&õ˜/convert_to_tensorH€™©¡íMP §Ù„"&õ˜/convert_to_tensorHÀªÜñøMP€Ş‚"%õ˜/convert_to_tensorH€ëï“şMP Ç½"%õ˜/convert_to_tensorH Ùá«şMP€ÑÊ"Cõ˜/ExecutorState::ProcessHÀåó¬NPÀÌZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀá˜¯NPàØÏZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2_0:_SendHàİî²NP ág"1õ˜/ExecutorDoneCallbackHÀø«´NPàÜ*Z
+id-1"Cõ˜/ExecutorState::ProcessHàá³áNPàÂ€Z
+id-1Z
+iter_num0"‹õ˜/	ReverseV2H€Ã›âNPÀ¹UZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ReverseV2_0:_SendH€®ãNPàÜ*"1õ˜/ExecutorDoneCallbackH€ÕäNPà§Z
+id-1"%õ˜/convert_to_tensorHàÓÛƒNP ¤™"&õ˜/convert_to_tensorH€èøƒNP úñà"%õ˜/convert_to_tensorH€ï™‰”NPàü·"&õ˜/convert_to_tensorHÀÓ³´”NP ã¡"&õ˜/convert_to_tensorH ¶İïœNP€·˜Õ"%õ˜/convert_to_tensorHàêÁ©NP Šï"&õ˜/convert_to_tensorH€´í÷©NP ¾¥ı"%õ˜/convert_to_tensorH Æä±NP€º·"%õ˜/convert_to_tensorHÀÌ÷Ï²NPàÂ€"&õ˜/convert_to_tensorHàôœµNP ĞÛì"%õ˜/convert_to_tensorHà±ãÕ¹NPà÷˜"%õ˜/convert_to_tensorHÀ”¦÷¹NP ¶"%õ˜/convert_to_tensorH Ş½NPà÷˜"&õ˜/convert_to_tensorH€öø°½NPÀ”Òş"&õ˜/convert_to_tensorH ÖÚ¾¾NPàô†ª"%õ˜/convert_to_tensorHÀğÚéÇNP€ïÏ"&õ˜/convert_to_tensorH Éß„ÈNP€èÌİ"%õ˜/convert_to_tensorHà½Ù•ÏNPÀ‰Ü"%õ˜/convert_to_tensorHÀòÆ÷×NP â«"&õ˜/convert_to_tensorHà¯å½ØNP Äç"&õ˜/convert_to_tensorHà˜€ßâNPÀ…ó"%õ˜/convert_to_tensorH ª©ñçNPÀŸ«"%õ˜/convert_to_tensorH ¡äˆèNP€©‡"Cõ˜/ExecutorState::ProcessHÀó¾†ëNP€ıèZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H —öˆëNPÀËÉZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2_0:_SendH€ù¿ŒëNP€ŸI"1õ˜/ExecutorDoneCallbackHÀÑŞëNPÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH ¶©ºëNPàÂ€Z
+id-1Z
+iter_num0"‹õ˜/	ReverseV2H Š‹»ëNP ¬OZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ReverseV2_0:_SendH€»—¼ëNP ÷6"1õ˜/ExecutorDoneCallbackH œÿ¼ëNP€µZ
+id-1"%õ˜/convert_to_tensorH€¸’¸íNPàáÉ"&õ˜/convert_to_tensorHàúÇÓíNP€êÔè"%õ˜/convert_to_tensorH€ÃÃüNPÀ‰Ü"&õ˜/convert_to_tensorHÀÿŞüNPà½ø’"&õ˜/convert_to_tensorH İË‚OP€ÿªÊ"%õ˜/convert_to_tensorH€ÚÔàŠOPÀÔÃ"&õ˜/convert_to_tensorHàù‚‹OPàŒÄŠ"%õ˜/convert_to_tensorH Å¤³—OPÀÃ“"%õ˜/convert_to_tensorHàß£Ş˜OPÀóŒ"&õ˜/convert_to_tensorHÀõû“œOP ÍùŒ"%õ˜/convert_to_tensorHà±‚¡OP İŒ"%õ˜/convert_to_tensorH ‚·¤¡OP€©‡"%õ˜/convert_to_tensorH€ÆË³¤OPÀŸ«"&õ˜/convert_to_tensorHàİ¦Õ¤OPÀÖŠå"&õ˜/convert_to_tensorHàöÊß¥OPà±"%õ˜/convert_to_tensorHàú•ñ®OP€º·"&õ˜/convert_to_tensorHÀ´Ñ‹¯OP àÇã"%õ˜/convert_to_tensorHà“¡¶OPÀŸ«"%õ˜/convert_to_tensorHà×±»OP Ç½"&õ˜/convert_to_tensorHàË¶»OP Â¬™"&õ˜/convert_to_tensorH€«œ¼ÃOP€¸ÜÚ"%õ˜/convert_to_tensorH ‡Ç´ÈOPà÷˜"%õ˜/convert_to_tensorHÀ¡×ËÈOP õ"Cõ˜/ExecutorState::ProcessHÀ¼ÊíËOP ñˆZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2Hàí¸ñËOPÀóŒZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2_0:_SendH ó¹÷ËOPà°Œ"1õ˜/ExecutorDoneCallbackHàÔÒùËOPÀ„=Z
+id-1"Cõ˜/ExecutorState::ProcessHÀßµÌOPÀŸ«Z
+id-1Z
+iter_num0"‹õ˜/	ReverseV2H Û¶ÌOP€ÔaZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ReverseV2_0:_SendH Î¬·ÌOP€ê0"1õ˜/ExecutorDoneCallbackHÀ¯”¸ÌOP€µZ
+id-1"%õ˜/convert_to_tensorHÀ•ÎÑOPÀÌ"&õ˜/convert_to_tensorH °¨€ÒOP€æõ"%õ˜/convert_to_tensorH ò”ğäOPà‰"&õ˜/convert_to_tensorH ¾õåOPÀ€ãÆ"&õ˜/convert_to_tensorHÀ¥öóêOPà´ÖÎ"%õ˜/convert_to_tensorH ºÖÏóOPÀÔÃ"&õ˜/convert_to_tensorH€ñúñóOP ™ï"%õ˜/convert_to_tensorHàŒ†·úOPÀÔÃ"%õ˜/convert_to_tensorHÀÑâ¦ûOP€Ğ†"&õ˜/convert_to_tensorHàƒÆíıOPÀ¢›ü"%õ˜/convert_to_tensorHÀ‹øÉ‚PP€…Ÿ"%õ˜/convert_to_tensorHÀ°Ùë‚PPÀÃ“"%õ˜/convert_to_tensorH€‚Öı…PPÀŸ«"&õ˜/convert_to_tensorHÀŒ«Ÿ†PP€Œ©Ğ
+"&õ˜/convert_to_tensorH ã°©‡PPà¨ä"%õ˜/convert_to_tensorH€äé–PPÀü†"&õ˜/convert_to_tensorHàÜû¾–PP€÷ğó"%õ˜/convert_to_tensorHà”¯ PPà–â"%õ˜/convert_to_tensorH€šÖÄ¥PPÀÔÃ"&õ˜/convert_to_tensorHàùî¥PP ŸÙ"&õ˜/convert_to_tensorH ½æ¿®PPÀÆ×á"%õ˜/convert_to_tensorHÀİ†Â³PP Ç½"%õ˜/convert_to_tensorH€ÙşÙ³PP ë¥"Cõ˜/ExecutorState::ProcessHÀÛ¸î¶PP€ÈĞZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀ×İğ¶PPà£·Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2_0:_SendHÀ‘•ô¶PP ¬O"1õ˜/ExecutorDoneCallbackHà‘Æõ¶PP ÂZ
+id-1"Cõ˜/ExecutorState::ProcessH ½ì¢·PP İŒZ
+id-1Z
+iter_num0"‹õ˜/	ReverseV2Hà«Ú£·PPÀ¹UZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2:ReverseV2Z
+is_eager0"hõ˜/U_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ReverseV2_0:_SendHàéì¤·PP€ê0"1õ˜/ExecutorDoneCallbackHà½Î¥·PP€µZ
+id-1"%õ˜/convert_to_tensorHÀ‰¶¹PPÀ¾ô"&õ˜/convert_to_tensorHà›êÑ¹PP ìõ"%õ˜/convert_to_tensorH€šáûÉPP Ãâ"&õ˜/convert_to_tensorH Úá¡ÊPPÀı…†	"&õ˜/convert_to_tensorH€ ÓáÓPPà‘ùÜ"%õ˜/convert_to_tensorH€’Û®ßPPàŸÜ"&õ˜/convert_to_tensorH ‹ÏÒßPPà¬¿œ"%õ˜/convert_to_tensorHà™ÆæPPÀŸ«"%õ˜/convert_to_tensorHÀ½É¬çPP€Ğ†"&õ˜/convert_to_tensorHàÁ†ééPP ­·î"%õ˜/convert_to_tensorHàúñ°îPP€º·"%õ˜/convert_to_tensorH ¤ÓîPP ¶"%õ˜/convert_to_tensorH æ·‰òPP€ïÏ"&õ˜/convert_to_tensorH şÃ¬òPPÀÍÅü"&õ˜/convert_to_tensorHÀÈÖºóPP ª¶Å"%õ˜/convert_to_tensorHÀ¶‡åüPP€Ã±"&õ˜/convert_to_tensorH ãí€ıPP íœâ"%õ˜/convert_to_tensorH Ã¾š„QP€Ğ†"%õ˜/convert_to_tensorH€ºÅ™ŒQPà  
+"&õ˜/convert_to_tensorHÀ¨æŒQPÀ‹–"&õ˜/convert_to_tensorH ÖÅ™šQPÀ€®®"%õ˜/convert_to_tensorHàòÚèŸQPÀŸ«"%õ˜/convert_to_tensorH€¬´€ QPàĞ™"Cõ˜/ExecutorState::ProcessH ™ı€£QP ë¥Z
+id-1Z
+iter_num0"õ˜/	ReverseV2HÀíƒ£QP ‰«Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2_0:_SendH€»†£QP ¬O"1õ˜/ExecutorDoneCallbackHÀåÙ‡£QP ÂZ
+id-1"Cõ˜/ExecutorState::ProcessH€é¼³£QP ’¥Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀ×ª´£QP ¬OZ_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ReverseV2_0:_SendHà×Ûµ£QPàÜ*"1õ˜/ExecutorDoneCallbackHÀ·¶£QP€µZ
+id-1"%õ˜/convert_to_tensorH Ù“²¥QPÀ‰Ü"&õ˜/convert_to_tensorH ô¶Í¥QPÀˆ¼æ"%õ˜/convert_to_tensorHÀ«ãâ´QP€øÉ"&õ˜/convert_to_tensorHàÆ·ÿ´QPÀÎá¾"&õ˜/convert_to_tensorH æ˜ßºQP ë”×"%õ˜/convert_to_tensorH€×íÃQP€Ã±"&õ˜/convert_to_tensorHÀ³Ş—ÄQP æí"%õ˜/convert_to_tensorH ¾ï¼ĞQP€—“"%õ˜/convert_to_tensorHÀÍ†ÂÑQP€­â"&õ˜/convert_to_tensorHÀ™ª‘ÖQP€¬–É"%õ˜/convert_to_tensorHÀÙÉÛQP üÕ"%õ˜/convert_to_tensorHÀ¯¯íÛQPÀû"%õ˜/convert_to_tensorHÀÆÇ‘ßQP€º·"&õ˜/convert_to_tensorH€Ñœ³ßQPà½Õî"&õ˜/convert_to_tensorH€­òÁàQP€ÇÆ¹"%õ˜/convert_to_tensorH ú‚âéQP Ç½"&õ˜/convert_to_tensorH€Ó‡ıéQP Áà"%õ˜/convert_to_tensorH £èˆñQP€…Ÿ"%õ˜/convert_to_tensorHÀÃÓòõQPàáÉ"&õ˜/convert_to_tensorH€¬È›öQPàˆ×˜"&õ˜/convert_to_tensorH€©ã¤şQP ŠÍ§"%õ˜/convert_to_tensorH€…­¢†RPÀ ï"%õ˜/convert_to_tensorHÀ¹ÍĞ†RPàğ¦"Cõ˜/ExecutorState::ProcessH€Ú‘ÿŒRPà¿é
+Z
+id-1Z
+iter_num0"õ˜/	ReverseV2H€ß°‚RP ’¥Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2_0:_SendH ™™‡RPÀîm"1õ˜/ExecutorDoneCallbackH€‡‰RP€ê0Z
+id-1"Cõ˜/ExecutorState::ProcessH Û¥ÏRP …ĞZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H€ÁÊĞRP€‰zZ_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ReverseV2_0:_SendH€¦ÒRP€ŸI"1õ˜/ExecutorDoneCallbackH€Ü¸ÓRPÀÏ$Z
+id-1"%õ˜/convert_to_tensorHÀœï™‘RP€©‡"&õ˜/convert_to_tensorH€®ëÉ‘RPÀÉêş"%õ˜/convert_to_tensorH€é¢’ RPÀñ¹"%õ˜/convert_to_tensorH€´¿ª RP€‹‚"%õ˜/convert_to_tensorH ®Â» RP€Àš"%õ˜/convert_to_tensorHÀæ×Í RP€èİ"%õ˜/convert_to_tensorH€–¤à RP "%õ˜/convert_to_tensorH ‡­ğ RP ãï"%õ˜/convert_to_tensorHàÂÿ®­RPÀæ·"&õ˜/convert_to_tensorHàˆ²Ü­RPà•ê©"&õ˜/convert_to_tensorHàîÓŠ³RPÀŸï"&õ˜/convert_to_tensorH À¤ş¶RP Áà"%õ˜/convert_to_tensorHÀ·ˆá»RP€º·"%õ˜/convert_to_tensorH€×èü»RPà£·"%õ˜/convert_to_tensorHàƒÏ˜¼RPà›"%õ˜/convert_to_tensorHÀÎº¯¼RP€Õ¥"%õ˜/convert_to_tensorH€Í½®ÃRP€ëô"&õ˜/convert_to_tensorHÀÏ‘íÃRPÀÑç†	"&õ˜/convert_to_tensorH€½«üÌRP€¥Š©"&õ˜/convert_to_tensorHàÚ’®ÔRP€âòÎ"%õ˜/convert_to_tensorHàÈÔˆÚRPÀŸ«"%õ˜/convert_to_tensorHà–£ÚRPà£·"%õ˜/convert_to_tensorHàÒü¿ÚRPà­õ"%õ˜/convert_to_tensorHà‡ÊØÚRPÀº™"%õ˜/convert_to_tensorH€ÆøÏàRP€º·"&õ˜/convert_to_tensorH ­øñàRPÀ‹æ"&õ˜/convert_to_tensorHàµÜäRP€íëà"&õ˜/convert_to_tensorH ÙŞÁèRPà°°é"%õ˜/convert_to_tensorHÀ½ŠíRPà÷˜"%õ˜/convert_to_tensorHÀò×µíRPÀ–±"%õ˜/convert_to_tensorH µÑíRPàæè"%õ˜/convert_to_tensorH€á¯çíRP â«"%õ˜/convert_to_tensorHÀ‹ıƒôRP ’¥"%õ˜/convert_to_tensorH »§úøRP Ç½"%õ˜/convert_to_tensorHÀñé™ùRPàØÏ"%õ˜/convert_to_tensorHÀª’°ùRPàĞ™"%õ˜/convert_to_tensorHÀ­‚©ıRP Ç½"%õ˜/convert_to_tensorHàñİÌıRPÀÃ“"%õ˜/convert_to_tensorHà®ÃÛ‚SP Í "%õ˜/convert_to_tensorHà¿Ç¹ƒSP â«"%õ˜/convert_to_tensorH ØµßƒSPàğ¦"%õ˜/convert_to_tensorHà±™ª‰SP€Ã±"%õ˜/convert_to_tensorHÀäâÎ‰SPÀ­Ä"%õ˜/convert_to_tensorH€¯à•SPàó½"%õ˜/convert_to_tensorH€½ÀSPÀâÜ"%õ˜/convert_to_tensorHÀáË‹¢SP€âú"%õ˜/convert_to_tensorHà™âá§SPà–â"%õ˜/convert_to_tensorH€‹ùŠ¬SP ’¥"%õ˜/convert_to_tensorHàì÷¦¬SP€±½"&õ˜/convert_to_tensorH à¹Ã¬SPà·¢ß"%õ˜/convert_to_tensorH€¨ß¬µSP€º·"%õ˜/convert_to_tensorHÀ€³ÆµSP ¾Ã"&õ˜/convert_to_tensorH€Õ«âµSPÀšûÏ"%õ˜/convert_to_tensorHÀŞ‰îÀSP€«"%õ˜/convert_to_tensorHÀ˜ö‰ÁSP ôŸ"%õ˜/convert_to_tensorHÀÏ–•ÁSP€Å¹"&õ˜/convert_to_tensorHÀÆ¥ÂSPÀæÎ˜"%õ˜/convert_to_tensorH ÛìÖSPÀóŒ"&õ˜/convert_to_tensorH€ÓŞ‡×SPàØ…ß"&õ˜/convert_to_tensorH …ü…İSP ŒÈ"%õ˜/convert_to_tensorH ÇïçåSP üÕ"&õ˜/convert_to_tensorHà×ŠæSPàùÄö"%õ˜/convert_to_tensorHÀşÿÊìSPà÷˜"%õ˜/convert_to_tensorH ¬ÉµíSP İŒ"&õ˜/convert_to_tensorH€’ŸôïSPàÜƒ"%õ˜/convert_to_tensorH€òóèôSPÀÔÃ"%õ˜/convert_to_tensorH ëçŒõSPàĞ™"%õ˜/convert_to_tensorHàÚ½ûøSP â«"&õ˜/convert_to_tensorHÀ›Õ¼ùSPàÂ†æ"&õ˜/convert_to_tensorH ×‹ûSPÀè‚Â"%õ˜/convert_to_tensorH€¶À †TP æ†"&õ˜/convert_to_tensorHàŞË¾†TP€÷“˜"%õ˜/convert_to_tensorH€õÄÍTP ë¥"%õ˜/convert_to_tensorHà˜ÀÅšTPàÌ¾	"&õ˜/convert_to_tensorH€‘Ú”›TPà‚Ñë"&õ˜/convert_to_tensorHÀõõÇ¦TP€÷ùí"%õ˜/convert_to_tensorHà¤ºà­TPà€“"%õ˜/convert_to_tensorH€Ñ¾ù­TPà…²"Cõ˜/ExecutorState::ProcessH€íÀˆ±TPÀ²ã
+Z
+id-1Z
+iter_num0"õ˜/	ReverseV2HÀƒòŠ±TP€¤èZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2:ReverseV2Z
+is_eager0"jõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2_0:_SendHÀ¹Î±TP€¾’"1õ˜/ExecutorDoneCallbackH óÔ’±TPÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH€á™À±TP€Ğ†Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H ÂÁ±TP ¬OZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ReverseV2_0:_SendHÀšÂ±TP€ê0"1õ˜/ExecutorDoneCallbackHÀáûÂ±TP€µZ
+id-1"%õ˜/convert_to_tensorH€‹¬Ù³TPÀÔÃ"&õ˜/convert_to_tensorH€Ûçô³TP€¹—"%õ˜/convert_to_tensorHà‘ÚÊÄTP ï€"&õ˜/convert_to_tensorHÀ…ÍèÄTP€ö÷Õ"&õ˜/convert_to_tensorH€œéßÊTPà¾”Õ"%õ˜/convert_to_tensorHÀ”›ÊÓTP€º·"&õ˜/convert_to_tensorH Ë¿ìÓTP ß¸ö"%õ˜/convert_to_tensorHàĞÊ°ÚTPà÷˜"%õ˜/convert_to_tensorH ©½“ÛTPàÂ€"&õ˜/convert_to_tensorH È·ÑİTP İ°ë"%õ˜/convert_to_tensorH Ÿ¨”âTP ’¥"%õ˜/convert_to_tensorHàôäµâTPàĞ™"%õ˜/convert_to_tensorH€ÔÀåTPà¬±"&õ˜/convert_to_tensorH ÷ÓâåTP “¨ß"&õ˜/convert_to_tensorH ÉëêæTP€¿²"%õ˜/convert_to_tensorH àõïTPà¬±"&õ˜/convert_to_tensorH€È›ğTP ¥ÌÚ"%õ˜/convert_to_tensorHÀ¬©ª÷TP€ïÏ"%õ˜/convert_to_tensorHà‰ÍÀüTPÀ¾ô"&õ˜/convert_to_tensorHàÿøêüTP€Óà¬"&õ˜/convert_to_tensorHÀçŒ‘…UP Ãè"%õ˜/convert_to_tensorH šƒ˜ŠUPÀŸ«"%õ˜/convert_to_tensorH ÆÖ¯ŠUPÀû"Cõ˜/ExecutorState::ProcessHà„æ¡UPÀ­ÄZ
+id-1Z
+iter_num0"õ˜/	ReverseV2H€‘¤UPÀ–±Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2_0:_SendH  ¶§UP ¬O"1õ˜/ExecutorDoneCallbackH “á¨UPÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessH ¤ûÕUP€Ğ†Z
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HÀ…ãÖUPÀ¹UZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ReverseV2_0:_SendHÀÃõ×UP€ê0"1õ˜/ExecutorDoneCallbackHÀ—×ØUP ÂZ
+id-1"%õ˜/convert_to_tensorH€æÉÇUPàáÉ"&õ˜/convert_to_tensorH ¤ÂâUP ä¢á"%õ˜/convert_to_tensorHÀÉ·ŸUPàêÃ"&õ˜/convert_to_tensorH À£ÕŸUPàô‚Ï"&õ˜/convert_to_tensorHà—éÅ¥UP€°èÌ"%õ˜/convert_to_tensorHà„·¡®UP ’¥"&õ˜/convert_to_tensorH€·Ã®UPÀ›ôí"%õ˜/convert_to_tensorHÀˆ ô´UPÀŸ«"%õ˜/convert_to_tensorH Âú×µUPàÂ€"&õ˜/convert_to_tensorHÀÓŒ“¸UPÀ®¬õ"%õ˜/convert_to_tensorH Ÿÿà¼UPà÷˜"%õ˜/convert_to_tensorH€ÀÔƒ½UPÀû"%õ˜/convert_to_tensorHÀÖÕŒÀUP İŒ"&õ˜/convert_to_tensorH€ê¤¯ÀUP Ñºà"&õ˜/convert_to_tensorH€ƒÉ¹ÁUPÀíã²"%õ˜/convert_to_tensorH ñõÌÊUP Ç½"&õ˜/convert_to_tensorHÀä†èÊUP ƒìá"%õ˜/convert_to_tensorH€ê°õÑUPÀê’"%õ˜/convert_to_tensorH ·şãÖUPà¬±"&õ˜/convert_to_tensorH …çŒ×UPÀ†Œ"&õ˜/convert_to_tensorHÀû‹‰ßUP€ˆãİ"%õ˜/convert_to_tensorHÀÏÏ„äUP ’¥"%õ˜/convert_to_tensorHàø›äUP õ"Cõ˜/ExecutorState::ProcessH€º²çUP€ÈĞZ
+id-1Z
+iter_num0"õ˜/	ReverseV2Hà¨ÑçUPÀ–±Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2_0:_SendHÀÕ‚”çUP€ŸI"1õ˜/ExecutorDoneCallbackHàÕ³•çUPÀÏ$Z
+id-1"Cõ˜/ExecutorState::ProcessHà¤àÃçUP İŒZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H “ÎÄçUPÀ¹UZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ReverseV2_0:_SendHÀŞæÅçUP€ê0"1õ˜/ExecutorDoneCallbackHÀ²ÈÆçUP€µZ
+id-1"%õ˜/convert_to_tensorHàáÀ³éUP€ïÏ"&õ˜/convert_to_tensorH€ÕÑÎéUP ¦à"%õ˜/convert_to_tensorH€¸Ì˜øUP€Ù€"&õ˜/convert_to_tensorHÀ¸ã³øUP àº"&õ˜/convert_to_tensorH€°—áıUPÀÛ¤É"%õ˜/convert_to_tensorH€£“­†VPà¬±"&õ˜/convert_to_tensorH Š“Ï†VPàÍ¦÷"%õ˜/convert_to_tensorHÀÄïÂVP ’¥"%õ˜/convert_to_tensorHà¦ïªVP€Ğ†"&õ˜/convert_to_tensorH ‘³ëVP ¬óè"%õ˜/convert_to_tensorHÀÔ«•VP€Ğ†"%õ˜/convert_to_tensorH€åÍ•VPà›"%õ˜/convert_to_tensorH ¬×˜VP ’¥"&õ˜/convert_to_tensorHàÛø˜VPà¸ŠÍ"&õ˜/convert_to_tensorH€£æÿ™VPÀ¿§Ù"%õ˜/convert_to_tensorHÀÜ½ˆ¥VPÀÇî"&õ˜/convert_to_tensorHÀÇç¦¥VP€Š¸"%õ˜/convert_to_tensorHàÊê›®VP€âú"%õ˜/convert_to_tensorH€¦ìüµVP ¤™"&õ˜/convert_to_tensorH€äè®¶VPàñ¶¾"&õ˜/convert_to_tensorHÀ•ç—ÃVPÀñ·"%õ˜/convert_to_tensorH ²ëúÉVPà€“"%õ˜/convert_to_tensorH€¬Á¡ÊVPàÍ‚"Cõ˜/ExecutorState::ProcessHÀ‡›ƒÎVP ôŸZ
+id-1Z
+iter_num0"õ˜/	ReverseV2H€Ì…ÎVPÀËÉZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2_0:_SendH€œ‰ÎVPÀ¹U"1õ˜/ExecutorDoneCallbackH ÂåŠÎVPàÜ*Z
+id-1"Cõ˜/ExecutorState::ProcessH€šÛ¸ÎVP İŒZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H ûÂ¹ÎVPàÆ[Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ReverseV2_0:_SendH€áçºÎVPàÜ*"1õ˜/ExecutorDoneCallbackHà§Ã»ÎVPà§Z
+id-1"%õ˜/convert_to_tensorHà¶Ñ‚ÑVPÀü†"&õ˜/convert_to_tensorHà”¦¢ÑVPà¢ ß"%õ˜/convert_to_tensorHÀ—·¨ãVP ï€"&õ˜/convert_to_tensorHÀß¼ÈãVP ÿ×ğ"&õ˜/convert_to_tensorH îˆŞéVP€¨»Ë"%õ˜/convert_to_tensorH Ë…±õVPÀÇî"&õ˜/convert_to_tensorH ¼’ØõVP€¨ğã"%õ˜/convert_to_tensorHà€†—şVPÀ¨¥"%õ˜/convert_to_tensorH ùº˜ÿVPÀŸ«"&õ˜/convert_to_tensorH Óš‚WP€©Ê¸"%õ˜/convert_to_tensorHÀ´Î¼‡WP ±î"%õ˜/convert_to_tensorHàôÎâ‡WPÀâÜ"%õ˜/convert_to_tensorH€ĞÂª‹WP Ç½"&õ˜/convert_to_tensorHÀùàÌ‹WP€‘Ã´"&õ˜/convert_to_tensorH  íÙŒWP€Œµá"%õ˜/convert_to_tensorHÀÎè–WP€Ù€"&õ˜/convert_to_tensorH€À÷„—WP ƒ‹«"%õ˜/convert_to_tensorHàû¡ÄŸWP€øÉ"%õ˜/convert_to_tensorHÀ€š„¦WPÀ’Ö"&õ˜/convert_to_tensorHàåÆ³¦WP ØÏú"&õ˜/convert_to_tensorHÀÕéÕ²WPÀ‹–"%õ˜/convert_to_tensorHÀ«æ™ºWP€Ã±"%õ˜/convert_to_tensorH ‘À³ºWPàºÊ"Cõ˜/ExecutorState::ProcessH ½‚›¾WPà­õZ
+id-1Z
+iter_num0"õ˜/	ReverseV2H€á¹¾WPà÷˜Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2_0:_SendHÀ‰ß¡¾WP ág"1õ˜/ExecutorDoneCallbackH ¤œ£¾WP ÷6Z
+id-1"Cõ˜/ExecutorState::ProcessHÀ¤·Õ¾WP€…ŸZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2H€“¥Ö¾WPàÆ[Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ReverseV2_0:_SendHàøÉ×¾WP€ê0"1õ˜/ExecutorDoneCallbackHàÌ«Ø¾WP€µZ
+id-1"%õ˜/convert_to_tensorH€é¿ŸÁWPÀÇî"&õ˜/convert_to_tensorH –ˆ¾ÁWP çØ¢"%õ˜/convert_to_tensorH€‡©ÑWPà€“"&õ˜/convert_to_tensorHà³¹ÑWP€ö¥"&õ˜/convert_to_tensorH€Á–ıÖWP •«Ë"%õ˜/convert_to_tensorH€›¬ÑßWP€º·"&õ˜/convert_to_tensorH ·ÄóßWP€—·í"%õ˜/convert_to_tensorH€¤å¨æWPà¬±"%õ˜/convert_to_tensorH€ ŞŒçWPÀê’"&õ˜/convert_to_tensorHÀ¯ÎÖéWP ŠÄ­"%õ˜/convert_to_tensorHàÿ˜“ñWPÀİ½"%õ˜/convert_to_tensorH€™š½ñWPÀ­Ä"%õ˜/convert_to_tensorH Õ˜æõWP æ†"&õ˜/convert_to_tensorHàÅÃŠöWP ßƒ"&õ˜/convert_to_tensorH€¦¥˜÷WP £ÄÏ"%õ˜/convert_to_tensorH óêĞ€XP Ç½"&õ˜/convert_to_tensorHàÔ¸ë€XPÀöÇä"%õ˜/convert_to_tensorH Š‘ˆXPà÷˜"%õ˜/convert_to_tensorHÀòÌÿŒXP€º·"&õ˜/convert_to_tensorH€¦©¨XP€áÄ˜"&õ˜/convert_to_tensorHà¢“°•XP€áãá"%õ˜/convert_to_tensorH êã¯šXP€…Ÿ"%õ˜/convert_to_tensorH –·ÇšXP õ"Cõ˜/ExecutorState::ProcessHà›Ó»XP ë¥Z
+id-1Z
+iter_num0"õ˜/	ReverseV2H ıë½XP€ü¤Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2_0:_SendH€õ„ÁXP€ŸI"1õ˜/ExecutorDoneCallbackH õµÂXP ÂZ
+id-1"Cõ˜/ExecutorState::ProcessH õŸóXPàáÉZ
+id-1Z
+iter_num0"Œõ˜/	ReverseV2HàãôXPÀ¹UZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2:ReverseV2Z
+is_eager0"iõ˜/V_send_kenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ReverseV2_0:_SendH€™×õXPàÜ*"1õ˜/ExecutorDoneCallbackH ú¾öXP€µZ
+id-1"%õ˜/convert_to_tensorHÀğÃåŸXP€ïÏ"&õ˜/convert_to_tensorHà®¼€ XPà¸æä"%õ˜/convert_to_tensorH€¦ÄË¨XP€»û"%õ˜/convert_to_tensorHà÷¡Ø¨XP€¿Ö"%õ˜/convert_to_tensorHàœÎá¨XPà±Ğ"%õ˜/convert_to_tensorHà×Éê¨XPÀº™"%õ˜/convert_to_tensorH ˆó¨XP â«"%õ˜/convert_to_tensorH€‡åû¨XP€Õ¥"%õ˜/convert_to_tensorHÀ·Âƒ´XPàó½"&õ˜/convert_to_tensorHà¼ü¸´XP ïÉ"&õ˜/convert_to_tensorH ºÈ‡ºXP€›Çƒ"&õ˜/convert_to_tensorH ÍÙ¾XPà«‘æ"%õ˜/convert_to_tensorHÀµ•ÃXPà÷˜"%õ˜/convert_to_tensorHÀ±ï›ÃXPÀ–±"%õ˜/convert_to_tensorHà¶ô¸ÃXPÀÃ“"%õ˜/convert_to_tensorH€Ñ„ĞÃXPÀº™"%õ˜/convert_to_tensorH ìÉÉXPÀŸ«"&õ˜/convert_to_tensorH€€íÉXP€İÿé"&õ˜/convert_to_tensorHà’ºÛÍXP §Ôå"&õ˜/convert_to_tensorHàï¹ÅÑXPà‡©â"%õ˜/convert_to_tensorHÀú‚šÖXPÀê’"%õ˜/convert_to_tensorH€•Ä²ÖXP ¾Ã"%õ˜/convert_to_tensorHàŒ’ÎÖXP€ôî"%õ˜/convert_to_tensorHàÅºäÖXPÀº™"%õ˜/convert_to_tensorHàôÚĞÜXP€…Ÿ"&õ˜/convert_to_tensorHà™¼òÜXP€Ô…é"&õ˜/convert_to_tensorH€‰áßàXP€«şá"&õ˜/convert_to_tensorHÀÂÈäXPÀÃ‹Ñ"%õ˜/convert_to_tensorHÀıÀÆêXP Ğ·"%õ˜/convert_to_tensorHàè›æêXPÀËÉ"%õ˜/convert_to_tensorHà¹›‡ëXPà¤û"%õ˜/convert_to_tensorHÀ¬ÊŸëXPÀ¤Ê"%õ˜/convert_to_tensorHàè·˜óXPÀİ½"%õ˜/convert_to_tensorH€¸€½ùXP€âú"%õ˜/convert_to_tensorH ¶“äùXPÀµú"%õ˜/convert_to_tensorH€¶—ûùXP€ŞŸ"%õ˜/convert_to_tensorHÀ÷šÁşXP Ğ·"%õ˜/convert_to_tensorH şÅæşXPàºÊ"%õ˜/convert_to_tensorH€Øç‡ƒYPÀİ½"%õ˜/convert_to_tensorHàÙó©ƒYP ¾Ã"%õ˜/convert_to_tensorHà›–ÁƒYP€ŞŸ"%õ˜/convert_to_tensorH àûæ‡YP Ç½"%õ˜/convert_to_tensorH€— ‰ˆYP€©‡"%õ˜/convert_to_tensorH€õ—‹YPà÷˜"%õ˜/convert_to_tensorH ˆ®¸‹YPà›"%õ˜/convert_to_tensorHÀæû©“YP€¤è"%õ˜/convert_to_tensorHÀó¤Š”YP İŒ"%õ˜/convert_to_tensorHÀòûò–YPà¬±"%õ˜/convert_to_tensorH òÓ—YPÀµú".õ˜/TFE_Py_ExecuteCancelableHàü·Ñ»aP€¨µ×Ë"<õ˜/&EagerExecute: __inference_my_func_1130H ­Èé»aPà½½Ë"Aõ˜/+EagerLocalExecute: __inference_my_func_1130Hàæê»aPÀÜ¶¼Ë"3õ˜/EagerCopyToDeviceAndAddCacheKeyH€çÎë»aP€£Ù"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€¦¥ò»aP Â"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH ¦Öó»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHÀ‡¾ô»aPà§"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHà³õ»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH íâõ»aPà§"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€´¾ö»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€Ó‡÷»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€òĞ÷»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHàƒ”ø»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH §šù»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHÀÓéù»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHÀò²ú»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH „öú»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€–¹û»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHàÜ”ü»aPÀš"<õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€‰äü»a"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHÀ¡ı»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHÀ¬êı»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHÀË³ş»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH€Ğğş»aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH ü¿ÿ»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHà€ıÿ»aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHàŸÆ€¼aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyHà¾¼aP "@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH ÃÌ¼aPÀš"@õ˜/-TensorHandle::GetResourceHandleInfo WaitReadyH â•‚¼aPÀš"1õ˜/ValidateInputTypeAndPlacementHà²­Ø¡dP€±½"[õ˜/EagerKernelExecute 0HÀñÜ¡dP€ÖÈeZ!
+	step_nameEagerKernelExecute 0Z
+group_id0"Jõ˜/FunctionRunHàĞöÈ«dP çÊ	Z
+id-2229578280777170211Z
+group_id0"*õ˜/TFE_DeleteTensorHandleH “¯‹ˆeP€±½")õ˜/TFE_DeleteTensorHandleH ÍæˆeP ág")õ˜/TFE_DeleteTensorHandleHàğìˆeP ¬O")õ˜/TFE_DeleteTensorHandleHÀìàˆeP€ŸI"!õ˜/tf.constantHà—éñ­…Pà¹·¿"*õ˜/TFE_DeleteTensorHandleHÀİ±ª°…PÀîm"-õ˜/TFE_Py_FastPathExecute_CHàÒÓÊ±…P€¡»<"*õ˜/TFE_DeleteTensorHandleH€ÄÜÚ±…PÀš"*õ˜/TFE_DeleteTensorHandleH ÚÜÛ±…PÀš"-õ˜/EagerExecute: LogicalAndH€õ™İ±…PàÀâ("2õ˜/EagerLocalExecute: LogicalAndHÀ®ïİ±…PÀßú'"1õ˜/ValidateInputTypeAndPlacementH€¸€ú±…PÀ„="6õ˜/EagerKernelExecuteHÀ¦îú±…P ¥İ
+Z
+group_id0"aõ˜/
+LogicalAndH öÃü±…P€ŞŸZ"
+	long_nameLogicalAnd:LogicalAndZ
+group_id0Z
+is_eager1"&õ˜/convert_to_tensorH€¿ÆÑ²…PÀº™"-õ˜/TFE_Py_FastPathExecute_CH€ÁÎÜ²…Pà´œ"+õ˜/EagerExecute: IdentityHà§·ã²…PÀßÅ"0õ˜/EagerLocalExecute: IdentityH ÷Ûã²…Pà‚›"1õ˜/ValidateInputTypeAndPlacementHà©¿î²…Pà§"6õ˜/EagerKernelExecuteH€³êğ²…P ŸúZ
+group_id0"Zõ˜/IdentityH ß¹ñ²…P€ê0Z
+	long_nameIdentity:IdentityZ
+group_id0Z
+is_eager1"-õ˜/TFE_Py_FastPathExecute_CHàĞó‚³…P ï€"&õ˜/convert_to_tensorHàŠ•·³…Pà‚›"&õ˜/convert_to_tensorHàËóÈ³…P€“í" õ˜/tf.constantH€äûÔ³…PÀ˜¹"*õ˜/TFE_DeleteTensorHandleHÀµ¨à³…PÀÏ$"&õ˜/convert_to_tensorHàÚ…ë³…P€áë" õ˜/tf.constantH€÷èô³…P€ÑÊ"*õ˜/TFE_DeleteTensorHandleHÀºüû³…P€µ"&õ˜/convert_to_tensorHàÍå„´…P íâ*" õ˜/tf.constantHà¦›¡´…P€†ã"*õ˜/TFE_DeleteTensorHandleH ŸÇ¨´…Pà§"-õ˜/TFE_Py_ExecuteCancelableH ³Ãµ´…PÀƒã+"/õ˜/EagerExecute: WriteSummaryHÀÅè¸´…P€Åî'"4õ˜/EagerLocalExecute: WriteSummaryH€•¹´…P èÃ'"1õ˜/ValidateInputTypeAndPlacementH æˆÃ´…P€µ"6õ˜/EagerKernelExecuteHÀİ¿Ã´…PàêøZ
+group_id0"gõ˜/WriteSummaryH€Ì­Ä´…Pà÷ÍZ&
+	long_nameWriteSummary:WriteSummaryZ
+group_id0Z
+is_eager1"*õ˜/TFE_DeleteTensorHandleHÀÑãâ´…P ¬O"*õ˜/TFE_DeleteTensorHandleHÀÚİã´…Pà§"&õ˜/TFE_DeleteTensorHandleHàœüã´…" õ˜/tf.constantH€÷ñî´…Pà—¦	"*õ˜/TFE_DeleteTensorHandleH ÌÈö´…P€µ"*õ˜/TFE_DeleteTensorHandleH À·ı´…P€µ"*õ˜/TFE_DeleteTensorHandleHàÄôı´…P€ê0"*õ˜/TFE_DeleteTensorHandleH€Ç­Šµ…P ¬O"&õ˜/TFE_DeleteTensorHandleHÀê³‹µ…"dõœAExecutorState::ProcessH èŠš¬dPÀÑá#Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"€õœAReadVariableOpH€ƒÈ›¬dP€‰zZ?
+	long_name2kenn/dense_1/BiasAdd/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"eõœAExecutorState::ProcessHàÙ²õdP€ğ¥ıZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"”õœAGatherV2Hà¶ë³õdPÀÓ´ZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"…õœAMulH€»¬ËõdPàáşZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/mul:MulZ
+group_id0Z
+is_eager0"‘õœASoftmaxHà»ôçõdP€ÑéQZV
+	long_nameIkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‡õœAMulH š•»ödP€™ZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/mul_2:MulZ
+group_id0Z
+is_eager0"—õœA	TransposeHàáƒÀödP ¨ôZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/transpose:TransposeZ
+group_id0Z
+is_eager0"—õœA	ScatterNdH€ŞÙÃödPÀŞ
+ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"™õœA	TransposeH ÎÎödP Éú&Z\
+	long_nameOkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/transpose_1:TransposeZ
+group_id0Z
+is_eager0"võœAAddNHàûöödP€· Z>
+	long_name1kenn/relational_kenn/knowledge_enhancer/AddN:AddNZ
+group_id0Z
+is_eager0"…õœAStridedSliceHÀîÆ†÷dPÀœ”ZE
+	long_name8kenn/relational_kenn/group_by/strided_slice:StridedSliceZ
+group_id0Z
+is_eager0"{õœA	ScatterNdHÀÄ°’÷dP€ÙµZ>
+	long_name1kenn/relational_kenn/group_by/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"eõœAExecutorState::ProcessHà´ªµ÷dP€ÚÍƒZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"xõœAGatherV2Hà½¤¶÷dPàËúZ<
+	long_name/kenn/relational_kenn_1/join_1/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"võœAConcatV2H ›âº÷dP€»ûZ:
+	long_name-kenn/relational_kenn_1/join_1/concat:ConcatV2Z
+group_id0Z
+is_eager0"˜õœAGatherV2Hà™ñÊ÷dP€ÚÄ	Z\
+	long_nameOkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"‰õœAMulHÀ…ùÔ÷dPàµ«ZR
+	long_nameEkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/mul:MulZ
+group_id0Z
+is_eager0"•õœASoftmaxHà¿áÙ÷dPàÚ×ZZ
+	long_nameMkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‹õœAMulH ¬üç÷dP€™ZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/mul_2:MulZ
+group_id0Z
+is_eager0"›õœA	TransposeH ø§í÷dP ¾ÃZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/transpose:TransposeZ
+group_id0Z
+is_eager0"›õœA	ScatterNdH È®ğ÷dP€ü¤Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õœA	TransposeHÀğ¢ó÷dPà Õ"Z`
+	long_nameSkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/transpose_1:TransposeZ
+group_id0Z
+is_eager0"zõœAAddNH€Â„—ødPÀŸ«ZB
+	long_name5kenn/relational_kenn_1/knowledge_enhancer_1/AddN:AddNZ
+group_id0Z
+is_eager0"‰õœAStridedSliceHàÔ‹ødP øúZI
+	long_name<kenn/relational_kenn_1/group_by_1/strided_slice:StridedSliceZ
+group_id0Z
+is_eager0"õœA	ScatterNdHÀÑÃ£ødP éÒZB
+	long_name5kenn/relational_kenn_1/group_by_1/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"dõœAExecutorState::ProcessHà¥‹¾ødPÀÅº[Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"xõœAGatherV2HÀ¡ÿ¾ødP ±îZ<
+	long_name/kenn/relational_kenn_2/join_2/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"võœAConcatV2H€Ê¤ÃødP ¤™Z:
+	long_name-kenn/relational_kenn_2/join_2/concat:ConcatV2Z
+group_id0Z
+is_eager0"™õœAGatherV2Hà’ˆÏødP ¥İ
+Z]
+	long_namePkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"ŠõœAMulHÀñºÚødPàıûZS
+	long_nameFkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/mul:MulZ
+group_id0Z
+is_eager0"–õœASoftmaxH€úæødP ³öZ[
+	long_nameNkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"ŒõœAMulH€°äöødP€øÉZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/mul_2:MulZ
+group_id0Z
+is_eager0"œõœA	TransposeHÀ¬ëûødPà÷˜Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/transpose:TransposeZ
+group_id0Z
+is_eager0"œõœA	ScatterNdH€¶ÇÿødP ¾ÃZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õœA	TransposeH€†Î‚ùdP€Ï÷Za
+	long_nameTkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessHàûï‹¬dPà¸÷Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"±õ mReadVariableOpH ó×¬dPà°ŒZo
+	long_namebkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"Œõ mMulHà˜æ™¬dP ÌÜZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessHÀ˜¡¬dPà¹†Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"¯õ mReadVariableOpHà•Ï¡¬dP ÷6Zn
+	long_nameakenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"Šõ mMulHÀÜª¢¬dP€ÔaZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessHà§Ã£¬dP ŸúZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"©õ mReadVariableOpHà‘ô£¬dP ÷6Zh
+	long_name[kenn/relational_kenn/knowledge_enhancer/clause_enhancer/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"„õ mMulHàåÕ¤¬dP ¬OZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessHÀ–â¥¬dPÀ¬€Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ mReadVariableOpH€›Ÿ¦¬dP€ê0Zo
+	long_namebkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õ mMulHàáú¦¬dPÀ¹UZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessH€­“¨¬dP Ç½Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ mReadVariableOpH ¤Ê¨¬dPÀ¹UZo
+	long_namebkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"Œõ mMulH âÜ©¬dP€İÛZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_17/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessHÀë‡¬¬dP€ü¤Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ mReadVariableOpHÀŠÑ¬¬dPÀ„=Zo
+	long_namebkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õ mMulHàë¸­¬dP€ÔaZU
+	long_nameHkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessH Ä×®¬dP ‰«Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ mReadVariableOpHàÈ”¯¬dPàÆ[Zo
+	long_namebkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õ mMulH€ß”°¬dPÀ¹UZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/mul_1:MulZ
+group_id0Z
+is_eager0"dõ mExecutorState::ProcessH€İÓĞ÷dP ¼Ú@Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"˜õ mGatherV2H€ĞşÑ÷dPÀÄ×Z\
+	long_nameOkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"‰õ mMulHàÀ¥ß÷dPà—¦	ZR
+	long_nameEkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/mul:MulZ
+group_id0Z
+is_eager0"•õ mSoftmaxH€İˆé÷dP °ßZZ
+	long_nameMkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‹õ mMulHÀ¹·€ødPàêÃZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/mul_2:MulZ
+group_id0Z
+is_eager0"›õ m	TransposeHà¨¸…ødP ¨ôZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/transpose:TransposeZ
+group_id0Z
+is_eager0"›õ m	ScatterNdH ÈãˆødPÀ–±Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õ m	TransposeHÀğ×‹ødPÀü†Z`
+	long_nameSkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõ„,ExecutorState::ProcessH ÒÑé«dPàé+Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"dõ„,ExecutorState::ProcessH€Ê§¬dPÀ¿¸	Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ„,ReadVariableOpH Ã“©¬dPÀ£†Zn
+	long_nameakenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õ„,MulH ëÖª¬dPà’‡ZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_9/mul_1:MulZ
+group_id0Z
+is_eager0"eõ„,ExecutorState::ProcessHÀ®¹ÏõdPÀ¸„¦Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"”õ„,GatherV2Hàã‚ÑõdPàğZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"…õ„,MulH °àõdP È	ZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/mul:MulZ
+group_id0Z
+is_eager0"‘õ„,SoftmaxHÀõúéõdP Àµ>ZV
+	long_nameIkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‡õ„,MulHàÔù¨ödPà‰ZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/mul_2:MulZ
+group_id0Z
+is_eager0"—õ„,	TransposeHà¿î®ödP€¯êZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/transpose:TransposeZ
+group_id0Z
+is_eager0"—õ„,	ScatterNdHà¬ë¿ödP€öZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"™õ„,	TransposeHÀÅÕÎödP ‹è%Z\
+	long_nameOkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõ„,ExecutorState::ProcessHà•–Í÷dP€°˜FZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õ„,GatherV2HÀš„Ï÷dPàáşZ]
+	long_namePkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"Šõ„,MulHà‰ºì÷dP€Ã±ZS
+	long_nameFkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/mul:MulZ
+group_id0Z
+is_eager0"–õ„,SoftmaxH€Ä¢ñ÷dP ß”Z[
+	long_nameNkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"Œõ„,MulHÀ¹·€ødP ï€ZU
+	long_nameHkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/mul_2:MulZ
+group_id0Z
+is_eager0"œõ„,	TransposeHàü™†ødPà¬±Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/transpose:TransposeZ
+group_id0Z
+is_eager0"œõ„,	ScatterNdH »ŠødPÀ€âZ_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õ„,	TransposeH À­ødP Ù±Za
+	long_nameTkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_11/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõ„,ExecutorState::ProcessH ¡ƒÖødP ƒçBZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õ„,GatherV2Hàù¡×ødP€‚ˆZ]
+	long_namePkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"Šõ„,MulH€’ªãødP€Õ¥ZS
+	long_nameFkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/mul:MulZ
+group_id0Z
+is_eager0"–õ„,SoftmaxHàø’êødP€¡Z[
+	long_nameNkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"Œõ„,MulHà§ıùødP ï€ZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/mul_2:MulZ
+group_id0Z
+is_eager0"œõ„,	TransposeH€¶ÇÿødP€ïÏZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/transpose:TransposeZ
+group_id0Z
+is_eager0"œõ„,	ScatterNdHÀ©ÔƒùdP İŒZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õ„,	TransposeH ‹‡ùdP€¸äZa
+	long_nameTkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_15/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõäExecutorState::ProcessHàãÍ™¬dP€¸äZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"€õäReadVariableOpH ñ„›¬dPÀ£†Z>
+	long_name1kenn/dense_3/MatMul/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"dõäExecutorState::ProcessH Õ‡«¬dP æ†Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"«õäReadVariableOpH ©é«¬dPà‘CZj
+	long_name]kenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‡õäMulHÀ¿é¬¬dP€ÇŒZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/mul_1:MulZ
+group_id0Z
+is_eager0"dõäExecutorState::ProcessH€‹³¯¬dP –€Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"€õäReadVariableOpH€õã¯¬dPÀ„=Z?
+	long_name2kenn/dense_2/BiasAdd/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"dõäExecutorState::ProcessHàÌ¿ÒødP€Î‡rZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õäGatherV2Hàô‚ÔødP ìéZ]
+	long_namePkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"ŠõäMulHà§ÈáødP ZS
+	long_nameFkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/mul:MulZ
+group_id0Z
+is_eager0"–õäSoftmaxH€ÖŸíødPà«¢Z[
+	long_nameNkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"ŒõäMulHà ‹„ùdPÀÇîZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/mul_2:MulZ
+group_id0Z
+is_eager0"œõä	TransposeHÀ”É‰ùdPà÷˜Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/transpose:TransposeZ
+group_id0Z
+is_eager0"œõä	ScatterNdHàŸùdPàÈãZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õä	TransposeH  Ş™ùdPÀ—õZa
+	long_nameTkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/transpose_1:TransposeZ
+group_id0Z
+is_eager0"zõäAddNHÀèß¢ùdP€ïÏZB
+	long_name5kenn/relational_kenn_2/knowledge_enhancer_2/AddN:AddNZ
+group_id0Z
+is_eager0"‰õäStridedSliceHÀû—ªùdPà‰ZI
+	long_name<kenn/relational_kenn_2/group_by_2/strided_slice:StridedSliceZ
+group_id0Z
+is_eager0"õä	ScatterNdHÀºî°ùdPà¦ƒZB
+	long_name5kenn/relational_kenn_2/group_by_2/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessH€‰ö‹¬dPÀìšZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"¬õ´IReadVariableOpHÀ€Ş¬dPÀ£†Zj
+	long_name]kenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‡õ´IMulH ˜„—¬dP óÛZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/mul_1:MulZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessHà¡àš¬dP µÉZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"€õ´IReadVariableOpH Ûµ›¬dPÀ¹UZ?
+	long_name2kenn/dense_3/BiasAdd/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessH ƒùœ¬dP€…ŸZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"¯õ´IReadVariableOpH€ÊÔ¬dPà‘CZn
+	long_nameakenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õ´IMulH àÔ¬dP €±ZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_7/mul_1:MulZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessH€åÂ ¬dP Ô’Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"«õ´IReadVariableOpHÀéÿ ¬dP ÷6Zj
+	long_name]kenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"†õ´IMulHÀ½á¡¬dP€ÔaZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_4/mul_1:MulZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessH€–€£¬dPÀ£†Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"õ´IReadVariableOpH ·£¬dPÀ„=Z>
+	long_name1kenn/dense_1/MatMul/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessHàû¤¤¬dPÀ¬€Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ´IReadVariableOpHàšî¤¬dPÀÏ$Zo
+	long_namebkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õ´IMulH€Ç½¥¬dPÀ¹UZU
+	long_nameHkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/mul_1:MulZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessHà÷É¦¬dP€ëôZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"°õ´IReadVariableOpH ü†§¬dP ÷6Zo
+	long_namebkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"Œõ´IMulH€Ãâ§¬dPàêÃZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/mul_1:MulZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessHÀô­¬dP€’ôZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"«õ´IReadVariableOpH€ù¾­¬dPÀÏ$Zj
+	long_name]kenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"†õ´IMulH ¥®¬dPÀ¹UZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_2/mul_1:MulZ
+group_id0Z
+is_eager0"cõ´IExecutorState::ProcessH€Öš¯¬dP€‰zZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"õ´IReadVariableOpH€ÀË¯¬dP ÷6Z>
+	long_name1kenn/dense_2/MatMul/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"eõ´IExecutorState::ProcessHÀ•¿õdPà…¥²Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"”õ´IGatherV2H€£ÕÀõdP éÒZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"…õ´IMulHàú•ÖõdPà”ZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/mul:MulZ
+group_id0Z
+is_eager0"‘õ´ISoftmaxH€ÉúçõdPà‚…@ZV
+	long_nameIkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‡õ´IMulH ºí¨ödPÀÔÃZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/mul_2:MulZ
+group_id0Z
+is_eager0"—õ´I	TransposeH€»€­ödPàªŞZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/transpose:TransposeZ
+group_id0Z
+is_eager0"—õ´I	ScatterNdH ÔÌ¾ödP èZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"™õ´I	TransposeH€ö°ÎödPàë¼"Z\
+	long_nameOkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessHÀ£ß†÷dP ¨Ş3Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"‡õ´IStridedSliceH€üı‡÷dPà—¦	ZG
+	long_name:kenn/relational_kenn/group_by/strided_slice_1:StridedSliceZ
+group_id0Z
+is_eager0"}õ´I	ScatterNdH€Àó‘÷dPà‰ÂZ@
+	long_name3kenn/relational_kenn/group_by/ScatterNd_1:ScatterNdZ
+group_id0Z
+is_eager0"õ´IAddNH ƒ‹°÷dPà–âZW
+	long_nameJkenn/relational_kenn/group_by/ArithmeticOptimizer/AddOpsRewrite_add_1:AddNZ
+group_id0Z
+is_eager0"zõ´IGatherV2HàˆŒ¶÷dPà€“Z>
+	long_name1kenn/relational_kenn_1/join_1/GatherV2_1:GatherV2Z
+group_id0Z
+is_eager0"dõ´IExecutorState::ProcessHÀÉ¹Æ÷dPÀéíFZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õ´IGatherV2Hàß¹Ç÷dP Úõ
+Z]
+	long_namePkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"Šõ´IMulHÀ¾ìÒ÷dP ºèZS
+	long_nameFkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/mul:MulZ
+group_id0Z
+is_eager0"–õ´ISoftmaxHàâ…Ø÷dP ÉÅZ[
+	long_nameNkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"Œõ´IMulH £‚ç÷dP Ğ·ZU
+	long_nameHkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/mul_2:MulZ
+group_id0Z
+is_eager0"œõ´I	TransposeH€ñì÷dP€›îZ_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/transpose:TransposeZ
+group_id0Z
+is_eager0"œõ´I	ScatterNdH È®ğ÷dP ‰«Z_
+	long_nameRkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õ´I	TransposeHàÈó÷dP ËÍZa
+	long_nameTkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_10/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõœhExecutorState::ProcessHÀ‹à™¬dP€Ö$Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"±õœhReadVariableOpH ñ„›¬dPÀ£†Zo
+	long_namebkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"ŒõœhMulHÀí·¬dPÀï±ZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_14/mul_1:MulZ
+group_id0Z
+is_eager0"eõœhExecutorState::ProcessHàĞ•±õdPÀ¹ıÃZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"”õœhGatherV2H ŞÌ²õdP€‹‚ZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"…õœhMulH ˆ˜¿õdP€™Ğ(ZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/mul:MulZ
+group_id0Z
+is_eager0"‘õœhSoftmaxHà¥¥èõdP èø?ZV
+	long_nameIkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‡õœhMulH€­ç¨ödPÀü†ZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/mul_2:MulZ
+group_id0Z
+is_eager0"—õœh	TransposeHÀÈ·®ödP€Å¹ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/transpose:TransposeZ
+group_id0Z
+is_eager0"—õœh	ScatterNdH ‰å¾ödPÀª­ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"™õœh	TransposeHÀÿŒÒödPÀ©"Z\
+	long_nameOkenn/relational_kenn/knowledge_enhancer/clause_enhancer_1/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõœhExecutorState::ProcessHàÿÆÍ÷dP€ì¢<Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"˜õœhGatherV2H€ê¨Ï÷dPàÑİZ\
+	long_nameOkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"‰õœhMulHàÄ€İ÷dPÀ…ZR
+	long_nameEkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/mul:MulZ
+group_id0Z
+is_eager0"•õœhSoftmaxH€‘İã÷dPÀ¼¡ZZ
+	long_nameMkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‹õœhMulHàùÍõ÷dPÀóŒZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/mul_2:MulZ
+group_id0Z
+is_eager0"›õœh	TransposeHà¯ªû÷dP üÕZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/transpose:TransposeZ
+group_id0Z
+is_eager0"›õœh	ScatterNdHÀ£è€ødP€æÕZ^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õœh	TransposeHÀ¨‡„ødPÀü†Z`
+	long_nameSkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõœhExecutorState::ProcessHÀï²ÏødPÀûáHZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õœhGatherV2H  ¿ĞødP€ş¬Z]
+	long_namePkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"ŠõœhMulHÀÿÓŞødPàïâZS
+	long_nameFkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/mul:MulZ
+group_id0Z
+is_eager0"–õœhSoftmaxH€úæødP€¦ğZ[
+	long_nameNkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"ŒõœhMulHà¸­öødP ºèZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/mul_2:MulZ
+group_id0Z
+is_eager0"œõœh	TransposeHÀ¬ëûødPà÷˜Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/transpose:TransposeZ
+group_id0Z
+is_eager0"œõœh	ScatterNdH ÃÍÿødP€æÕZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õœh	TransposeH “Ô‚ùdPÀ«ñZa
+	long_nameTkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_13/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõœhExecutorState::ProcessHÀÆÿ©ùdPàş©BZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"‹õœhStridedSliceHÀ¹ª«ùdPÀü†ZK
+	long_name>kenn/relational_kenn_2/group_by_2/strided_slice_1:StridedSliceZ
+group_id0Z
+is_eager0"õœh	ScatterNdHÀ¤Ÿ±ùdP€´‰ZD
+	long_name7kenn/relational_kenn_2/group_by_2/ScatterNd_1:ScatterNdZ
+group_id0Z
+is_eager0"“õœhAddNH êëÄùdPÀÂÏZ[
+	long_nameNkenn/relational_kenn_2/group_by_2/ArithmeticOptimizer/AddOpsRewrite_add_1:AddNZ
+group_id0Z
+is_eager0"\õœhSoftmaxHàË„ÇùdPàâÂ!Z!
+	long_namekenn/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"SõœhExecutorDoneCallbackH ¯ÚìùdP€ÀšZ
+id-2229578280777170211Z
+group_id0"dõà)ExecutorState::ProcessHàÛÌ¶¬dPà™®Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"¯õà)ReadVariableOpHàÎ÷·¬dP€ÔaZn
+	long_nameakenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‹õà)MulH€ëÚÁ¬dP “éZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_6/mul_1:MulZ
+group_id0Z
+is_eager0"eõà)ExecutorState::ProcessHÀæ³¯õdPàÆZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"’õà)GatherV2Hà›ı°õdP ‹³ZV
+	long_nameIkenn/relational_kenn/knowledge_enhancer/clause_enhancer/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"ƒõà)MulHÀ´ç¿õdP èÃ'ZL
+	long_name?kenn/relational_kenn/knowledge_enhancer/clause_enhancer/mul:MulZ
+group_id0Z
+is_eager0"õà)SoftmaxH ‹™èõdPÀª—@ZT
+	long_nameGkenn/relational_kenn/knowledge_enhancer/clause_enhancer/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"…õà)MulH€âÿ¨ödPÀü†ZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer/mul_2:MulZ
+group_id0Z
+is_eager0"•õà)	TransposeH ¥â®ödP€¡ZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer/transpose:TransposeZ
+group_id0Z
+is_eager0"•õà)	ScatterNdH ¾ı¾ödPÀÀüZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"—õà)	TransposeHà‡ôÎödP€ÉÉ%ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõà)ExecutorState::ProcessHàî–Ñ÷dP€¶Æ6Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"˜õà)GatherV2H ¤‘Ô÷dP€Íï
+Z\
+	long_nameOkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"‰õà)MulHàßîß÷dP —ÄZR
+	long_nameEkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/mul:MulZ
+group_id0Z
+is_eager0"•õà)SoftmaxHà§¿ç÷dPà¶ï	ZZ
+	long_nameMkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‹õà)MulHÀÈßñ÷dPà÷˜ZT
+	long_nameGkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/mul_2:MulZ
+group_id0Z
+is_eager0"›õà)	TransposeH€¢Âø÷dP€Ù€Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/transpose:TransposeZ
+group_id0Z
+is_eager0"›õà)	ScatterNdHÀÉı÷dPÀê’Z^
+	long_nameQkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õà)	TransposeH€¨¥ødP€¶ÜZ`
+	long_nameSkenn/relational_kenn_1/knowledge_enhancer_1/clause_enhancer_8/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõà)ExecutorState::ProcessH€Ş¶ŸødPÀŞ¶"Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"‹õà)StridedSliceHÀ½ ødP ÊZK
+	long_name>kenn/relational_kenn_1/group_by_1/strided_slice_1:StridedSliceZ
+group_id0Z
+is_eager0"õà)	ScatterNdHà˜§ødPà´ZD
+	long_name7kenn/relational_kenn_1/group_by_1/ScatterNd_1:ScatterNdZ
+group_id0Z
+is_eager0"“õà)AddNHàÕ„»ødPàÏÕZ[
+	long_nameNkenn/relational_kenn_1/group_by_1/ArithmeticOptimizer/AddOpsRewrite_add_1:AddNZ
+group_id0Z
+is_eager0"zõà)GatherV2Hàùì¾ødP óÛZ>
+	long_name1kenn/relational_kenn_2/join_2/GatherV2_1:GatherV2Z
+group_id0Z
+is_eager0"dõà)ExecutorState::ProcessH ¬ĞÉødP€¿õOZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õà)GatherV2Hà°ÊødP Ñû	Z]
+	long_namePkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"Šõà)MulH€ÖêÔødPÀĞèZS
+	long_nameFkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/mul:MulZ
+group_id0Z
+is_eager0"–õà)SoftmaxH ¸–ÛødP ñˆZ[
+	long_nameNkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"Œõà)MulHà ÖëødP …ĞZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/mul_2:MulZ
+group_id0Z
+is_eager0"œõà)	TransposeH€¯ ñødPÀ‰ÜZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/transpose:TransposeZ
+group_id0Z
+is_eager0"œõà)	ScatterNdH ½êöødP Ô’Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õà)	TransposeHÀ°ÆùødPàÇÔZa
+	long_nameTkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_12/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõäVExecutorState::ProcessH Íçş«dPÀÕ‡	Z
+id-2229578280777170211Z
+iter_num0Z
+group_id0"~õäVReadVariableOpHÀÍ˜€¬dPÀµúZ<
+	long_name/kenn/dense/MatMul/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"dõäVExecutorState::ProcessHàÁ¸ˆ¬dP€¦ğZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"«õäVReadVariableOpHÀÓûˆ¬dP€ÔaZj
+	long_name]kenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/mul_2/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"‡õäVMulH î¸Š¬dP€ªËZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_3/mul_1:MulZ
+group_id0Z
+is_eager0"eõäVExecutorState::ProcessHà»Š˜¬dP€ìÎùHZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"~õäVReadVariableOpHàÄ„™¬dP ¬OZ=
+	long_name0kenn/dense/BiasAdd/ReadVariableOp:ReadVariableOpZ
+group_id0Z
+is_eager0"jõäV_FusedMatMulH€š¬dP€˜Û„GZ)
+	long_namekenn/dense/Relu:_FusedMatMulZ
+group_id0Z
+is_eager0"kõäV_FusedMatMulHàÈ˜©ódPà ¿SZ+
+	long_namekenn/dense_1/Relu:_FusedMatMulZ
+group_id0Z
+is_eager0"kõäV_FusedMatMulH€á¿şódP€‹¡UZ+
+	long_namekenn/dense_2/Relu:_FusedMatMulZ
+group_id0Z
+is_eager0"nõäV_FusedMatMulH ª¤ÖôdPÀÀ±'Z.
+	long_name!kenn/dense_3/BiasAdd:_FusedMatMulZ
+group_id0Z
+is_eager0"võäVGatherV2HàÃÖõdP€Å¹Z:
+	long_name-kenn/relational_kenn/join/GatherV2_1:GatherV2Z
+group_id0Z
+is_eager0"eõäVExecutorState::ProcessHàûº’õdPÀ—ÒãZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"tõäVGatherV2Hàîå“õdP€æÕZ8
+	long_name+kenn/relational_kenn/join/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"rõäVConcatV2H Ùø–õdP€×­Z6
+	long_name)kenn/relational_kenn/join/concat:ConcatV2Z
+group_id0Z
+is_eager0"”õäVGatherV2H ­°õdPÀìšZX
+	long_nameKkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"…õäVMulHÀ•¿õdPÀşÃ(ZN
+	long_nameAkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/mul:MulZ
+group_id0Z
+is_eager0"‘õäVSoftmaxH€³«èõdP€Ûò?ZV
+	long_nameIkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"‡õäVMulH€­ç¨ödPÀü†ZP
+	long_nameCkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/mul_2:MulZ
+group_id0Z
+is_eager0"—õäV	TransposeH ¥â®ödP ¦¡ZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/transpose:TransposeZ
+group_id0Z
+is_eager0"—õäV	ScatterNdHàáƒÀödPàÄˆZZ
+	long_nameMkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"™õäV	TransposeHÀ´¥ÒödPÀ“Ï"Z\
+	long_nameOkenn/relational_kenn/knowledge_enhancer/clause_enhancer_5/transpose_1:TransposeZ
+group_id0Z
+is_eager0"dõäVExecutorState::ProcessH€ªÌÕødPÀŒ’EZ
+id-2229578280777170211Z
+iter_num0Z
+group_id0"™õäVGatherV2HàÄ‰×ødP€· Z]
+	long_namePkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/GatherV2:GatherV2Z
+group_id0Z
+is_eager0"ŠõäVMulH€ÇÂãødP€ ZS
+	long_nameFkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/mul:MulZ
+group_id0Z
+is_eager0"–õäVSoftmaxH Ş†êødP ‡ØZ[
+	long_nameNkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/Softmax:SoftmaxZ
+group_id0Z
+is_eager0"ŒõäVMulHÀÏúødPÀÇîZU
+	long_nameHkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/mul_2:MulZ
+group_id0Z
+is_eager0"œõäV	TransposeH ÃÍÿødPàáÉZ_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/transpose:TransposeZ
+group_id0Z
+is_eager0"œõäV	ScatterNdHà¶ÚƒùdP€Ğ†Z_
+	long_nameRkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/ScatterNd:ScatterNdZ
+group_id0Z
+is_eager0"õäV	TransposeH ‹‡ùdPà¼ÒZa
+	long_nameTkenn/relational_kenn_2/knowledge_enhancer_2/clause_enhancer_16/transpose_1:TransposeZ
+group_id0Z
+is_eager0

@@ -57,7 +57,6 @@ class Kenn(Standard):
 
         z = self.preactivations(features)
         z, _ = self.kenn_layer_1(z, relations, sx, sy)
-
         z, _ = self.kenn_layer_2(z, relations, sx, sy)
         z, _ = self.kenn_layer_3(z, relations, sx, sy)
 
@@ -65,7 +64,6 @@ class Kenn(Standard):
 
     def get_weigths(self):
         print()
-
 
 class Kenn_greedy(Model):
     def __init__(self, knowlege_file, *args, **kwargs):
