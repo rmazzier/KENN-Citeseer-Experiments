@@ -39,37 +39,41 @@ class Standard(Model):
 
 
 class Kenn(Standard):
-    def __init__(self, knowledge_file, *args, **kwargs):
+    """
+    Model with 3 KENN layers.
+    If self.debug = True, the model returns also the preactivations and the list of all the deltas
+    for each individual clause enhancer.
+    """
+    def __init__(self, knowledge_file, explainer_object=None, *args, **kwargs):
         super(Kenn, self).__init__(*args, **kwargs)
         self.knowledge = knowledge_file
+        self.explainer_object = explainer_object
 
     def build(self, input_shape):
         super(Kenn, self).build(input_shape)
-        self.kenn_layer_1 = relational_parser(self.knowledge)
-        self.kenn_layer_2 = relational_parser(self.knowledge)
-        self.kenn_layer_3 = relational_parser(self.knowledge)
+        self.kenn_layer_1 = relational_parser(self.knowledge, explainer_object=self.explainer_object) #returns a RelationalKENN Layer
+        self.kenn_layer_2 = relational_parser(self.knowledge, explainer_object=self.explainer_object)
+        self.kenn_layer_3 = relational_parser(self.knowledge, explainer_object=self.explainer_object)
 
-    def call(self, inputs, **kwargs):
+    def call(self, inputs, save_debug_data=False, **kwargs):
         features = inputs[0]
         relations = inputs[1]
         sx = inputs[2]
         sy = inputs[3]
 
         z = self.preactivations(features)
-        z, _ = self.kenn_layer_1(z, relations, sx, sy)
-        z, _ = self.kenn_layer_2(z, relations, sx, sy)
-        z, _ = self.kenn_layer_3(z, relations, sx, sy)
+        z, _ = self.kenn_layer_1(z, relations, sx, sy, save_debug_data=save_debug_data)
+        z, _ = self.kenn_layer_2(z, relations, sx, sy, save_debug_data=save_debug_data)
+        z, _ = self.kenn_layer_3(z, relations, sx, sy, save_debug_data=save_debug_data)
 
         return softmax(z)
 
-    def get_weigths(self):
-        print()
 
 class Kenn_greedy(Model):
-    def __init__(self, knowlege_file, *args, **kwargs):
+    def __init__(self, knowlege_file, debug=False, *args, **kwargs):
         super(Kenn_greedy, self).__init__(*args, **kwargs)
         self.knowledge = knowlege_file
-
+        self.debug = debug
     def build(self, input_shape):
         self.kenn_layer_1 = relational_parser(self.knowledge)
 
@@ -82,6 +86,3 @@ class Kenn_greedy(Model):
         z, _ = self.kenn_layer_1(features, relations, sx, sy)
 
         return softmax(z)
-
-    def get_weigths(self):
-        print()

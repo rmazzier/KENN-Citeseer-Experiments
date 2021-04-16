@@ -63,13 +63,11 @@ def my_func(inputs):
     sy = inputs[3]
     return model([training_set, relations, sx, sy])
 
-
 tf.summary.trace_on(graph=True, profiler=True)
 out = my_func([features[:train_len,:], 
     relations_inductive_training, 
     index_x_train, 
     index_y_train])
-
 
 with writer.as_default():
     tf.summary.trace_export(

@@ -6,17 +6,18 @@ import os
 import settings as s
 from training_helper_functions import *
 from training_standard import train_and_evaluate_standard
+from kenn_explainer.KennExplainer import KennExplainer
 
 from pre_elab import generate_dataset, get_train_and_valid_lengths
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
-def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True):
+def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True, explainer_object=None):
     """
     Trains KENN model with the Training Set using the Inductive Paradigm.
     Validates on Validation Set, and evaluates accuracy on the Test Set.
     """
-    kenn_model = Kenn('knowledge_base')
+    kenn_model = Kenn('knowledge_base', explainer_object=explainer_object)
     kenn_model.build((s.NUMBER_OF_FEATURES,))
 
     optimizer = keras.optimizers.Adam()
@@ -108,8 +109,9 @@ def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True):
             print("callback_early_stopping signal received at epoch= %d/%d"%(epoch,s.EPOCHS))
             print("Terminating training ")
             break
+    
+    predictions_test = kenn_model([features[test_indices,:], relations_inductive_test, index_x_test, index_y_test], save_debug_data=True)
 
-    predictions_test = kenn_model([features[test_indices,:], relations_inductive_test, index_x_test, index_y_test])
     test_accuracy = accuracy(predictions_test, labels[test_indices,:])
 
     all_clause_weights = np.array([clause_weights_1, clause_weights_2, clause_weights_3])
@@ -120,9 +122,17 @@ def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True):
         "valid_losses": valid_losses, 
         "valid_accuracies": valid_accuracies, 
         "test_accuracy": test_accuracy,
-        "clause_weights": all_clause_weights}
+        "clause_weights": all_clause_weights,
+        "kenn_test_predictions":predictions_test}
 
 if __name__ == "__main__":
-    generate_dataset(0.50)
-    # _,_,_,history = train_and_evaluate_standard(0.50)
-    history_kenn = train_and_evaluate_kenn_inductive(0.50)
+    random_seed=0
+    tf.random.set_seed(random_seed)
+    np.random.seed(random_seed)
+
+    generate_dataset(0.90)
+    explainer = KennExplainer(debug_data_directory=s.EXPLAINABILITY_FOLDER)
+
+    history_kenn = train_and_evaluate_kenn_inductive(
+        0.90,  
+        explainer_object=explainer)

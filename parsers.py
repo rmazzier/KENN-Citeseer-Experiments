@@ -3,7 +3,7 @@ from layers.Kenn import Kenn
 from layers.RelationalKENN import RelationalKENN
 
 
-def unary_parser(knowledge_file, activation=lambda x: x, initial_clause_weight=0.5, **kwargs):
+def unary_parser(knowledge_file, activation=lambda x: x, initial_clause_weight=0.5, debug=False,**kwargs):
     """
     Takes in input the knowledge file containing only unary clauses and returns a Kenn Layer, 
     with input the predicates and clauses found in the knowledge file.
@@ -17,10 +17,10 @@ def unary_parser(knowledge_file, activation=lambda x: x, initial_clause_weight=0
 
     predicates = predicates_string[:-1].split(',')
 
-    return Kenn(predicates, clauses, activation, initial_clause_weight, **kwargs)
+    return Kenn(predicates, clauses, activation, initial_clause_weight, debug=debug, **kwargs)
 
 
-def unary_parser_ke(knowledge_file, initial_clause_weight=0.5, **kwargs):
+def unary_parser_ke(knowledge_file, initial_clause_weight=0.5, debug=False, **kwargs):
     """
     Takes in input the knowledge file containing only unary clauses and returns a Knowledge Enhancer layer, 
     with input the predicates and clauses found in the knowledge file.
@@ -34,10 +34,10 @@ def unary_parser_ke(knowledge_file, initial_clause_weight=0.5, **kwargs):
 
     predicates = predicates_string[:-1].split(',')
 
-    return KnowledgeEnhancer(predicates, clauses, initial_clause_weight, **kwargs)
+    return KnowledgeEnhancer(predicates, clauses, initial_clause_weight, debug=debug **kwargs)
 
 
-def relational_parser(knowledge_file, activation=lambda x: x, initial_clause_weight=0.5, **kwargs):
+def relational_parser(knowledge_file, activation=lambda x: x, initial_clause_weight=0.5, explainer_object=None, **kwargs):
     """
     Takes in input the knowledge file containing both unary and binary clauses and returns a RelationalKENN 
     Layer, with input the predicates and clauses found in the knowledge file.
@@ -71,4 +71,11 @@ def relational_parser(knowledge_file, activation=lambda x: x, initial_clause_wei
         else:
             binary_clauses.append(clause)
 
-    return RelationalKENN(u_groundings, b_groundings, unary_clauses, binary_clauses, activation, initial_clause_weight)
+    return RelationalKENN(
+        u_groundings, 
+        b_groundings, 
+        unary_clauses, 
+        binary_clauses, 
+        activation, 
+        initial_clause_weight, 
+        explainer_object=explainer_object)

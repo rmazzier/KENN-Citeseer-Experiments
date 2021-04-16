@@ -10,6 +10,8 @@ class KnowledgeEnhancer(tf.keras.layers.Layer):
         :param predicates: a list of predicates names
         :param clauses: a list of constraints. Each constraint is a string on the form:
         clause_weight:clause
+        :debug: if true, the layer will also return the list with all the deltas from the
+        individual clause enhancers
 
         The clause_weight should be either a real number (in such a case this value is fixed) or an underscore
         (in this case the weight will be a tensorflow variable and learned during training).
@@ -23,7 +25,6 @@ class KnowledgeEnhancer(tf.keras.layers.Layer):
         """
 
         super(KnowledgeEnhancer, self).__init__(**kwargs)
-
         self.predicates = predicates
         self.clauses = clauses
         self.initial_clause_weight = initial_clause_weight
@@ -46,8 +47,9 @@ class KnowledgeEnhancer(tf.keras.layers.Layer):
         :param inputs: the tensor containing predicates' pre-activation values for many entities
         :return: final delta values"""
 
-        deltas = []
+        deltas_list = []
         for clause in self.clause_enhancers:
-            deltas.append(clause(inputs))
+            deltas_list.append(clause(inputs))
 
-        return tf.add_n(deltas)
+        return tf.add_n(deltas_list), deltas_list
+ 

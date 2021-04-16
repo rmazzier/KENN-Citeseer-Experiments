@@ -75,7 +75,9 @@ def train_step_kenn_inductive(model, features, relations, index_x_train, index_y
     - optimizer: tf.optimizer object associated with the model.
     """
     with tf.GradientTape() as tape:
+
         predictions_KENN = model([features, relations, index_x_train, index_y_train])
+
         l = loss(predictions_KENN, labels)
 
         gradient = tape.gradient(l, model.variables)
@@ -97,10 +99,12 @@ def train_step_kenn_transductive(model, features, relations, index_x_train, inde
     - optimizer: tf.optimizer object associated with the model.
     """
     with tf.GradientTape() as tape:
-       predictions_KENN = model([features, relations, index_x_train, index_y_train])
-       l = loss(predictions_KENN[:len(labels),:], labels)
-       gradient = tape.gradient(l, model.variables)
-       optimizer.apply_gradients(zip(gradient, model.variables))
+
+        predictions_KENN = model([features, relations, index_x_train, index_y_train])
+        
+        l = loss(predictions_KENN[:len(labels),:], labels)
+        gradient = tape.gradient(l, model.variables)
+        optimizer.apply_gradients(zip(gradient, model.variables))
 
 def validation_step_kenn_inductive(model, features, relations, index_x_valid, index_y_valid, labels, loss):
     """
@@ -116,6 +120,8 @@ def validation_step_kenn_inductive(model, features, relations, index_x_valid, in
     - labels: the ground truth labels corresponding to the samples given in the features parameter;
     - loss: tf.loss object associated with the model.
     """
+
     predictions = model([features, relations, index_x_valid, index_y_valid])
+    
     valid_loss = loss(predictions, labels)
     return predictions, valid_loss

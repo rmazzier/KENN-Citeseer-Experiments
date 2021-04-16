@@ -94,4 +94,5 @@ class ClauseEnhancer(tf.keras.layers.Layer):
 
         scattered_delta = tf.scatter_nd(self.scatter_literal_indices, tf.transpose(delta), tf.reverse(tf.shape(inputs), [0]))
 
+        # forse vorrei ritornarmi direttamente delta?
         return tf.transpose(scattered_delta)

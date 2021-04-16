@@ -208,6 +208,9 @@ def print_and_plot_results(history, plot_title, other_deltas=''):
     return
 
 def plot_clause_weights(history):
+
+    topics = ["AI","Agents","DB","HCI","IR","ML"]
+    
     fig, axes = plt.subplots(1,3)
 
     for i,l in enumerate(history['clause_weights']):

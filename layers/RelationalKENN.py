@@ -1,4 +1,5 @@
 import tensorflow as tf
+import numpy as np
 from layers.residual.KnowledgeEnhancer import KnowledgeEnhancer
 from layers.relational.Join import Join
 from layers.relational.GroupBy import GroupBy
@@ -6,13 +7,17 @@ from layers.relational.GroupBy import GroupBy
 
 class RelationalKENN(tf.keras.layers.Layer):
 
-    def __init__(self, unary_predicates, binary_predicates, unary_clauses, binary_clauses, activation=lambda x: x, initial_clause_weight=0.5, **kwargs):
+    def __init__(self, unary_predicates, binary_predicates, unary_clauses, binary_clauses, activation=lambda x: x, initial_clause_weight=0.5, explainer_object=None, **kwargs):
         """Initialize the knowledge base.
 
         :param unary_predicates: the list of unary predicates names
         :param binary_predicates: the list of binary predicates names
         :param unary_clauses: a list of unary clauses. Each clause is a string on the form:
         clause_weight:clause
+        :debug: if true, this layer will return the list of all the deltas from the
+        individual clause enhancers.
+        :explainer_object: None by default. If a KennExplainer object is passed, KENN will
+        output the debug data to be used by KennExplainer for the explainability task.
 
         The clause_weight should be either a real number (in such a case this value is fixed) or an underscore
         (in this case the weight will be a tensorflow variable and learned during training).
@@ -30,6 +35,8 @@ class RelationalKENN(tf.keras.layers.Layer):
 
         super(RelationalKENN, self).__init__(**kwargs)
 
+        self.explainer_object = explainer_object
+
         self.unary_predicates = unary_predicates
         self.n_unary = len(unary_predicates)
         self.unary_clauses = unary_clauses
@@ -44,6 +51,7 @@ class RelationalKENN(tf.keras.layers.Layer):
         self.group_by = None
 
     def build(self, input_shape):
+        self.explainer_object.clear_data()
         if len(self.unary_clauses) != 0:
             self.unary_ke = KnowledgeEnhancer(self.unary_predicates, self.unary_clauses, initial_clause_weight=self.initial_clause_weight)
         if len(self.binary_clauses) != 0:
@@ -54,7 +62,7 @@ class RelationalKENN(tf.keras.layers.Layer):
 
         super(RelationalKENN, self).build(input_shape)
 
-    def call(self, unary, binary, index1, index2, **kwargs):
+    def call(self, unary, binary, index1, index2, save_debug_data=False, **kwargs):
         """Forward step of Kenn model for relational data.
 
         :param unary: the tensor with unary predicates pre-activations
@@ -66,20 +74,33 @@ class RelationalKENN(tf.keras.layers.Layer):
         """
 
         if len(self.unary_clauses) != 0:
-            u = unary + self.unary_ke(unary)
+            deltas_sum, deltas_u_list = self.unary_ke(unary)
+            u = unary + deltas_sum
         else:
             u = unary
+            deltas_u_list = tf.zeros(unary.shape)
 
         if len(self.binary_clauses) != 0 and len(binary) != 0:
             joined_matrix = self.join(u, binary, index1, index2)
-            deltas = self.binary_ke(joined_matrix)
+            deltas_sum, deltas_b_list = self.binary_ke(joined_matrix)
 
-            up, bp = self.group_by(u, binary, deltas, index1, index2)
+            delta_up, delta_bp = self.group_by(u, binary, deltas_sum, index1, index2)
         else:
-            up = u
-            bp = binary
+            delta_up = tf.zeros(u.shape)
+            delta_bp = tf.zeros(binary.shape)
 
-        return self.activation(up), self.activation(bp)
+        # FOR Explainability
+        if self.explainer_object and save_debug_data:
+            self.explainer_object.get_predicates_and_clauses(self.unary_predicates, self.binary_predicates, self.unary_clauses, self.binary_clauses)
+            np.save(self.explainer_object.debug_data_directory + 'deltas_unary_' + self.name, deltas_u_list)
+            np.save(self.explainer_object.debug_data_directory + 'deltas_binary_' + self.name, deltas_b_list)
+            np.save(self.explainer_object.debug_data_directory + 'preactivations_unary_' + self.name, u + delta_up)
+            np.save(self.explainer_object.debug_data_directory + 'preactivations_binary_' + self.name, binary + delta_bp)
+
+            # Reads the files 
+            self.explainer_object.read_debug_data()
+
+        return self.activation(u + delta_up), self.activation(binary + delta_bp)
 
     def get_config(self):
         config = super(RelationalKENN, self).get_config()

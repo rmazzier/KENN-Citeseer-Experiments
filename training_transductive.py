@@ -15,8 +15,10 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
     """
     Trains KENN model with the Training Set using the Transductive Paradigm.
     Validates on Validation Set, and evaluates accuracy on the Test Set.
+
+    :param debug: if True, the models will return the deltas from the single clause enhancers
     """
-    kenn_model = Kenn('knowledge_base')
+    kenn_model = Kenn('knowledge_base', debug=debug)
     kenn_model.build((s.NUMBER_OF_FEATURES,))
 
     optimizer = keras.optimizers.Adam()
@@ -97,10 +99,18 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
             print("callback_early_stopping signal received at epoch= %d/%d"%(epoch,s.EPOCHS))
             print("Terminating training ")
             break
-
+    # NOTE, IN THE TRANSDUCTIVE CASE THE DELTAS FOR THE BINARY CLAUSES
+    # WILL HAVE ALL THE COUPLES (not only the ones in the training set)
+    # WE WILL HAVE TO FILTER AFTER MAKING THE GROUP BY
+    # select only the deltas relative to test samples
+    # for key in ce_deltas.keys():
+    #     ce_deltas[key][0] = ce_deltas[key][0][(train_len + samples_in_valid):,:]
+        
     kenn_predictions = kenn_model([features, relations, index_x, index_y])
-    test_accuracy = accuracy(kenn_predictions[(train_len + samples_in_valid):,:], labels[(train_len + samples_in_valid):,:])
+    kenn_test_predictions = kenn_predictions[(train_len + samples_in_valid):,:]
+    test_accuracy = accuracy(kenn_test_predictions, labels[(train_len + samples_in_valid):,:])
     all_clause_weights = np.array([clause_weights_1, clause_weights_2, clause_weights_3])
+
     print("Test Accuracy: {}".format(test_accuracy))
     return {
         "train_losses": train_losses, 
@@ -108,9 +118,14 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
         "valid_losses": valid_losses, 
         "valid_accuracies": valid_accuracies, 
         "test_accuracy": test_accuracy,
-        "clause_weights": all_clause_weights}
+        "clause_weights": all_clause_weights,
+        "kenn_test_predictions":kenn_test_predictions,
+        }
 
 if __name__ == "__main__":
-    generate_dataset(0.75)
-    history = train_and_evaluate_standard(0.75)
-    history_kenn = train_and_evaluate_kenn_transductive(0.75)
+    random_seed=0
+    tf.random.set_seed(random_seed)
+    np.random.seed(random_seed)
+
+    generate_dataset(0.9)
+    history_kenn = train_and_evaluate_kenn_transductive(0.9, debug=True)
