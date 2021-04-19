@@ -78,7 +78,7 @@ class RelationalKENN(tf.keras.layers.Layer):
             u = unary + deltas_sum
         else:
             u = unary
-            deltas_u_list = tf.zeros(unary.shape)
+            deltas_u_list = tf.expand_dims(tf.zeros(unary.shape), axis=0)
 
         if len(self.binary_clauses) != 0 and len(binary) != 0:
             joined_matrix = self.join(u, binary, index1, index2)
@@ -91,13 +91,18 @@ class RelationalKENN(tf.keras.layers.Layer):
 
         # FOR Explainability
         if self.explainer_object and save_debug_data:
-            self.explainer_object.get_predicates_and_clauses(self.unary_predicates, self.binary_predicates, self.unary_clauses, self.binary_clauses)
-            np.save(self.explainer_object.debug_data_directory + 'deltas_unary_' + self.name, deltas_u_list)
-            np.save(self.explainer_object.debug_data_directory + 'deltas_binary_' + self.name, deltas_b_list)
-            np.save(self.explainer_object.debug_data_directory + 'preactivations_unary_' + self.name, u + delta_up)
-            np.save(self.explainer_object.debug_data_directory + 'preactivations_binary_' + self.name, binary + delta_bp)
-
-            # Reads the files 
+            metadata = {
+                'unary':unary, 
+                'index1':index1, 
+                'index2':index2, 
+                'unary_predicates':self.unary_predicates, 
+                'binary_predicates':self.binary_predicates, 
+                'unary_clauses':self.unary_clauses, 
+                'binary_clauses':self.binary_clauses
+                }
+            self.explainer_object._save_data_from_call(self.name,metadata,deltas_u_list,deltas_b_list,u,binary)
+            # Reads the files from disk.
+            # Functions are separated so you can read data from disk without retraining the model each time.
             self.explainer_object.read_debug_data()
 
         return self.activation(u + delta_up), self.activation(binary + delta_bp)

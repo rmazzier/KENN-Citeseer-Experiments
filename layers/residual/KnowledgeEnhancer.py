@@ -47,6 +47,8 @@ class KnowledgeEnhancer(tf.keras.layers.Layer):
         :param inputs: the tensor containing predicates' pre-activation values for many entities
         :return: final delta values"""
 
+        #deltas_list will be the list of deltas for each clause
+        # e.g. deltas_list[0] are the deltas relative to the first clause.
         deltas_list = []
         for clause in self.clause_enhancers:
             deltas_list.append(clause(inputs))

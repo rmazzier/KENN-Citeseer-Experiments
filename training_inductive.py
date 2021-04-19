@@ -130,9 +130,16 @@ if __name__ == "__main__":
     tf.random.set_seed(random_seed)
     np.random.seed(random_seed)
 
-    generate_dataset(0.90)
+    generate_dataset(0.75)
     explainer = KennExplainer(debug_data_directory=s.EXPLAINABILITY_FOLDER)
 
     history_kenn = train_and_evaluate_kenn_inductive(
-        0.90,  
+        0.75,  
         explainer_object=explainer)
+
+    _ = explainer.get_deltas_from_unary_clause(0)
+    _ = explainer.get_deltas_from_binary_clause(0)
+    _ = explainer.get_deltas_from_binary_clause(0, layer_index=-1)
+    _ = explainer.get_deltas_from_binary_clause(0, layer_index=4)
+    _ = explainer.get_deltas_from_binary_clause(3)
+
