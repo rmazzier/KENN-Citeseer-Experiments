@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-from layers.RangeConstraint import RangeConstraint
+from KENN.layers.RangeConstraint import RangeConstraint
 
 class ClauseEnhancer(tf.keras.layers.Layer):
     """Clause Enhancer layer

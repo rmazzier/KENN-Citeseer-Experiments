@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras import Model
 from tensorflow.keras import layers
 from tensorflow.keras.activations import softmax
-from parsers import relational_parser
+from KENN.parsers import relational_parser
 import settings as s
 
 

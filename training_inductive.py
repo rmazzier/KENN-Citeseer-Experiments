@@ -6,7 +6,6 @@ import os
 import settings as s
 from training_helper_functions import *
 from training_standard import train_and_evaluate_standard
-from kenn_explainer.KennExplainer import KennExplainer
 
 from pre_elab import generate_dataset, get_train_and_valid_lengths
 
@@ -131,15 +130,7 @@ if __name__ == "__main__":
     np.random.seed(random_seed)
 
     generate_dataset(0.75)
-    explainer = KennExplainer(debug_data_directory=s.EXPLAINABILITY_FOLDER)
+    history_kenn = train_and_evaluate_kenn_inductive(0.75)
 
-    history_kenn = train_and_evaluate_kenn_inductive(
-        0.75,  
-        explainer_object=explainer)
 
-    _ = explainer.get_deltas_from_unary_clause(0)
-    _ = explainer.get_deltas_from_binary_clause(0)
-    _ = explainer.get_deltas_from_binary_clause(0, layer_index=-1)
-    _ = explainer.get_deltas_from_binary_clause(0, layer_index=4)
-    _ = explainer.get_deltas_from_binary_clause(3)
 

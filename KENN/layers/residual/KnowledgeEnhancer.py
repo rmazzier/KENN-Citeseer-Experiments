@@ -1,15 +1,17 @@
 import tensorflow as tf
-from layers.residual.KnowledgeEnhancer import KnowledgeEnhancer
+from KENN.layers.residual.ClauseEnhancer import ClauseEnhancer
 
 
-class Kenn(tf.keras.layers.Layer):
+class KnowledgeEnhancer(tf.keras.layers.Layer):
 
-    def __init__(self, predicates, clauses, activation=lambda x: x, initial_clause_weight=0.5, **kwargs):
+    def __init__(self, predicates, clauses, initial_clause_weight=0.5, **kwargs):
         """Initialize the knowledge base.
 
         :param predicates: a list of predicates names
         :param clauses: a list of constraints. Each constraint is a string on the form:
         clause_weight:clause
+        :debug: if true, the layer will also return the list with all the deltas from the
+        individual clause enhancers
 
         The clause_weight should be either a real number (in such a case this value is fixed) or an underscore
         (in this case the weight will be a tensorflow variable and learned during training).
@@ -22,13 +24,11 @@ class Kenn(tf.keras.layers.Layer):
 
         """
 
-        super(Kenn, self).__init__(**kwargs)
-
+        super(KnowledgeEnhancer, self).__init__(**kwargs)
         self.predicates = predicates
         self.clauses = clauses
-        self.activation = activation
         self.initial_clause_weight = initial_clause_weight
-        self.knowledge_enhancer = None
+        self.clause_enhancers = []
 
     def build(self, input_shape):
         """Build the layer
@@ -36,25 +36,22 @@ class Kenn(tf.keras.layers.Layer):
         :param input_shape: the input shape
         """
 
-        self.knowledge_enhancer = KnowledgeEnhancer(self.predicates, self.clauses, self.initial_clause_weight)
+        for clause in self.clauses:
+            self.clause_enhancers.append(ClauseEnhancer(self.predicates, clause[:-1], self.initial_clause_weight))
 
-        super(Kenn, self).build(input_shape)
+        super(KnowledgeEnhancer, self).build(input_shape)
 
     def call(self, inputs, **kwargs):
         """Improve the satisfaction level of a set of clauses.
 
         :param inputs: the tensor containing predicates' pre-activation values for many entities
-        :return: final preactivations"""
+        :return: final delta values"""
 
-        deltas = self.knowledge_enhancer(inputs)
+        #deltas_list will be the list of deltas for each clause
+        # e.g. deltas_list[0] are the deltas relative to the first clause.
+        deltas_list = []
+        for clause in self.clause_enhancers:
+            deltas_list.append(clause(inputs))
 
-        return self.activation(inputs + deltas)
-
-    def get_config(self):
-        config = super(Kenn, self).get_config()
-        config.update({'predicates':self.predicates})
-        config.update({'clauses':self.clauses})
-        config.update({'activation':self.activation})
-        config.update({'initial_clause_weight':self.initial_clause_weight})
-        # config['output_size'] =  # say self. _output_size  if you store the argument in __init__
-        return config
+        return tf.add_n(deltas_list), deltas_list
+ 

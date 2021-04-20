@@ -1,6 +1,6 @@
-from layers.residual.KnowledgeEnhancer import KnowledgeEnhancer
-from layers.Kenn import Kenn
-from layers.RelationalKENN import RelationalKENN
+from KENN.layers.residual.KnowledgeEnhancer import KnowledgeEnhancer
+from KENN.layers.Kenn import Kenn
+from KENN.layers.RelationalKENN import RelationalKENN
 
 
 def unary_parser(knowledge_file, activation=lambda x: x, initial_clause_weight=0.5, debug=False,**kwargs):

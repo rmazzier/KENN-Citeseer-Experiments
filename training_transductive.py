@@ -18,7 +18,7 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
 
     :param debug: if True, the models will return the deltas from the single clause enhancers
     """
-    kenn_model = Kenn('knowledge_base', debug=debug)
+    kenn_model = Kenn('knowledge_base')
     kenn_model.build((s.NUMBER_OF_FEATURES,))
 
     optimizer = keras.optimizers.Adam()
@@ -128,4 +128,4 @@ if __name__ == "__main__":
     np.random.seed(random_seed)
 
     generate_dataset(0.9)
-    history_kenn = train_and_evaluate_kenn_transductive(0.9, debug=True)
+    history_kenn = train_and_evaluate_kenn_transductive(0.9)

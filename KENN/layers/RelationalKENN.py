@@ -1,8 +1,8 @@
 import tensorflow as tf
 import numpy as np
-from layers.residual.KnowledgeEnhancer import KnowledgeEnhancer
-from layers.relational.Join import Join
-from layers.relational.GroupBy import GroupBy
+from KENN.layers.residual.KnowledgeEnhancer import KnowledgeEnhancer
+from KENN.layers.relational.Join import Join
+from KENN.layers.relational.GroupBy import GroupBy
 
 
 class RelationalKENN(tf.keras.layers.Layer):
@@ -51,7 +51,8 @@ class RelationalKENN(tf.keras.layers.Layer):
         self.group_by = None
 
     def build(self, input_shape):
-        self.explainer_object.clear_data()
+        if self.explainer_object:
+            self.explainer_object.clear_data()
         if len(self.unary_clauses) != 0:
             self.unary_ke = KnowledgeEnhancer(self.unary_predicates, self.unary_clauses, initial_clause_weight=self.initial_clause_weight)
         if len(self.binary_clauses) != 0:
@@ -89,7 +90,7 @@ class RelationalKENN(tf.keras.layers.Layer):
             delta_up = tf.zeros(u.shape)
             delta_bp = tf.zeros(binary.shape)
 
-        # FOR Explainability
+        # Explainability Part
         if self.explainer_object and save_debug_data:
             metadata = {
                 'unary':unary, 
@@ -102,7 +103,7 @@ class RelationalKENN(tf.keras.layers.Layer):
                 }
             self.explainer_object._save_data_from_call(self.name,metadata,deltas_u_list,deltas_b_list,u,binary)
             # Reads the files from disk.
-            # Functions are separated so you can read data from disk without retraining the model each time.
+            # Functions are separated so one can read data from disk without retraining the model each time.
             self.explainer_object.read_debug_data()
 
         return self.activation(u + delta_up), self.activation(binary + delta_bp)
