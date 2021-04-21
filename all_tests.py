@@ -3,7 +3,7 @@ from tests_script_inductive import run_tests_inductive
 
 if  __name__ == '__main__':
     
-    n_runs = 20
+    n_runs = 100
 
     run_tests_inductive(
         n_runs=n_runs,
