@@ -39,8 +39,8 @@ def run_tests_inductive(
         results_greedy.setdefault(td_string, {})
 
         # results e2e will be dictionaries like this:
-        # {'10' : {'NN': [list of n_runs dictionaries containing all the stats], 'KENN': [same a before]},
-        #  '25' : {'NN': [list of n_runs dictionaries containing all the stats], 'KENN': [same a before]}, 
+        # {'10' : {'NN': [list of n_runs dictionaries containing all the stats], 'KENN': [same as before]},
+        #  '25' : {'NN': [list of n_runs dictionaries containing all the stats], 'KENN': [same as before]}, 
         #   ...}
         
         for i in range(n_runs):

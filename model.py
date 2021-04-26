@@ -32,7 +32,7 @@ class Standard(Model):
         return self.last_layer(x)
         # return self.last_layer(inputs)
 
-    @tf.function
+    # @tf.function
     def call(self, inputs, **kwargs):
         z = self.preactivations(inputs)
 
@@ -56,7 +56,7 @@ class Kenn(Standard):
         self.kenn_layer_2 = relational_parser(self.knowledge, explainer_object=self.explainer_object)
         self.kenn_layer_3 = relational_parser(self.knowledge, explainer_object=self.explainer_object)
 
-    @tf.function
+    # @tf.function
     def call(self, inputs, save_debug_data=False, **kwargs):
         features = inputs[0]
         relations = inputs[1]
@@ -79,7 +79,7 @@ class Kenn_greedy(Model):
     def build(self, input_shape):
         self.kenn_layer_1 = relational_parser(self.knowledge)
 
-    @tf.function
+    # @tf.function
     def call(self, inputs, **kwargs):
         features = inputs[0]
         relations = inputs[1]

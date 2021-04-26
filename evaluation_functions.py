@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set_theme()
+sns.set_theme('paper')
+sns.set_style('whitegrid')
 
 def plot_learning_curves(history):
     """
@@ -98,29 +99,36 @@ def get_means_and_stds(history):
     stds = []
     means_kenn = []
     stds_kenn = []
+    means_deltas = []
+    stds_deltas = []
 
     n_runs = len(history[list(history.keys())[0]]['NN'])
 
     for num in history.keys():
         test_accuracies = [history[num]['NN'][i]['test_accuracy'] for i in range(n_runs)]
         mean_test_accuracies = np.mean(test_accuracies)
-        std_test_accuracies = np.std(test_accuracies)
-
-        # Append to lists
-        means.append(mean_test_accuracies)
-        stds.append(std_test_accuracies)
+        std_test_accuracies = np.std(test_accuracies)        
 
         test_accuracies_kenn = [history[num]['KENN'][i]['test_accuracy'] for i in range(n_runs)]
         mean_test_accuracies_kenn = np.mean(test_accuracies_kenn)
         std_test_accuracies_kenn = np.std(test_accuracies_kenn)
 
+        deltas = list(np.array(test_accuracies_kenn) - np.array(test_accuracies))
+        mean_deltas = np.mean(deltas)
+        std_deltas = np.std(deltas)
+        
+        # Append to lists
+        means.append(mean_test_accuracies)
+        stds.append(std_test_accuracies)
         means_kenn.append(mean_test_accuracies_kenn)
         stds_kenn.append(std_test_accuracies_kenn)
+        means_deltas.append(mean_deltas)
+        stds_deltas.append(std_deltas)
     
-    return (means, stds, means_kenn, stds_kenn)
+    return (means, stds, means_kenn, stds_kenn, means_deltas, stds_deltas)
 
 def plot_means_and_stds(history, title, barwidth=0.3):
-    means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
+    means, stds, means_kenn, stds_kenn, _, _ = get_means_and_stds(history)
     barWidth = barwidth
 
     plt.figure(figsize=(9,5))
@@ -143,7 +151,7 @@ def plot_means_and_stds(history, title, barwidth=0.3):
 
 def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
     assert(other_deltas=='' or other_deltas=='i' or other_deltas == 't')
-    means, _, means_kenn, _ = get_means_and_stds(history)
+    _, _, _, _, means_deltas, stds_deltas = get_means_and_stds(history)
 
     results_NN_Marra_i = np.array([0.645, 0.674, 0.707, 0.717, 0.723])
     results_SBR_i = np.array([0.650, 0.682, 0.712, 0.719, 0.726])
@@ -159,11 +167,11 @@ def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
     deltas_SBR_t = results_SBR_t - results_NN_Marra_t
     deltas_RNM_t = results_RNM_t - results_NN_Marra_t
 
-    deltas = np.array(means_kenn) - np.array(means)
+    deltas = means_deltas
     r = np.arange(len(deltas))
 
     plt.figure(figsize=(9,5))
-    plt.bar(r, deltas, color='b', width=barwidth, edgecolor='white', label='delta KENN')
+    plt.bar(r, deltas, yerr=stds_deltas, color='b', width=barwidth, edgecolor='white', label='delta KENN')
 
     if other_deltas=='i':
         r2 = [x + barwidth for x in r]
@@ -178,19 +186,50 @@ def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
         plt.bar(r3, deltas_RNM_t, color='g', width=barwidth, edgecolor='white', label='delta RNM')
 
     plt.xlabel('Percentage of Training', fontweight='bold')
-    plt.xticks([r + barwidth for r in range(len(means))], list(history.keys()))
+    plt.xticks([r + barwidth for r in range(len(means_deltas))], list(history.keys()))
     plt.legend(loc='best')
     plt.title(title)
     return
 
+def plot_histograms(history, bw=0.5, bins=20):
+
+    n_runs = len(history[list(history.keys())[0]]['NN'])
+
+    fig, axes = plt.subplots(len(history.keys()),2, figsize=(12,13))
+
+    for i, num in enumerate(history.keys()):
+
+        test_accuracies = [history[num]['NN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
+        test_accuracies_kenn = [history[num]['KENN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
+        deltas = list(np.array(test_accuracies_kenn) - np.array(test_accuracies))
+
+        # Draw histograms
+        axes[i,0].hist(test_accuracies, density=True, bins=bins, alpha=0.3, label='NN', color='blue')
+        sns.kdeplot(test_accuracies, ax=axes[i,0],bw_adjust=bw, color='blue')
+
+        axes[i,0].hist(test_accuracies_kenn, density=True, bins=bins, alpha=0.3, label='KENN', color='red')
+        sns.kdeplot(test_accuracies_kenn, ax=axes[i,0], bw_adjust=bw, color='red')
+        
+        axes[i,0].set_title("Training dimension: {}".format(num))
+        axes[i,0].legend(loc='best')
+
+        axes[i,1].hist(deltas, density=True, bins=bins, alpha=0.3, label='KENN', color='green')
+        sns.kdeplot(deltas, ax=axes[i,1], bw_adjust=bw, color='green')
+        axes[i,1].set_title("Deltas for training dimension {}%".format(i))
+
+    fig.tight_layout()
+    plt.show()
+
+
 def print_stats(history):
-    means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
+    means, stds, means_kenn, stds_kenn, means_deltas, stds_deltas = get_means_and_stds(history)
 
     for i,key in enumerate(history.keys()):
         print("== {}% ==".format(key))
         print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[i], means_kenn[i]))
         print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[i], stds_kenn[i]))
-        print("\t\t\tDelta = {:8.6f}".format(means_kenn[i]-means[i]))
+        print("\t\t\tDeltas Mean = {:8.6f}".format(means_deltas[i]))
+        print("\t\t\tDeltas Std = {:8.6f}".format(stds_deltas[i]))
         print()
 
 def print_and_plot_results(history, plot_title, other_deltas=''):
@@ -201,7 +240,7 @@ def print_and_plot_results(history, plot_title, other_deltas=''):
         - 'i': The deltas from the other inductive experiments are printed along our deltas
         - 't': The deltas from the other transductive experiments are printed along our deltas
     """
-    means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
+    # means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
     print_stats(history)
     plot_means_and_stds(history, plot_title, 0.4)
     plot_deltas(history, title=plot_title, other_deltas=other_deltas)
