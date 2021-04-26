@@ -192,7 +192,6 @@ def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
     return
 
 def plot_histograms(history, bw=0.5, bins=20):
-
     n_runs = len(history[list(history.keys())[0]]['NN'])
 
     fig, axes = plt.subplots(len(history.keys()),2, figsize=(12,13))
@@ -204,10 +203,12 @@ def plot_histograms(history, bw=0.5, bins=20):
         deltas = list(np.array(test_accuracies_kenn) - np.array(test_accuracies))
 
         # Draw histograms
-        axes[i,0].hist(test_accuracies, density=True, bins=bins, alpha=0.3, label='NN', color='blue')
+        b=np.histogram(np.hstack((test_accuracies,test_accuracies_kenn)), bins=bins)[1] #get the bin edges
+
+        axes[i,0].hist(test_accuracies, density=True, bins=b, alpha=0.3, label='NN', color='blue')
         sns.kdeplot(test_accuracies, ax=axes[i,0],bw_adjust=bw, color='blue')
 
-        axes[i,0].hist(test_accuracies_kenn, density=True, bins=bins, alpha=0.3, label='KENN', color='red')
+        axes[i,0].hist(test_accuracies_kenn, density=True, bins=b, alpha=0.3, label='KENN', color='red')
         sns.kdeplot(test_accuracies_kenn, ax=axes[i,0], bw_adjust=bw, color='red')
         
         axes[i,0].set_title("Training dimension: {}".format(num))
