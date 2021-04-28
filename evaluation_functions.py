@@ -109,7 +109,7 @@ def get_means_and_stds(history):
     
     return (means, stds, means_kenn, stds_kenn, means_deltas, stds_deltas)
 
-def plot_means_and_stds(history, title, barwidth=0.3, confidence_level=0.95):
+def plot_means_and_intervals(history, title, barwidth=0.3, confidence_level=0.95):
 
     confidence_margins_nn, confidence_margins_kenn, _ = get_all_confidence_margins(history, confidence_level)
     means, stds, means_kenn, stds_kenn, _, _ = get_means_and_stds(history)
@@ -147,7 +147,7 @@ def plot_means_and_stds(history, title, barwidth=0.3, confidence_level=0.95):
     plt.title(title)
 
     plt.show()
-    return
+    plt.savefig('plots/' + title + '.png')
 
 def plot_deltas(history, barwidth=0.3, title='', other_deltas ='', confidence_level=0.95):
     assert(other_deltas=='' or other_deltas=='i' or other_deltas == 't')
@@ -199,9 +199,9 @@ def plot_deltas(history, barwidth=0.3, title='', other_deltas ='', confidence_le
     plt.xticks([r + barwidth for r in range(len(means_deltas))], list(history.keys()))
     plt.legend(loc='best')
     plt.title(title)
-    return
+    plt.savefig('plots/' + title + '.png')
 
-def plot_histograms(history, bw=0.5, bins=20):
+def plot_histograms(history, title, bw=0.5, bins=20):
     n_runs = len(history[list(history.keys())[0]]['NN'])
 
     fig, axes = plt.subplots(len(history.keys()),2, figsize=(12,13))
@@ -229,6 +229,7 @@ def plot_histograms(history, bw=0.5, bins=20):
         axes[i,1].set_title("Deltas for training dimension {}%".format(num))
 
     fig.tight_layout()
+    plt.savefig('plots/' + title + '.png')
     plt.show()
 
 def print_stats(history):
@@ -253,9 +254,8 @@ def print_and_plot_results(history, plot_title, other_deltas='', confidence_leve
     """
     # means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
     print_stats(history)
-    plot_means_and_stds(history, plot_title, 0.4, confidence_level=confidence_level)
+    plot_means_and_intervals(history, plot_title, 0.4, confidence_level=confidence_level)
     plot_deltas(history, title=plot_title, other_deltas=other_deltas)
-    return
 
 def plot_clause_weights(history):
 
@@ -274,6 +274,7 @@ def plot_clause_weights(history):
     fig.set_figheight(5)
     fig.set_figwidth(15)
     plt.subplots_adjust(hspace=0.3)
+    plt.savefig('plots/clause_weights.png')
 
 def make_t_test(history):
     p_values = []
