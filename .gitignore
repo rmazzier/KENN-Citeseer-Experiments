@@ -1,3 +1,4 @@
 .vscode/
 __pycache__/
-results
+results/e2e/*
+results/greedy/*

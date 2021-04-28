@@ -17,7 +17,7 @@ def run_tests_inductive(
     random_seed=s.RANDOM_SEED):
 
 
-    # SET RANDOM SEED for tensorflow e numpy
+    # SET RANDOM SEED for tensorflow and numpy
     tf.random.set_seed(random_seed)
     np.random.seed(random_seed)
 
