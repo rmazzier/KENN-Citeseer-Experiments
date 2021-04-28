@@ -1,28 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.set_theme('paper')
+import scipy
+from scipy.stats import t, norm
+sns.set_theme('notebook')
 sns.set_style('whitegrid')
-
-def plot_learning_curves(history):
-    """
-    history is a dict containing all the information about training. Specifically the keys are:
-    - train_losses;
-    - train_accuracies;
-    - valid_losses;
-    - valid_accuracies
-    """
-    fig, axes = plt.subplots(1,2)
-    _ = axes[0].plot(history['train_losses'], label='Train Loss')
-    _ = axes[0].plot(history['valid_losses'], label = 'Validation Loss')
-    axes[0].legend(loc='best')
-    _ = axes[1].plot(history['train_accuracies'], label='Train Accuracy')
-    _ = axes[1].plot(history['valid_accuracies'], label = 'Validation Accuracy')
-    plt.legend(loc='best')
-
-    fig.set_figheight(4)
-    fig.set_figwidth(12)  
-    return
 
 def plot_losses(x):
     fig, axes = plt.subplots(len(list(x.keys())),2)
@@ -127,7 +109,9 @@ def get_means_and_stds(history):
     
     return (means, stds, means_kenn, stds_kenn, means_deltas, stds_deltas)
 
-def plot_means_and_stds(history, title, barwidth=0.3):
+def plot_means_and_stds(history, title, barwidth=0.3, confidence_level=0.95):
+
+    confidence_margins_nn, confidence_margins_kenn, _ = get_all_confidence_margins(history, confidence_level)
     means, stds, means_kenn, stds_kenn, _, _ = get_means_and_stds(history)
     barWidth = barwidth
 
@@ -137,8 +121,24 @@ def plot_means_and_stds(history, title, barwidth=0.3):
     r2 = [x + barWidth for x in r1]
     
     # Make the plot
-    plt.bar(r1, means, yerr=stds , color='b', width=barWidth, edgecolor='white', label='NN')
-    plt.bar(r2, means_kenn, yerr=stds_kenn, color='r', width=barWidth, edgecolor='white', label='KENN')
+    plt.bar(r1, means, color='b', width=barWidth, edgecolor='white', label='NN')
+    plt.bar(r2, means_kenn, color='r', width=barWidth, edgecolor='white', label='KENN')
+    plt.errorbar(
+        r1, 
+        means, 
+        yerr=confidence_margins_nn, 
+        capsize=5, 
+        color='black', 
+        elinewidth=2,
+        ls='none')
+    plt.errorbar(
+        r2, 
+        means_kenn, 
+        yerr=confidence_margins_kenn, 
+        capsize=5, 
+        color='black', 
+        elinewidth=2,
+        ls='none')
     
     # Add xticks on the middle of the group bars
     plt.xlabel('Percentage of Training', fontweight='bold')
@@ -149,9 +149,11 @@ def plot_means_and_stds(history, title, barwidth=0.3):
     plt.show()
     return
 
-def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
+def plot_deltas(history, barwidth=0.3, title='', other_deltas ='', confidence_level=0.95):
     assert(other_deltas=='' or other_deltas=='i' or other_deltas == 't')
     _, _, _, _, means_deltas, stds_deltas = get_means_and_stds(history)
+
+    _,_, confidence_margins_delta = get_all_confidence_margins(history, confidence_level=confidence_level)
 
     results_NN_Marra_i = np.array([0.645, 0.674, 0.707, 0.717, 0.723])
     results_SBR_i = np.array([0.650, 0.682, 0.712, 0.719, 0.726])
@@ -171,7 +173,15 @@ def plot_deltas(history, barwidth=0.3, title='', other_deltas =''):
     r = np.arange(len(deltas))
 
     plt.figure(figsize=(9,5))
-    plt.bar(r, deltas, yerr=stds_deltas, color='b', width=barwidth, edgecolor='white', label='delta KENN')
+    plt.bar(r, deltas, color='b', width=barwidth, edgecolor='white', label='delta KENN')
+    plt.errorbar(
+        r, 
+        deltas, 
+        yerr=confidence_margins_delta, 
+        capsize=5, 
+        color='black', 
+        elinewidth=2,
+        ls='none')
 
     if other_deltas=='i':
         r2 = [x + barwidth for x in r]
@@ -216,24 +226,24 @@ def plot_histograms(history, bw=0.5, bins=20):
 
         axes[i,1].hist(deltas, density=True, bins=bins, alpha=0.3, label='KENN', color='green')
         sns.kdeplot(deltas, ax=axes[i,1], bw_adjust=bw, color='green')
-        axes[i,1].set_title("Deltas for training dimension {}%".format(i))
+        axes[i,1].set_title("Deltas for training dimension {}%".format(num))
 
     fig.tight_layout()
     plt.show()
 
-
 def print_stats(history):
     means, stds, means_kenn, stds_kenn, means_deltas, stds_deltas = get_means_and_stds(history)
-
+    p_vals = make_t_test(history)
     for i,key in enumerate(history.keys()):
         print("== {}% ==".format(key))
         print("Mean Test Accuracy:\tNN = {:8.6f}; KENN = {:8.6f}".format(means[i], means_kenn[i]))
         print("Test Accuracy std:\tNN = {:8.6f}; KENN = {:8.6f}".format(stds[i], stds_kenn[i]))
         print("\t\t\tDeltas Mean = {:8.6f}".format(means_deltas[i]))
         print("\t\t\tDeltas Std = {:8.6f}".format(stds_deltas[i]))
+        print("\t\t\tright tailed p-value: {}".format(p_vals[i]))
         print()
 
-def print_and_plot_results(history, plot_title, other_deltas=''):
+def print_and_plot_results(history, plot_title, other_deltas='', confidence_level=0.95):
     """
     Parameters:
     - other_deltas: a string taking values in ['', 'i', 't']. 
@@ -243,7 +253,7 @@ def print_and_plot_results(history, plot_title, other_deltas=''):
     """
     # means, stds, means_kenn, stds_kenn = get_means_and_stds(history)
     print_stats(history)
-    plot_means_and_stds(history, plot_title, 0.4)
+    plot_means_and_stds(history, plot_title, 0.4, confidence_level=confidence_level)
     plot_deltas(history, title=plot_title, other_deltas=other_deltas)
     return
 
@@ -264,3 +274,37 @@ def plot_clause_weights(history):
     fig.set_figheight(5)
     fig.set_figwidth(15)
     plt.subplots_adjust(hspace=0.3)
+
+def make_t_test(history):
+    p_values = []
+    n_runs = len(history[list(history.keys())[0]]['NN'])
+    for i, num in enumerate(history.keys()):
+        test_accuracies = [history[num]['NN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
+
+        p_values.append(scipy.stats.ttest_ind(test_accuracies_kenn, test_accuracies, alternative='greater')[1])
+    return p_values
+
+def get_confidence_margin(samples, confidence_level):
+    alpha = 1-confidence_level
+    n = len(samples)
+    df = n-1
+    t1 = t.ppf(1-alpha/2, df=df)
+    cm = (t1*(np.std(samples)/np.sqrt(n)))
+    return cm
+
+def get_all_confidence_margins(history, confidence_level):
+    confidence_margins_nn = []
+    confidence_margins_kenn = []
+    confidence_margins_deltas = []
+
+    # compute confidence margins
+    n_runs = len(history[list(history.keys())[0]]['NN'])
+    for i, num in enumerate(history.keys()):
+        test_accuracies = [history[num]['NN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
+        test_accuracies_kenn = [history[num]['KENN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
+        deltas = list(np.array(test_accuracies_kenn) - np.array(test_accuracies))
+        confidence_margins_nn.append(get_confidence_margin(test_accuracies, confidence_level))
+        confidence_margins_kenn.append(get_confidence_margin(test_accuracies_kenn, confidence_level))
+        confidence_margins_deltas.append(get_confidence_margin(deltas, confidence_level))
+    
+    return confidence_margins_nn, confidence_margins_kenn, confidence_margins_deltas 
