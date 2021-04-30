@@ -52,9 +52,13 @@ class Kenn(Standard):
 
     def build(self, input_shape):
         super(Kenn, self).build(input_shape)
-        self.kenn_layer_1 = relational_parser(self.knowledge, explainer_object=self.explainer_object) #returns a RelationalKENN Layer
-        self.kenn_layer_2 = relational_parser(self.knowledge, explainer_object=self.explainer_object)
-        self.kenn_layer_3 = relational_parser(self.knowledge, explainer_object=self.explainer_object)
+        self.kenn_layer = relational_parser(self.knowledge, explainer_object=self.explainer_object)
+
+        self.layer_weight_1 = self.add_weight(
+            name='kernel',
+            shape=(1, 1),
+            initializer=tf.keras.initializers.Constant(value=self.initial_weight))
+
 
     # @tf.function
     def call(self, inputs, save_debug_data=False, **kwargs):

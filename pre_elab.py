@@ -66,7 +66,8 @@ def generate_indexes_inductive(relations, ids_list, samples_in_training, samples
     :param relations: array containing the edges of the graph. The format is [cited_paper, citing paper]
     :param ids_list: array containing the ids of all the samples
     :param samples_in_training: n. of samples in the training set. Needed to tell if an index refers to a 
-    sample of the training set or of the test set.'''
+    sample of the training set or of the test set.
+    '''
     s1_training = []
     s2_training = []
     s1_valid = []

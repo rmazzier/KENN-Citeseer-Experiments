@@ -106,7 +106,7 @@ class RelationalKENN(tf.keras.layers.Layer):
             # Functions are separated so one can read data from disk without retraining the model each time.
             self.explainer_object.read_debug_data()
 
-        return self.activation(u + delta_up), self.activation(binary + delta_bp)
+        return self.activation(u + delta_up), self.activation(binary + delta_bp), u + delta_up, binary + delta_bp
 
     def get_config(self):
         config = super(RelationalKENN, self).get_config()

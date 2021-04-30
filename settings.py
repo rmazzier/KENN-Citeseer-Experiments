@@ -1,7 +1,6 @@
 NUMBER_OF_FEATURES = 3703
 NUMBER_OF_CLASSES = 6
 DATASET_FOLDER = './dataset/CiteSeer/'
-EXPLAINABILITY_FOLDER = './results/explainability/'
 DATASET = 'citeseer'
 
 # Parameters Editable by the user:

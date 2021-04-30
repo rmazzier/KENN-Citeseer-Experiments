@@ -45,8 +45,6 @@ def run_tests_inductive(
         
         for i in range(n_runs):
             print('Generate new dataset: iteration number ' + str(i))
-            # spostare il generate_dataset(td) fuori dal for per non avere un dataset diverso a ogni try
-            # provare!
             generate_dataset(td, verbose=False)
 
             if include_e2e:

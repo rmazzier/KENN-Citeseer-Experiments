@@ -31,7 +31,6 @@ def run_tests_transductive(
 
     results_e2e = {}
     results_greedy = {}
-    #generate_dataset(td)
 
     for td in training_dimensions:
         td_string = str(int(td * 100))
