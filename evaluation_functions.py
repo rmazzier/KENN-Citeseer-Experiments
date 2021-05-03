@@ -146,8 +146,8 @@ def plot_means_and_intervals(history, title, barwidth=0.3, confidence_level=0.95
     plt.legend(loc='best')
     plt.title(title)
 
-    plt.show()
     plt.savefig('plots/' + title + '.png')
+    plt.show()
 
 def plot_deltas(history, barwidth=0.3, title='', other_deltas ='', confidence_level=0.95):
     assert(other_deltas=='' or other_deltas=='i' or other_deltas == 't')
