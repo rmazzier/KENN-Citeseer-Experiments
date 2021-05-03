@@ -3,6 +3,7 @@ import numpy as np
 
 from KENN.layers.RangeConstraint import RangeConstraint
 
+
 class ClauseEnhancer(tf.keras.layers.Layer):
     """Clause Enhancer layer
     """
@@ -25,7 +26,8 @@ class ClauseEnhancer(tf.keras.layers.Layer):
         string = clause_string.split(':')
 
         self.original_string = string[1]
-        self.string = string[1].replace(',', 'v').replace('(', '').replace(')', '')
+        self.string = string[1].replace(
+            ',', 'v').replace('(', '').replace(')', '')
 
         if string[0] == '_':
             self.initial_weight = initial_weight_value
@@ -63,11 +65,12 @@ class ClauseEnhancer(tf.keras.layers.Layer):
         """
 
         self.clause_weight = self.add_weight(
-                name='kernel',
-                shape=(1,1),
-                initializer=tf.keras.initializers.Constant(value=self.initial_weight),
-                constraint=RangeConstraint(),
-                trainable=not self.hard_clause)
+            name='kernel',
+            shape=(1, 1),
+            initializer=tf.keras.initializers.Constant(
+                value=self.initial_weight),
+            constraint=RangeConstraint(),
+            trainable=not self.hard_clause)
 
         super(ClauseEnhancer, self).build(input_shape)
 
@@ -77,7 +80,8 @@ class ClauseEnhancer(tf.keras.layers.Layer):
         :return: the grounded clause (a tensor with literals truth values)
         """
 
-        selected_predicates = tf.gather(inputs, self.gather_literal_indices, axis=1)
+        selected_predicates = tf.gather(
+            inputs, self.gather_literal_indices, axis=1)
         clause_matrix = selected_predicates * self.signs
 
         return clause_matrix
@@ -92,7 +96,7 @@ class ClauseEnhancer(tf.keras.layers.Layer):
 
         delta = self.signs * tf.nn.softmax(clause_matrix) * self.clause_weight
 
-        scattered_delta = tf.scatter_nd(self.scatter_literal_indices, tf.transpose(delta), tf.reverse(tf.shape(inputs), [0]))
+        scattered_delta = tf.scatter_nd(self.scatter_literal_indices, tf.transpose(
+            delta), tf.reverse(tf.shape(inputs), [0]))
 
-        # forse vorrei ritornarmi direttamente delta?
         return tf.transpose(scattered_delta)

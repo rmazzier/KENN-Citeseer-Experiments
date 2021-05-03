@@ -19,7 +19,8 @@ class Standard(Model):
         self.h3 = layers.Dense(50, input_shape=(50,), activation='relu')
         self.d3 = layers.Dropout(0.5)
 
-        self.last_layer = layers.Dense(6, input_shape=(50,), activation='linear')
+        self.last_layer = layers.Dense(
+            6, input_shape=(50,), activation='linear')
 
     def preactivations(self, inputs):
         x = self.h1(inputs)
@@ -45,6 +46,7 @@ class Kenn(Standard):
     If self.debug = True, the model returns also the preactivations and the list of all the deltas
     for each individual clause enhancer.
     """
+
     def __init__(self, knowledge_file, explainer_object=None, *args, **kwargs):
         super(Kenn, self).__init__(*args, **kwargs)
         self.knowledge = knowledge_file
@@ -52,15 +54,15 @@ class Kenn(Standard):
 
     def build(self, input_shape):
         super(Kenn, self).build(input_shape)
-        self.kenn_layer = relational_parser(self.knowledge, explainer_object=self.explainer_object)
-
-        self.layer_weight_1 = self.add_weight(
-            name='kernel',
-            shape=(1, 1),
-            initializer=tf.keras.initializers.Constant(value=self.initial_weight))
-
+        self.kenn_layer_1 = relational_parser(
+            self.knowledge, explainer_object=self.explainer_object)
+        self.kenn_layer_2 = relational_parser(
+            self.knowledge, explainer_object=self.explainer_object)
+        self.kenn_layer_3 = relational_parser(
+            self.knowledge, explainer_object=self.explainer_object)
 
     # @tf.function
+
     def call(self, inputs, save_debug_data=False, **kwargs):
         features = inputs[0]
         relations = inputs[1]
@@ -68,9 +70,12 @@ class Kenn(Standard):
         sy = inputs[3]
 
         z = self.preactivations(features)
-        z, _ = self.kenn_layer_1(z, relations, sx, sy, save_debug_data=save_debug_data)
-        z, _ = self.kenn_layer_2(z, relations, sx, sy, save_debug_data=save_debug_data)
-        z, _ = self.kenn_layer_3(z, relations, sx, sy, save_debug_data=save_debug_data)
+        z, _ = self.kenn_layer_1(z, relations, sx, sy,
+                                 save_debug_data=save_debug_data)
+        z, _ = self.kenn_layer_2(z, relations, sx, sy,
+                                 save_debug_data=save_debug_data)
+        z, _ = self.kenn_layer_3(z, relations, sx, sy,
+                                 save_debug_data=save_debug_data)
 
         return softmax(z)
 
@@ -80,6 +85,7 @@ class Kenn_greedy(Model):
         super(Kenn_greedy, self).__init__(*args, **kwargs)
         self.knowledge = knowlege_file
         self.debug = debug
+
     def build(self, input_shape):
         self.kenn_layer_1 = relational_parser(self.knowledge)
 

@@ -11,6 +11,7 @@ from pre_elab import generate_dataset, get_train_and_valid_lengths
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
+
 def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
     """
     Trains KENN model with the Training Set using the Transductive Paradigm.
@@ -33,7 +34,8 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
     index_y = np.load(s.DATASET_FOLDER + 'index_y_transductive.npy')
     relations = np.load(s.DATASET_FOLDER + 'relations_transductive.npy')
 
-    train_len, samples_in_valid = get_train_and_valid_lengths(features, percentage_of_training)
+    train_len, samples_in_valid = get_train_and_valid_lengths(
+        features, percentage_of_training)
 
     train_losses = []
     valid_losses = []
@@ -57,28 +59,34 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
             relations=relations,
             index_x_train=index_x,
             index_y_train=index_y,
-            labels=labels[train_indices,:],
+            labels=labels[train_indices, :],
             loss=loss,
             optimizer=optimizer
         )
 
         kenn_predictions = kenn_model([features, relations, index_x, index_y])
 
-        train_predictions = kenn_predictions[:train_len,:]
-        validation_predictions = kenn_predictions[train_len:(train_len+samples_in_valid),:]
+        train_predictions = kenn_predictions[:train_len, :]
+        validation_predictions = kenn_predictions[train_len:(
+            train_len+samples_in_valid), :]
 
-        train_loss = loss(train_predictions, labels[:train_len,:])
-        validation_loss = loss(validation_predictions, labels[train_len:(train_len+samples_in_valid),:])
+        train_loss = loss(train_predictions, labels[:train_len, :])
+        validation_loss = loss(
+            validation_predictions, labels[train_len:(train_len+samples_in_valid), :])
 
         train_accuracy = accuracy(train_predictions, labels[train_indices, :])
-        validation_accuracy = accuracy(validation_predictions, labels[valid_indices, :])
+        validation_accuracy = accuracy(
+            validation_predictions, labels[valid_indices, :])
 
         # Append current clause weights
-        c_enhancers_weights_1 = [float(tf.squeeze(ce.clause_weight)) for ce in kenn_model.kenn_layer_1.binary_ke.clause_enhancers]
+        c_enhancers_weights_1 = [float(tf.squeeze(
+            ce.clause_weight)) for ce in kenn_model.kenn_layer_1.binary_ke.clause_enhancers]
         clause_weights_1.append(c_enhancers_weights_1)
-        c_enhancers_weights_2 = [float(tf.squeeze(ce.clause_weight)) for ce in kenn_model.kenn_layer_2.binary_ke.clause_enhancers]
+        c_enhancers_weights_2 = [float(tf.squeeze(
+            ce.clause_weight)) for ce in kenn_model.kenn_layer_2.binary_ke.clause_enhancers]
         clause_weights_2.append(c_enhancers_weights_2)
-        c_enhancers_weights_3 = [float(tf.squeeze(ce.clause_weight)) for ce in kenn_model.kenn_layer_3.binary_ke.clause_enhancers]
+        c_enhancers_weights_3 = [float(tf.squeeze(
+            ce.clause_weight)) for ce in kenn_model.kenn_layer_3.binary_ke.clause_enhancers]
         clause_weights_3.append(c_enhancers_weights_3)
 
         # update lists
@@ -87,8 +95,8 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
 
         train_accuracies.append(train_accuracy)
         valid_accuracies.append(validation_accuracy)
-        
-        if verbose and epoch%10 == 0:
+
+        if verbose and epoch % 10 == 0:
             print(
                 "Epoch {}: Training Loss: {:5.4f} Validation Loss: {:5.4f} | Train Accuracy: {:5.4f} Validation Accuracy: {:5.4f};".format(
                     epoch, train_loss, validation_loss, train_accuracy, validation_accuracy))
@@ -96,7 +104,8 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
         # Early Stopping
         stopEarly = callback_early_stopping(valid_accuracies)
         if stopEarly:
-            print("callback_early_stopping signal received at epoch= %d/%d"%(epoch,s.EPOCHS))
+            print("callback_early_stopping signal received at epoch= %d/%d" %
+                  (epoch, s.EPOCHS))
             print("Terminating training ")
             break
     # NOTE, IN THE TRANSDUCTIVE CASE THE DELTAS FOR THE BINARY CLAUSES
@@ -105,25 +114,29 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
     # select only the deltas relative to test samples
     # for key in ce_deltas.keys():
     #     ce_deltas[key][0] = ce_deltas[key][0][(train_len + samples_in_valid):,:]
-        
+
     kenn_predictions = kenn_model([features, relations, index_x, index_y])
-    kenn_test_predictions = kenn_predictions[(train_len + samples_in_valid):,:]
-    test_accuracy = accuracy(kenn_test_predictions, labels[(train_len + samples_in_valid):,:])
-    all_clause_weights = np.array([clause_weights_1, clause_weights_2, clause_weights_3])
+    kenn_test_predictions = kenn_predictions[(
+        train_len + samples_in_valid):, :]
+    test_accuracy = accuracy(kenn_test_predictions,
+                             labels[(train_len + samples_in_valid):, :])
+    all_clause_weights = np.array(
+        [clause_weights_1, clause_weights_2, clause_weights_3])
 
     print("Test Accuracy: {}".format(test_accuracy))
     return {
-        "train_losses": train_losses, 
-        "train_accuracies": train_accuracies, 
-        "valid_losses": valid_losses, 
-        "valid_accuracies": valid_accuracies, 
+        "train_losses": train_losses,
+        "train_accuracies": train_accuracies,
+        "valid_losses": valid_losses,
+        "valid_accuracies": valid_accuracies,
         "test_accuracy": test_accuracy,
         "clause_weights": all_clause_weights,
-        "kenn_test_predictions":kenn_test_predictions,
-        }
+        "kenn_test_predictions": kenn_test_predictions,
+    }
+
 
 if __name__ == "__main__":
-    random_seed=0
+    random_seed = 0
     tf.random.set_seed(random_seed)
     np.random.seed(random_seed)
 

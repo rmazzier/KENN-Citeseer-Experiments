@@ -54,9 +54,11 @@ class RelationalKENN(tf.keras.layers.Layer):
         if self.explainer_object:
             self.explainer_object.clear_data()
         if len(self.unary_clauses) != 0:
-            self.unary_ke = KnowledgeEnhancer(self.unary_predicates, self.unary_clauses, initial_clause_weight=self.initial_clause_weight)
+            self.unary_ke = KnowledgeEnhancer(
+                self.unary_predicates, self.unary_clauses, initial_clause_weight=self.initial_clause_weight)
         if len(self.binary_clauses) != 0:
-            self.binary_ke = KnowledgeEnhancer(self.binary_predicates, self.binary_clauses, initial_clause_weight=self.initial_clause_weight)
+            self.binary_ke = KnowledgeEnhancer(
+                self.binary_predicates, self.binary_clauses, initial_clause_weight=self.initial_clause_weight)
 
             self.join = Join()
             self.group_by = GroupBy(self.n_unary)
@@ -85,7 +87,8 @@ class RelationalKENN(tf.keras.layers.Layer):
             joined_matrix = self.join(u, binary, index1, index2)
             deltas_sum, deltas_b_list = self.binary_ke(joined_matrix)
 
-            delta_up, delta_bp = self.group_by(u, binary, deltas_sum, index1, index2)
+            delta_up, delta_bp = self.group_by(
+                u, binary, deltas_sum, index1, index2)
         else:
             delta_up = tf.zeros(u.shape)
             delta_bp = tf.zeros(binary.shape)
@@ -93,24 +96,25 @@ class RelationalKENN(tf.keras.layers.Layer):
         # Explainability Part
         if self.explainer_object and save_debug_data:
             metadata = {
-                'unary':unary, 
-                'index1':index1, 
-                'index2':index2, 
-                'unary_predicates':self.unary_predicates, 
-                'binary_predicates':self.binary_predicates, 
-                'unary_clauses':self.unary_clauses, 
-                'binary_clauses':self.binary_clauses
-                }
-            self.explainer_object._save_data_from_call(self.name,metadata,deltas_u_list,deltas_b_list,u,binary)
+                'unary': unary,
+                'index1': index1,
+                'index2': index2,
+                'unary_predicates': self.unary_predicates,
+                'binary_predicates': self.binary_predicates,
+                'unary_clauses': self.unary_clauses,
+                'binary_clauses': self.binary_clauses
+            }
+            self.explainer_object._save_data_from_call(
+                self.name, metadata, deltas_u_list, deltas_b_list, u, binary)
             # Reads the files from disk.
             # Functions are separated so one can read data from disk without retraining the model each time.
             self.explainer_object.read_debug_data()
 
-        return self.activation(u + delta_up), self.activation(binary + delta_bp), u + delta_up, binary + delta_bp
+        return self.activation(u + delta_up), self.activation(binary + delta_bp)
 
     def get_config(self):
         config = super(RelationalKENN, self).get_config()
-        config.update({'unary_predicates':self.unary_predicates})
+        config.update({'unary_predicates': self.unary_predicates})
         config.update({'unary_clauses': self.unary_clauses})
         config.update({'binary_predicates': self.binary_predicates})
         config.update({'binary_clauses': self.binary_clauses})

@@ -2,10 +2,13 @@ import tensorflow as tf
 import numpy as np
 import settings as s
 
+
 def accuracy(predictions, labels):
     # Accuracy
-    correctly_classified = tf.equal(tf.argmax(predictions, 1), tf.argmax(labels, 1))
+    correctly_classified = tf.equal(
+        tf.argmax(predictions, 1), tf.argmax(labels, 1))
     return tf.reduce_mean(tf.cast(correctly_classified, tf.float32))
+
 
 def callback_early_stopping(AccList, min_delta=s.ES_MIN_DELTA, patience=s.ES_PATIENCE):
     """
@@ -13,20 +16,22 @@ def callback_early_stopping(AccList, min_delta=s.ES_MIN_DELTA, patience=s.ES_PAT
     If patience=k, checks if the mean of the last k accuracies is higher than the mean of the 
     previous k accuracies (i.e. we check that we are not overfitting). If not, stops learning.
     """
-    #No early stopping for 2*patience epochs 
-    if len(AccList)//patience < 2 :
+    # No early stopping for 2*patience epochs
+    if len(AccList)//patience < 2:
         return False
-    #Mean loss for last patience epochs and second-last patience epochs
+    # Mean loss for last patience epochs and second-last patience epochs
     mean_previous = np.mean(AccList[::-1][patience:2*patience])
     mean_recent = np.mean(AccList[::-1][:patience])
     delta = mean_recent - mean_previous
 
     if delta <= min_delta:
-        print("*CB_ES* Validation Accuracy didn't increase in the last %d epochs"%(patience))
+        print(
+            "*CB_ES* Validation Accuracy didn't increase in the last %d epochs" % (patience))
         print("*CB_ES* delta:", delta)
         return True
     else:
         return False
+
 
 def train_step_standard(model, features, labels, loss, optimizer):
     """
@@ -46,6 +51,7 @@ def train_step_standard(model, features, labels, loss, optimizer):
         gradient = tape.gradient(training_loss, model.variables)
         optimizer.apply_gradients(zip(gradient, model.variables))
 
+
 def validation_step_standard(model, features, labels, loss):
     """
     Validation step for the base NN.
@@ -58,6 +64,7 @@ def validation_step_standard(model, features, labels, loss):
     _, predictions = model(features)
     valid_loss = loss(predictions, labels)
     return predictions, valid_loss
+
 
 def train_step_kenn_inductive(model, features, relations, index_x_train, index_y_train, labels, loss, optimizer):
     """
@@ -76,12 +83,14 @@ def train_step_kenn_inductive(model, features, relations, index_x_train, index_y
     """
     with tf.GradientTape() as tape:
 
-        predictions_KENN = model([features, relations, index_x_train, index_y_train])
+        predictions_KENN = model(
+            [features, relations, index_x_train, index_y_train])
 
         l = loss(predictions_KENN, labels)
 
         gradient = tape.gradient(l, model.variables)
         optimizer.apply_gradients(zip(gradient, model.variables))
+
 
 def train_step_kenn_transductive(model, features, relations, index_x_train, index_y_train, labels, loss, optimizer):
     """
@@ -100,11 +109,13 @@ def train_step_kenn_transductive(model, features, relations, index_x_train, inde
     """
     with tf.GradientTape() as tape:
 
-        predictions_KENN = model([features, relations, index_x_train, index_y_train])
-        
-        l = loss(predictions_KENN[:len(labels),:], labels)
+        predictions_KENN = model(
+            [features, relations, index_x_train, index_y_train])
+
+        l = loss(predictions_KENN[:len(labels), :], labels)
         gradient = tape.gradient(l, model.variables)
         optimizer.apply_gradients(zip(gradient, model.variables))
+
 
 def validation_step_kenn_inductive(model, features, relations, index_x_valid, index_y_valid, labels, loss):
     """
@@ -122,6 +133,6 @@ def validation_step_kenn_inductive(model, features, relations, index_x_valid, in
     """
 
     predictions = model([features, relations, index_x_valid, index_y_valid])
-    
+
     valid_loss = loss(predictions, labels)
     return predictions, valid_loss
