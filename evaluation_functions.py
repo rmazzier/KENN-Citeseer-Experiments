@@ -282,7 +282,7 @@ def make_t_test(history):
         test_accuracies = [history[num]['NN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
         test_accuracies_kenn = [history[num]['KENN'][i]['test_accuracy'].numpy() for i in range(n_runs)]
 
-        p_values.append(scipy.stats.ttest_ind(test_accuracies_kenn, test_accuracies, alternative='greater')[1])
+        p_values.append(scipy.stats.ttest_ind(test_accuracies_kenn, test_accuracies, alternative='greater', equal_var=False)[1])
     return p_values
 
 def get_confidence_margin(samples, confidence_level):
