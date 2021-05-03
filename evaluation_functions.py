@@ -95,7 +95,7 @@ def get_means_and_stds(history):
         mean_test_accuracies_kenn = np.mean(test_accuracies_kenn)
         std_test_accuracies_kenn = np.std(test_accuracies_kenn)
 
-        deltas = list(np.array(test_accuracies_kenn) - np.array(test_accuracies))
+        deltas = np.array(test_accuracies_kenn) - np.array(test_accuracies)
         mean_deltas = np.mean(deltas)
         std_deltas = np.std(deltas)
         
@@ -113,16 +113,15 @@ def plot_means_and_intervals(history, title, barwidth=0.3, confidence_level=0.95
 
     confidence_margins_nn, confidence_margins_kenn, _ = get_all_confidence_margins(history, confidence_level)
     means, stds, means_kenn, stds_kenn, _, _ = get_means_and_stds(history)
-    barWidth = barwidth
 
     plt.figure(figsize=(9,5))
     # Set position of bar on X axis
     r1 = np.arange(len(means))
-    r2 = [x + barWidth for x in r1]
+    r2 = [x + barwidth for x in r1]
     
     # Make the plot
-    plt.bar(r1, means, color='b', width=barWidth, edgecolor='white', label='NN')
-    plt.bar(r2, means_kenn, color='r', width=barWidth, edgecolor='white', label='KENN')
+    plt.bar(r1, means, color='b', width=barwidth, edgecolor='white', label='NN')
+    plt.bar(r2, means_kenn, color='r', width=barwidth, edgecolor='white', label='KENN')
     plt.errorbar(
         r1, 
         means, 
@@ -142,7 +141,7 @@ def plot_means_and_intervals(history, title, barwidth=0.3, confidence_level=0.95
     
     # Add xticks on the middle of the group bars
     plt.xlabel('Percentage of Training', fontweight='bold')
-    plt.xticks([r + barWidth for r in range(len(means))], history.keys())
+    plt.xticks([r + barwidth for r in range(len(means))], history.keys())
     plt.legend(loc='best')
     plt.title(title)
 
