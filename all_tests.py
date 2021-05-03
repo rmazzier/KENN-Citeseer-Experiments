@@ -1,6 +1,7 @@
 from tests_script_transductive import run_tests_transductive
 from tests_script_inductive import run_tests_inductive
 import argparse
+import os
 
 
 def parsing():
@@ -33,6 +34,16 @@ def parsing():
 
 
 if __name__ == '__main__':
+
+    directory = "results/e2e"
+
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    directory = "results/greedy"
+
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
     args = parsing()
     n_runs = args['n']
