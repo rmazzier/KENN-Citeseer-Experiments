@@ -3,7 +3,7 @@ import numpy as np
 from tensorflow.keras import Model
 from tensorflow.keras import layers
 from tensorflow.keras.activations import softmax
-from KENN.parsers import relational_parser
+from KENN2.parsers import relational_parser
 import settings as s
 
 
@@ -31,9 +31,7 @@ class Standard(Model):
         x = self.d3(x)
 
         return self.last_layer(x)
-        # return self.last_layer(inputs)
 
-    # @tf.function
     def call(self, inputs, **kwargs):
         z = self.preactivations(inputs)
 
@@ -42,9 +40,7 @@ class Standard(Model):
 
 class Kenn(Standard):
     """
-    Model with 3 KENN layers.
-    If self.debug = True, the model returns also the preactivations and the list of all the deltas
-    for each individual clause enhancer.
+    Relational KENN Model with 3 KENN layers.
     """
 
     def __init__(self, knowledge_file, explainer_object=None, *args, **kwargs):
