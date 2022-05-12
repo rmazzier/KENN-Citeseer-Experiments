@@ -6,10 +6,12 @@ import training_greedy_transductive as tg
 import pickle
 import tensorflow as tf
 import settings as s
+import time
 
 
 def run_tests_transductive(
         n_runs,
+        n_layers,
         include_greedy=True,
         include_e2e=True,
         save_results=True,
@@ -49,11 +51,16 @@ def run_tests_transductive(
 
             if include_e2e:
                 print("--- Starting Base NN Training ---")
+                start_time = time.time()
                 results_e2e[td_string].setdefault('NN', []).append(
                     ts.train_and_evaluate_standard(td, verbose=verbose)[3])
+
                 print("--- Starting KENN Transductive Training ---")
-                results_e2e[td_string].setdefault('KENN', []).append(
-                    t.train_and_evaluate_kenn_transductive(td, verbose=verbose))
+                r = t.train_and_evaluate_kenn_transductive(td, n_layers, verbose=verbose)
+                end_time = time.time()
+
+                r['time'] = end_time - start_time
+                results_e2e[td_string].setdefault('KENN', []).append(r)
 
             if include_greedy:
                 print("--- Starting KENN Greedy Training ---")
@@ -65,7 +72,7 @@ def run_tests_transductive(
 
         if save_results:
             if include_e2e:
-                with open('./results/e2e/results_transductive_{}runs'.format(n_runs), 'wb') as output:
+                with open('./results/e2e/results_transductive_{}runs_{}layers'.format(n_runs, n_layers), 'wb') as output:
                     pickle.dump(results_e2e, output)
             if include_greedy:
                 with open('./results/greedy/results_transductive_{}runs'.format(n_runs), 'wb') as output:

@@ -4,7 +4,7 @@ import argparse
 import os
 
 
-def parsing():
+def parsing():  # add n_layers
     parser = argparse.ArgumentParser(
         description="Run tests for both inductive and transductive paradigm")
     parser.add_argument(
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    directory = "results/greedy"
+    directory = "results/greedy"  #TODO: remove greedy
 
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -48,18 +48,29 @@ if __name__ == '__main__':
     args = parsing()
     n_runs = args['n']
 
-    if (args['ind']):
-        run_tests_inductive(
-            n_runs=n_runs,
-            include_greedy=args['gr'],
-            include_e2e=args['e2e'],
-            save_results=True,
-            verbose=True)
+    for n_layers in [4,5,6]:
+        if (args['ind']):
+            run_tests_inductive(
+                n_runs=n_runs,
+                n_layers=n_layers,
+                include_greedy=args['gr'],
+                include_e2e=args['e2e'],
+                save_results=True,
+                verbose=True)
 
-    if (args['tra']):
-        run_tests_transductive(
-            n_runs=n_runs,
-            include_greedy=args['gr'],
-            include_e2e=args['e2e'],
-            save_results=True,
-            verbose=True)
+        if (args['tra']):
+            run_tests_transductive(
+                n_runs=n_runs,
+                n_layers=n_layers,
+                include_greedy=args['gr'],
+                include_e2e=args['e2e'],
+                save_results=True,
+                verbose=True)
+
+# TODO:
+#  - cambiare i plots:
+#    - aggiungere risultati con diverso numero di layers
+#    - nuovo plot: grafico a barre con il tempo medio di esecuzione (transductive... spostare prima nell'articolo?)
+#  DONE:
+#  - salvataggio tempo di esecuzione
+#  - parametro aggiuntivo per il numero di KE layers

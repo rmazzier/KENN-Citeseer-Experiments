@@ -40,25 +40,24 @@ class Standard(Model):
 
 class Kenn(Standard):
     """
-    Relational KENN Model with 3 KENN layers.
+    Relational KENN Model.
     """
 
-    def __init__(self, knowledge_file, explainer_object=None, *args, **kwargs):
+    def __init__(self, knowledge_file, n_layers, explainer_object=None, *args, **kwargs):
         super(Kenn, self).__init__(*args, **kwargs)
         self.knowledge = knowledge_file
         self.explainer_object = explainer_object
+        self.n_layers = n_layers
 
     def build(self, input_shape):
         super(Kenn, self).build(input_shape)
-        self.kenn_layer_1 = relational_parser(
-            self.knowledge, explainer_object=self.explainer_object)
-        self.kenn_layer_2 = relational_parser(
-            self.knowledge, explainer_object=self.explainer_object)
-        self.kenn_layer_3 = relational_parser(
-            self.knowledge, explainer_object=self.explainer_object)
+        self.kenn_layers = []
 
-    # @tf.function
+        for _ in range(self.n_layers):
+            self.kenn_layers.append(relational_parser(self.knowledge, explainer_object=self.explainer_object))
 
+
+    @tf.function
     def call(self, inputs, save_debug_data=False, **kwargs):
         features = inputs[0]
         relations = inputs[1]
@@ -66,12 +65,9 @@ class Kenn(Standard):
         sy = inputs[3]
 
         z = self.preactivations(features)
-        z, _ = self.kenn_layer_1(z, relations, sx, sy,
-                                 save_debug_data=save_debug_data)
-        z, _ = self.kenn_layer_2(z, relations, sx, sy,
-                                 save_debug_data=save_debug_data)
-        z, _ = self.kenn_layer_3(z, relations, sx, sy,
-                                 save_debug_data=save_debug_data)
+
+        for ke in self.kenn_layers:
+            z, _ = ke(z, relations, sx, sy, save_debug_data=save_debug_data)
 
         return softmax(z)
 

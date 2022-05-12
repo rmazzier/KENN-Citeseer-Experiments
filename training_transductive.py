@@ -12,14 +12,14 @@ from pre_elab import generate_dataset, get_train_and_valid_lengths
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 
-def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
+def train_and_evaluate_kenn_transductive(percentage_of_training, n_layers, verbose=True):
     """
     Trains KENN model with the Training Set using the Transductive Paradigm.
     Validates on Validation Set, and evaluates accuracy on the Test Set.
 
     :param debug: if True, the models will return the deltas from the single clause enhancers
     """
-    kenn_model = Kenn('knowledge_base')
+    kenn_model = Kenn('knowledge_base', n_layers)
     kenn_model.build((s.NUMBER_OF_FEATURES,))
 
     optimizer = keras.optimizers.Adam()
@@ -43,9 +43,9 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
     train_accuracies = []
 
     # list of all the evolutions of the clause weights
-    clause_weights_1 = []
-    clause_weights_2 = []
-    clause_weights_3 = []
+    # clause_weights_1 = []
+    # clause_weights_2 = []
+    # clause_weights_3 = []  TODO: rimuovere?
 
     train_indices = range(train_len)
     valid_indices = range(train_len, train_len + samples_in_valid)
@@ -78,16 +78,16 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
         validation_accuracy = accuracy(
             validation_predictions, labels[valid_indices, :])
 
-        # Append current clause weights
-        c_enhancers_weights_1 = [float(tf.squeeze(
-            ce.clause_weight)) for ce in kenn_model.kenn_layer_1.binary_ke.clause_enhancers]
-        clause_weights_1.append(c_enhancers_weights_1)
-        c_enhancers_weights_2 = [float(tf.squeeze(
-            ce.clause_weight)) for ce in kenn_model.kenn_layer_2.binary_ke.clause_enhancers]
-        clause_weights_2.append(c_enhancers_weights_2)
-        c_enhancers_weights_3 = [float(tf.squeeze(
-            ce.clause_weight)) for ce in kenn_model.kenn_layer_3.binary_ke.clause_enhancers]
-        clause_weights_3.append(c_enhancers_weights_3)
+        # # Append current clause weights
+        # c_enhancers_weights_1 = [float(tf.squeeze(
+        #     ce.clause_weight)) for ce in kenn_model.kenn_layer_1.binary_ke.clause_enhancers]
+        # clause_weights_1.append(c_enhancers_weights_1)
+        # c_enhancers_weights_2 = [float(tf.squeeze(
+        #     ce.clause_weight)) for ce in kenn_model.kenn_layer_2.binary_ke.clause_enhancers]
+        # clause_weights_2.append(c_enhancers_weights_2)
+        # c_enhancers_weights_3 = [float(tf.squeeze(
+        #     ce.clause_weight)) for ce in kenn_model.kenn_layer_3.binary_ke.clause_enhancers]
+        # clause_weights_3.append(c_enhancers_weights_3)  TODO: rimuovere?
 
         # update lists
         train_losses.append(train_loss)
@@ -120,8 +120,8 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
         train_len + samples_in_valid):, :]
     test_accuracy = accuracy(kenn_test_predictions,
                              labels[(train_len + samples_in_valid):, :])
-    all_clause_weights = np.array(
-        [clause_weights_1, clause_weights_2, clause_weights_3])
+    # all_clause_weights = np.array(
+    #     [clause_weights_1, clause_weights_2, clause_weights_3])  TODO: rimuovere?
 
     print("Test Accuracy: {}".format(test_accuracy))
     return {
@@ -130,7 +130,7 @@ def train_and_evaluate_kenn_transductive(percentage_of_training, verbose=True):
         "valid_losses": valid_losses,
         "valid_accuracies": valid_accuracies,
         "test_accuracy": test_accuracy,
-        "clause_weights": all_clause_weights,
+        # "clause_weights": all_clause_weights,  TODO: rimuovere?
         "kenn_test_predictions": kenn_test_predictions,
     }
 

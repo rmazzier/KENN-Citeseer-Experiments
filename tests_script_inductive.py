@@ -6,10 +6,12 @@ import training_greedy_inductive as tg
 import pickle
 import tensorflow as tf
 import settings as s
+import time
 
 
 def run_tests_inductive(
         n_runs,
+        n_layers,
         include_greedy=True,
         include_e2e=True,
         save_results=True,
@@ -49,11 +51,16 @@ def run_tests_inductive(
 
             if include_e2e:
                 print("--- Starting Base NN Training ---")
-                results_e2e[td_string].setdefault('NN', []).append(
-                    ts.train_and_evaluate_standard(td, verbose=verbose)[3])
+                start_time = time.time()
+                results = ts.train_and_evaluate_standard(td, verbose=verbose)[3]
+                results_e2e[td_string].setdefault('NN', []).append(results)
+
                 print("--- Starting Inductive KENN Training ---")
-                results_e2e[td_string].setdefault('KENN', []).append(
-                    t.train_and_evaluate_kenn_inductive(td, verbose=verbose))
+                r = t.train_and_evaluate_kenn_inductive(td, n_layers, verbose=verbose)  #TODO: add n_layers
+                end_time = time.time()
+
+                r['time'] = end_time - start_time
+                results_e2e[td_string].setdefault('KENN', []).append(r)
 
             if include_greedy:
                 print("--- Starting Base NN & Inductive Greedy KENN Training ---")
@@ -65,7 +72,7 @@ def run_tests_inductive(
 
         if save_results:
             if include_e2e:
-                with open('./results/e2e/results_inductive_{}runs'.format(n_runs), 'wb') as output:
+                with open('./results/e2e/results_inductive_{}runs_{}layers'.format(n_runs, n_layers), 'wb') as output:
                     pickle.dump(results_e2e, output)
             if include_greedy:
                 with open('./results/greedy/results_inductive_{}runs'.format(n_runs), 'wb') as output:
