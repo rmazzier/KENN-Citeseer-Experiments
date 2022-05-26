@@ -4,7 +4,7 @@ import argparse
 import os
 
 
-def parsing():  # add n_layers
+def parsing():
     parser = argparse.ArgumentParser(
         description="Run tests for both inductive and transductive paradigm")
     parser.add_argument(
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     args = parsing()
     n_runs = args['n']
 
-    for n_layers in [4,5,6]:
+    for n_layers in range(1, 7):
         if (args['ind']):
             run_tests_inductive(
                 n_runs=n_runs,
@@ -66,11 +66,3 @@ if __name__ == '__main__':
                 include_e2e=args['e2e'],
                 save_results=True,
                 verbose=True)
-
-# TODO:
-#  - cambiare i plots:
-#    - aggiungere risultati con diverso numero di layers
-#    - nuovo plot: grafico a barre con il tempo medio di esecuzione (transductive... spostare prima nell'articolo?)
-#  DONE:
-#  - salvataggio tempo di esecuzione
-#  - parametro aggiuntivo per il numero di KE layers

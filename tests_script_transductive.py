@@ -52,10 +52,13 @@ def run_tests_transductive(
             if include_e2e:
                 print("--- Starting Base NN Training ---")
                 start_time = time.time()
-                results_e2e[td_string].setdefault('NN', []).append(
-                    ts.train_and_evaluate_standard(td, verbose=verbose)[3])
+                results = ts.train_and_evaluate_standard(td, verbose=verbose)[3]
+                end_time = time.time()
+                results['time'] = end_time - start_time
+                results_e2e[td_string].setdefault('NN', []).append(results)
 
                 print("--- Starting KENN Transductive Training ---")
+                start_time = time.time()
                 r = t.train_and_evaluate_kenn_transductive(td, n_layers, verbose=verbose)
                 end_time = time.time()
 

@@ -53,10 +53,13 @@ def run_tests_inductive(
                 print("--- Starting Base NN Training ---")
                 start_time = time.time()
                 results = ts.train_and_evaluate_standard(td, verbose=verbose)[3]
+                end_time = time.time()
+                results['time'] = end_time - start_time
                 results_e2e[td_string].setdefault('NN', []).append(results)
 
                 print("--- Starting Inductive KENN Training ---")
-                r = t.train_and_evaluate_kenn_inductive(td, n_layers, verbose=verbose)  #TODO: add n_layers
+                start_time = time.time()
+                r = t.train_and_evaluate_kenn_inductive(td, n_layers, verbose=verbose)
                 end_time = time.time()
 
                 r['time'] = end_time - start_time

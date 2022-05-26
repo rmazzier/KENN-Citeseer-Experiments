@@ -12,12 +12,12 @@ from pre_elab import generate_dataset, get_train_and_valid_lengths
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 
-def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True, explainer_object=None):
+def train_and_evaluate_kenn_inductive(percentage_of_training, n_layers, verbose=True, explainer_object=None):
     """
     Trains KENN model with the Training Set using the Inductive Paradigm.
     Validates on Validation Set, and evaluates accuracy on the Test Set.
     """
-    kenn_model = Kenn('knowledge_base', explainer_object=explainer_object)
+    kenn_model = Kenn('knowledge_base', n_layers, explainer_object=explainer_object)
     kenn_model.build((s.NUMBER_OF_FEATURES,))
 
     optimizer = keras.optimizers.Adam()
@@ -53,11 +53,6 @@ def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True, expl
     valid_accuracies = []
     train_accuracies = []
 
-    # list of all the evolutions of the clause weights
-    clause_weights_1 = []
-    clause_weights_2 = []
-    clause_weights_3 = []
-
     train_indices = range(train_len)
     valid_indices = range(train_len, train_len + samples_in_valid)
     test_indices = range(train_len + samples_in_valid, features.shape[0])
@@ -79,16 +74,6 @@ def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True, expl
             [features[train_indices, :], relations_inductive_training, index_x_train, index_y_train])
         t_loss = loss(t_predictions, labels[train_indices, :])
 
-        # Append current clause weights
-        c_enhancers_weights_1 = [float(tf.squeeze(
-            ce.clause_weight)) for ce in kenn_model.kenn_layer_1.binary_ke.clause_enhancers]
-        clause_weights_1.append(c_enhancers_weights_1)
-        c_enhancers_weights_2 = [float(tf.squeeze(
-            ce.clause_weight)) for ce in kenn_model.kenn_layer_2.binary_ke.clause_enhancers]
-        clause_weights_2.append(c_enhancers_weights_2)
-        c_enhancers_weights_3 = [float(tf.squeeze(
-            ce.clause_weight)) for ce in kenn_model.kenn_layer_3.binary_ke.clause_enhancers]
-        clause_weights_3.append(c_enhancers_weights_3)
 
         v_predictions, v_loss = validation_step_kenn_inductive(
             model=kenn_model,
@@ -127,8 +112,6 @@ def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True, expl
 
     test_accuracy = accuracy(predictions_test, labels[test_indices, :])
 
-    all_clause_weights = np.array(
-        [clause_weights_1, clause_weights_2, clause_weights_3])
     print("Test Accuracy: {}".format(test_accuracy))
     return {
         "train_losses": train_losses,
@@ -136,7 +119,6 @@ def train_and_evaluate_kenn_inductive(percentage_of_training, verbose=True, expl
         "valid_losses": valid_losses,
         "valid_accuracies": valid_accuracies,
         "test_accuracy": test_accuracy,
-        "clause_weights": all_clause_weights,
         "kenn_test_predictions": predictions_test}
 
 

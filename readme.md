@@ -78,7 +78,7 @@ python all_tests.py [parameters]
 To run all the experiments using our settings, run:
 
 ```
-python all_tests.py -n 500 -ind -tra -e2e
+python all_tests.py -n 100 -ind -tra -e2e
 ```
 
 Results will be saved inside `./results/e2e`.
